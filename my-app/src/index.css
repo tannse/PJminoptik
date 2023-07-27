@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .MenuMobile {
+        @apply text-[22px] px-[20px] py-[14px] font-semibold text-white items-center
+        border-gray-500 font-Exo duration-200 ease-in active:bg-bgButton;
+    }
+}
+@layer components {
+    .MenuPc {
+        @apply text-[22px] px-[55px] py-[14px] font-semibold text-white items-center
+        border-gray-500 font-Exo duration-200 ease-in-out active:bg-bgButton uppercase;
+    }
+}
+@layer components {
+    .StyleMenu {
+        @apply absolute  transition-transform transition-all duration-500  bg-premierColor rounded-2xl  w-[90%];
+    }
+}
+@layer components {
+    .StyleButtonNav {
+        @apply select-none active:scale-75 transition-transform  duration-100 uppercase font-Exo font-bold text-[20px] mt-[15px] flex items-center justify-center   rounded-[10px] border-[1px] border-solid border-white  bg-bgButton text-white w-[300px] h-[50px];
+    }
+}
+@layer components {
+    .customAnimation {
+        @apply duration-200 ease-in;
+    }
+}

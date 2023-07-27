@@ -2,21 +2,55 @@ import Extranav1 from "../assets/Extranav-1.jpg";
 import Extranav2 from "../assets/Extranav-2.jpg";
 import Extranav3 from "../assets/Extranav-3.jpg";
 import Extranav4 from "../assets/Extranav-4.jpg";
+import { motion } from "framer-motion";
 const ExtraNav = () => {
     return (
         <div>
-            <ul className=" dt:hidden flex flex-col items-center my-[25px] mx-[36px]">
-                <li className="StyleButtonNav ">Synundersökning</li>
+            <ul className=" scroll-none dt:hidden flex flex-col items-center my-[25px] mx-[36px]">
+                <motion.li
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                    className="StyleButtonNav "
+                >
+                    Synundersökning
+                </motion.li>
 
-                <li className="StyleButtonNav">Glasögon</li>
+                <motion.li
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                    className="StyleButtonNav"
+                >
+                    Glasögon
+                </motion.li>
 
-                <li className="StyleButtonNav">Kontaktlinser</li>
+                <motion.li
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                    className="StyleButtonNav"
+                >
+                    Kontaktlinser
+                </motion.li>
 
-                <li className="StyleButtonNav">Solglasögon</li>
+                <motion.li
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                    className="StyleButtonNav"
+                >
+                    Solglasögon
+                </motion.li>
             </ul>
 
             <ul className="hidden rounded-sm border-stone-300 dt:justify-evenly   dt:flex  dt:w-[100%] bg-premierColor duration-300 ease-in-out transition-all  dt:items-center p-[50px]  dt:object-cover  ">
-                <li className="w-1/5 flex flex-col justify-center group cursor-pointer items-center border-2 rounded-xl border-white hover:shadow-buttonShadow  customAnimation   ">
+                <motion.li
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                    className="w-1/5 flex flex-col justify-center group cursor-pointer items-center border-2 rounded-xl border-white hover:shadow-buttonShadow  customAnimation   "
+                >
                     <img
                         alt="minoptik"
                         className=" group-hover:brightness-[90%] w-[100%] h-[30vh] object-cover   customAnimation   rounded-t-xl   "
@@ -28,9 +62,14 @@ const ExtraNav = () => {
                     >
                         synundersokning
                     </a>
-                </li>
+                </motion.li>
 
-                <li className="w-1/5 flex flex-col justify-center group  cursor-pointer items-center border-2 rounded-xl border-white hover:shadow-buttonShadow  customAnimation   ">
+                <motion.li
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                    className="w-1/5 flex flex-col justify-center group  cursor-pointer items-center border-2 rounded-xl border-white hover:shadow-buttonShadow  customAnimation   "
+                >
                     <img
                         alt="minoptik"
                         className=" group-hover:brightness-[90%] w-[100%] h-[30vh] object-cover   customAnimation   rounded-t-xl   "
@@ -42,9 +81,14 @@ const ExtraNav = () => {
                     >
                         Glasögon
                     </a>
-                </li>
+                </motion.li>
 
-                <li className="w-1/5 flex flex-col justify-center group cursor-pointer items-center border-2 rounded-xl border-white hover:shadow-buttonShadow  customAnimation   ">
+                <motion.li
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                    className="w-1/5 flex flex-col justify-center group cursor-pointer items-center border-2 rounded-xl border-white hover:shadow-buttonShadow  customAnimation   "
+                >
                     <img
                         alt="minoptik"
                         className=" group-hover:brightness-[90%] w-[100%] h-[30vh] object-cover   customAnimation   rounded-t-xl   "
@@ -56,9 +100,14 @@ const ExtraNav = () => {
                     >
                         kontaktlinser
                     </a>
-                </li>
+                </motion.li>
 
-                <li className="w-1/5 flex flex-col justify-center group cursor-pointer items-center border-2 rounded-xl border-white hover:shadow-buttonShadow  customAnimation   ">
+                <motion.li
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1 }}
+                    className="w-1/5 flex flex-col justify-center group cursor-pointer items-center border-2 rounded-xl border-white hover:shadow-buttonShadow  customAnimation   "
+                >
                     <img
                         alt="minoptik"
                         className=" group-hover:brightness-[95%] w-[100%] h-[30vh] object-cover   customAnimation   rounded-t-xl   "
@@ -70,7 +119,7 @@ const ExtraNav = () => {
                     >
                         solglasogon
                     </a>
-                </li>
+                </motion.li>
             </ul>
         </div>
     );

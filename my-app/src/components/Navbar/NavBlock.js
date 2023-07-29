@@ -61,8 +61,8 @@ const NavBlock = () => {
             </div>
 
             <div
-                className={`dt:hidden fixed w-[100%] bg-bgOverlay h-[100%] top-0 z-[100] transition-transform ease-in-out duration-500  ${
-                    openMenu ? "   opacity-100  " : " opacity-0 "
+                className={`dt:hidden  w-[100%] bg-bgOverlay h-[100%] top-0 z-[100] transition-transform ease-in-out duration-500  ${
+                    openMenu ? " fixed  opacity-100  " : " opacity-0 "
                 }`}
             >
                 <div

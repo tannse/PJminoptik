@@ -49,16 +49,16 @@ const ExtraNav = () => {
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
-                    className="w-1/5 flex flex-col justify-center group cursor-pointer items-center border-2 rounded-xl border-white hover:shadow-buttonShadow  customAnimation   "
+                    className="w-1/5 flex flex-col justify-center  group over cursor-pointer items-center border-2 rounded-xl border-white hover:shadow-buttonShadow  customAnimation   "
                 >
                     <img
                         alt="minoptik"
-                        className=" group-hover:brightness-[90%] w-[100%] h-[30vh] object-cover   customAnimation   rounded-t-xl   "
+                        className=" group-hover:brightness-[65%]  w-[100%] h-[30vh] object-cover   customAnimation   rounded-t-xl   "
                         src={Extranav1}
                     ></img>
                     <a
                         href="./"
-                        className="text-[25px] uppercase group-hover:translate-y-[-15vh] group-hover:text-[35px] customAnimation   font-extrabold text-white"
+                        className="text-[25px] child uppercase group-hover:translate-y-[-15vh] text-[2.1rem] customAnimation   font-extrabold text-white"
                     >
                         synundersokning
                     </a>
@@ -72,12 +72,12 @@ const ExtraNav = () => {
                 >
                     <img
                         alt="minoptik"
-                        className=" group-hover:brightness-[90%] w-[100%] h-[30vh] object-cover   customAnimation   rounded-t-xl   "
+                        className=" group-hover:brightness-[65%] w-[100%] h-[30vh] object-cover   customAnimation   rounded-t-xl   "
                         src={Extranav2}
                     ></img>
                     <a
                         href="./"
-                        className="text-[25px] uppercase group-hover:translate-y-[-15vh] group-hover:text-[35px] customAnimation   font-extrabold text-white"
+                        className="text-[25px] uppercase group-hover:translate-y-[-15vh] text-[2.1rem] customAnimation   font-extrabold text-white"
                     >
                         Glasögon
                     </a>
@@ -91,12 +91,12 @@ const ExtraNav = () => {
                 >
                     <img
                         alt="minoptik"
-                        className=" group-hover:brightness-[90%] w-[100%] h-[30vh] object-cover   customAnimation   rounded-t-xl   "
+                        className=" group-hover:brightness-[65%] w-[100%] h-[30vh] object-cover   customAnimation   rounded-t-xl   "
                         src={Extranav3}
                     ></img>
                     <a
                         href="./"
-                        className="text-[25px] uppercase group-hover:translate-y-[-15vh] group-hover:text-[35px] customAnimation   font-extrabold text-white"
+                        className="text-[25px] uppercase group-hover:translate-y-[-15vh] text-[2.1rem] customAnimation   font-extrabold text-white"
                     >
                         kontaktlinser
                     </a>
@@ -110,12 +110,12 @@ const ExtraNav = () => {
                 >
                     <img
                         alt="minoptik"
-                        className=" group-hover:brightness-[95%] w-[100%] h-[30vh] object-cover   customAnimation   rounded-t-xl   "
+                        className=" group-hover:brightness-[65%] w-[100%] h-[30vh] object-cover   customAnimation   rounded-t-xl   "
                         src={Extranav4}
                     ></img>
                     <a
                         href="./"
-                        className="text-[25px] uppercase group-hover:translate-y-[-15vh] group-hover:text-[35px] customAnimation   font-extrabold text-white"
+                        className="text-[25px] uppercase group-hover:translate-y-[-15vh] text-[2.1rem] customAnimation   font-extrabold text-white"
                     >
                         solglasogon
                     </a>

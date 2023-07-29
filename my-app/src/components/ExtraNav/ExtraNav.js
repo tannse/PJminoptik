@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const ExtraNav = () => {
     return (
         <div>
-            <ul className=" scroll-none dt:hidden flex flex-col items-center my-[25px] mx-[36px]">
+            <ul className=" h-[60vh] scroll-none dt:hidden flex flex-col items-center justify-evenly mx-[36px]">
                 <motion.li
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}

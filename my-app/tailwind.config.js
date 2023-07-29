@@ -12,7 +12,8 @@ module.exports = {
             dt: "1279px",
         },
         boxShadow: {
-            buttonShadow: "0px 10px 16px 0px rgba(255,254,254,0.75);",
+            Shadow: " 0px 10px 6px -1px rgba(0,0,0,0.2);",
+            whiteShadow: "0px 14px 6px 0px rgba(255,255,255,0.18);",
         },
         backgroundColor: {
             bgButton: "#118273",

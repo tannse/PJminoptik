@@ -1,7 +1,7 @@
 const InfoOptik = () => {
     return (
         <div className="bg-premierColor">
-            <div className="pt-[3.1rem] pb-[10.4rem] px-[2.4rem] StyleFlexCol">
+            <div className="pt-[3.1rem] pb-[13rem] px-[2.4rem] StyleFlexCol">
                 <h2 className="text-[1.5rem] font-bold font-Exo text-white ">
                     En ny generation optiker
                 </h2>
@@ -16,7 +16,7 @@ const InfoOptik = () => {
                     marknaden har att erbjuda. Kom in i butiken så visar vi mer
                     med hjälp av bl.a. Zeiss.
                 </p>
-                <button className="  dt:block mt-[15px] outline-none shadow-whiteShadow active:scale-75 transition-transform duration-50 font-Exo font-bold  rounded-[10px] px-[15px] border-[1px] border-solid border-white  bg-[#51ecd7ce] text-white  h-[43px]">
+                <button className="  dt:block mt-[15px] outline-none  active:scale-75 transition-transform duration-50 font-Exo font-bold  rounded-[10px] px-[15px] border-[1px] border-solid border-white  bg-bgButton text-white  h-[43px]">
                     LÄS MER OCH HITTA TILL OSS
                 </button>
             </div>

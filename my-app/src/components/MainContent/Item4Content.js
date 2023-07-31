@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ServiceCT2 from "../assets/ServiceCT2.jpg";
+import ServiceCT4 from "../assets/ServiceCT5.jpg";
 const Item4Content = () => {
     return (
         <div className="bg-white  h-[100vh] ">
@@ -40,11 +40,11 @@ const Item4Content = () => {
             </div>
             <div className="flex justify-center relative">
                 <motion.img
-                    initial={{ opacity: 0, y: 50 }}
+                    initial={{ y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 2 }}
-                    src={ServiceCT2}
-                    className=" ImgCusTomMobile"
+                    src={ServiceCT4}
+                    className=" ImgCusTomMobile object-cover"
                 />
             </div>
         </div>

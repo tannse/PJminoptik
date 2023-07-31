@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ServiceCT1 from "../assets/ServiceCT1.png";
+import ServiceCT5 from "../assets/ServiceCT5.gif";
 const Item5Content = () => {
     return (
         <div className="bg-premierColor  h-[100vh] ">
@@ -11,41 +11,34 @@ const Item5Content = () => {
                         transition={{ duration: 0.3 }}
                         className="h2CustomMobile"
                     >
-                        En ny generation optiker
+                        Vi är ISO Certifierade
                     </motion.h2>
                     <hr className="w-[50%] mt-[5px] font-bold" />
-                    <motion.span
-                        initial={{ y: 50 }}
-                        whileInView={{ y: 0 }}
-                        transition={{ duration: 0.3 }}
-                        className="TitleCustomMobile"
-                    >
-                        Vi försöker hela tiden att förbättra och utbilda oss.
-                    </motion.span>
+
                     <motion.p
                         initial={{ y: 50 }}
                         whileInView={{ y: 0 }}
                         transition={{ duration: 0.3 }}
                         className="DescCustomMobile"
                     >
-                        Allt för att kunna hjälpa dig på bästa sätt. Välkommen
-                        att inspireras! Vi har den senaste tekniken för att visa
-                        Dig somkund skillnaden på olika glas och alla de
-                        kvalitéer som marknaden har att erbjuda. Kom in i
-                        butiken så visar vi mer med hjälp av bl.a. Zeiss.
+                        Synologen är en medlems organisation med en central
+                        ledning som hjälper medlem marnaatt driva utvecklingen
+                        framåt. Tillsammans skapar vi mervärden som gör att vi
+                        stärkervår position och konkurrenskraft som en
+                        sammanslutning av experter.
                     </motion.p>
                     <button className="  dt:block mt-[15px] outline-none  active:scale-75 transition-transform duration-50 font-Exo font-bold  rounded-[10px] shadow-Shadow px-[15px] border-white border-[2px] border-solid text-white  bg-bgButton   h-[43px]">
-                        LÄS MER OCH HITTA TILL OSS
+                        Läser mer här
                     </button>
                 </div>
             </div>
-            <div className="flex justify-center relative">
+            <div className="flex justify-center relative ">
                 <motion.img
-                    initial={{ opacity: 0, y: 50 }}
+                    initial={{ y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 2 }}
-                    src={ServiceCT1}
-                    className=" ImgCusTomMobile"
+                    src={ServiceCT5}
+                    className=" rounded-[20px] ImgCusTomMobile h-[25vh] object-none "
                 />
             </div>
         </div>

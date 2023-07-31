@@ -31,11 +31,31 @@
 }
 @layer components {
     .StyleFlexCol {
-        @apply flex justify-center items-center flex-col;
+        @apply flex  items-center flex-col;
     }
 }
 @layer components {
     .StyleTitle {
         @apply text-[1.25rem] font-semibold text-white;
+    }
+}
+@layer components {
+    .h2CustomMobile {
+        @apply text-[1.5rem] font-bold font-Exo text-white;
+    }
+}
+@layer components {
+    .TitleCustomMobile {
+        @apply pt-[0.6rem] font-Exo font-bold text-[18px] text-white StyleTitle text-center;
+    }
+}
+@layer components {
+    .DescCustomMobile {
+        @apply pt-[0.6rem] text-[16px] font-medium text-white text-center;
+    }
+}
+@layer components {
+    .ImgCusTomMobile {
+        @apply absolute w-[80%] top-[-20vh] shadow-Shadow  rounded-[20px] text-center object-cover h-[40vh];
     }
 }

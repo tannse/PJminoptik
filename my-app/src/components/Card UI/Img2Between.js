@@ -1,16 +1,16 @@
 import { motion } from "framer-motion";
-import ServiceCT1 from "../assets/ServiceCT1.png";
-const Img1Between = () => {
+import ServiceCT2 from "../assets/ServiceCT2.jpg";
+const Img2Between = () => {
     return (
         <div className="flex justify-center relative">
             <motion.img
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 2 }}
-                src={ServiceCT1}
-                className=" absolute w-[80%] top-[-25vh] shadow-Shadow  rounded-[20px] text-center object-cover h-[45vh]"
+                src={ServiceCT2}
+                className=" ImgCusTomMobile"
             />
         </div>
     );
 };
-export default Img1Between;
+export default Img2Between;

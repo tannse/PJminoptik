@@ -1,31 +1,32 @@
 import { motion } from "framer-motion";
+import ServiceCT2 from "../assets/ServiceCT2.jpg";
 const Item4Content = () => {
     return (
-        <div className=" mb-[10rem]  bg-[#fff]">
-            <div className=" h-[100vh]    px-[2.4rem] StyleFlexCol">
-                <div className="border-solid border-green-700 border-[2px] rounded-[15px] py-[20px] px-[10px] mt-[10rem] StyleFlexCol">
+        <div className="bg-white  h-[100vh] ">
+            <div className="  px-[2.4rem] StyleFlexCol">
+                <div className="border-solid border-green-700 border-[2px] rounded-[15px] py-[20px] px-[10px] mt-[8rem] StyleFlexCol">
                     <motion.h2
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1 }}
-                        className="h2CustomMobile text-black    "
+                        initial={{ y: 50 }}
+                        whileInView={{ y: 0 }}
+                        transition={{ duration: 0.3 }}
+                        className="h2CustomMobile text-black"
                     >
                         Ögonläkare nära dig
                     </motion.h2>
                     <hr className="w-[50%] mt-[5px] font-bold" />
                     <motion.span
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ duration: 1 }}
+                        initial={{ y: 50 }}
+                        whileInView={{ y: 0 }}
+                        transition={{ duration: 0.3 }}
                         className="TitleCustomMobile text-black"
                     >
                         Min Optik erbjuder undersökning av legitimerad
                         ögonläkare.
                     </motion.span>
                     <motion.p
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ duration: 1 }}
+                        initial={{ y: 50 }}
+                        whileInView={{ y: 0 }}
+                        transition={{ duration: 0.3 }}
                         className="DescCustomMobile text-black"
                     >
                         Hos oss får du bra service Ögonläkare nära dig.Med jämna
@@ -36,6 +37,15 @@ const Item4Content = () => {
                         Se lediga tider
                     </button>
                 </div>
+            </div>
+            <div className="flex justify-center relative">
+                <motion.img
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 2 }}
+                    src={ServiceCT2}
+                    className=" ImgCusTomMobile"
+                />
             </div>
         </div>
     );

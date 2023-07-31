@@ -1,30 +1,31 @@
 import { motion } from "framer-motion";
+import ServiceCT3 from "../assets/ServiceCT3.jpg";
 const Item3Content = () => {
     return (
-        <div className=" mb-[10rem] bg-premierColor">
-            <div className=" h-[100vh]   px-[2.4rem] StyleFlexCol">
-                <div className="border-solid border-white border-[2px] rounded-[15px] py-[20px] px-[10px] mt-[10rem] StyleFlexCol">
+        <div className="bg-premierColor  h-[100vh] ">
+            <div className=" pt-[3.1rem]   px-[2.4rem] StyleFlexCol">
+                <div className="border-solid border-white border-[2px] rounded-[15px] py-[20px] px-[10px] mt-[10px] StyleFlexCol">
                     <motion.h2
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1 }}
+                        initial={{ y: 50 }}
+                        whileInView={{ y: 0 }}
+                        transition={{ duration: 0.3 }}
                         className="h2CustomMobile"
                     >
                         Vi är här för dig
                     </motion.h2>
                     <hr className="w-[50%] mt-[5px] font-bold" />
                     <motion.span
-                        initial={{ opacity: 0, y: 50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 1 }}
+                        initial={{ y: 50 }}
+                        whileInView={{ y: 0 }}
+                        transition={{ duration: 0.3 }}
                         className="TitleCustomMobile"
                     >
                         Vi tror på kompetens, valfrihet och omtanke.
                     </motion.span>
                     <motion.p
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ duration: 1 }}
+                        initial={{ y: 50 }}
+                        whileInView={{ y: 0 }}
+                        transition={{ duration: 0.3 }}
                         className="DescCustomMobile"
                     >
                         Hit kan du komma när du behöver en noggrann
@@ -37,6 +38,15 @@ const Item3Content = () => {
                         Boka tid online
                     </button>
                 </div>
+            </div>
+            <div className="flex justify-center relative">
+                <motion.img
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 2 }}
+                    src={ServiceCT3}
+                    className=" ImgCusTomMobile"
+                />
             </div>
         </div>
     );

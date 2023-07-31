@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
+import ServiceCT1 from "../assets/ServiceCT1.png";
 const Item1Content = () => {
     return (
-        <div className="bg-premierColor ">
-            <div className="pt-[3.1rem] h-[100vh] pb-[13rem] px-[2.4rem] StyleFlexCol">
+        <div className="bg-premierColor  h-[100vh] ">
+            <div className=" pt-[3.1rem]   px-[2.4rem] StyleFlexCol">
                 <div className="border-solid border-white border-[2px] rounded-[15px] py-[20px] px-[10px] mt-[10px] StyleFlexCol">
                     <motion.h2
                         initial={{ y: 50 }}
@@ -37,6 +38,15 @@ const Item1Content = () => {
                         LÄS MER OCH HITTA TILL OSS
                     </button>
                 </div>
+            </div>
+            <div className="flex justify-center relative">
+                <motion.img
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 2 }}
+                    src={ServiceCT1}
+                    className=" ImgCusTomMobile"
+                />
             </div>
         </div>
     );

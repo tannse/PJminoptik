@@ -7,8 +7,8 @@ const Item4Content = () => {
                 <div className="border-solid border-green-700 border-[2px] rounded-[15px] py-[20px] px-[10px] mt-[8rem] StyleFlexCol">
                     <motion.h2
                         initial={{ y: 50 }}
-                        whileInView={{ y: 0 }}
-                        transition={{ duration: 0.3 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1.5 }}
                         className="h2CustomMobile text-black"
                     >
                         Ögonläkare nära dig
@@ -16,8 +16,8 @@ const Item4Content = () => {
                     <hr className="w-[50%] mt-[5px] font-bold" />
                     <motion.span
                         initial={{ y: 50 }}
-                        whileInView={{ y: 0 }}
-                        transition={{ duration: 0.3 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1.5 }}
                         className="TitleCustomMobile text-black"
                     >
                         Min Optik erbjuder undersökning av legitimerad
@@ -25,8 +25,8 @@ const Item4Content = () => {
                     </motion.span>
                     <motion.p
                         initial={{ y: 50 }}
-                        whileInView={{ y: 0 }}
-                        transition={{ duration: 0.3 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1.5 }}
                         className="DescCustomMobile text-black"
                     >
                         Hos oss får du bra service Ögonläkare nära dig.Med jämna
@@ -40,9 +40,9 @@ const Item4Content = () => {
             </div>
             <div className="flex justify-center relative">
                 <motion.img
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 1 }}
+                    initial={{ y: 50 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1.5 }}
                     src={ServiceCT4}
                     className=" ImgCusTomMobile object-cover"
                 />

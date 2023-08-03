@@ -41,9 +41,9 @@ const Item3Content = () => {
             </div>
             <div className="flex justify-center relative">
                 <motion.img
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 1 }}
+                    initial={{ y: 50 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 0.3 }}
                     src={ServiceCT3}
                     className=" ImgCusTomMobile"
                 />

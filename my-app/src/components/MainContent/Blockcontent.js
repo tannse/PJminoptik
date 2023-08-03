@@ -4,7 +4,7 @@ import Item3Content from "./Item3Content";
 import Item4Content from "./Item4Content";
 import Item5Content from "./Item5Content";
 
-const MainContent = () => {
+const BlockContent = () => {
     return (
         <div>
             <Item1Content />
@@ -15,4 +15,4 @@ const MainContent = () => {
         </div>
     );
 };
-export default MainContent;
+export default BlockContent;

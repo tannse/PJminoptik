@@ -38,6 +38,9 @@ module.exports = {
                 48: "48px",
             },
         },
+        backgroundImage: {
+            "background-footer": "url('/src/components/assets/FOOTER.jpg')",
+        },
     },
     variants: {
         extend: {

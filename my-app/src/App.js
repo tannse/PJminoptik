@@ -3,16 +3,17 @@ import NavBlock from "./components/Navbar/NavBlock";
 import Hero from "./components/HeroLayer/Hero";
 import ExtraNav from "./components/ExtraNav/ExtraNav";
 import PcMenu from "./components/Navbar/PcMenu";
-import MainContent from "./components/MainContent/MainContent";
-import FooterBlock from "./components/Footer/FooterBlock";
+import BlockContent from "./components/MainContent/Blockcontent";
+import FooterBlock from "./components/Footer/Footercontent";
+
 function App() {
     return (
-        <div className="overflow-hidden">
+        <div>
             <NavBlock />
             <PcMenu></PcMenu>
             <Hero />
             <ExtraNav />
-            <MainContent />
+            <BlockContent />
             <FooterBlock />
         </div>
     );

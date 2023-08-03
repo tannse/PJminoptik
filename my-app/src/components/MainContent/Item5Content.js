@@ -32,13 +32,13 @@ const Item5Content = () => {
                     </button>
                 </div>
             </div>
-            <div className="flex justify-center relative ">
+            <div className="flex justify-center  ">
                 <motion.img
                     initial={{ y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 2 }}
                     src={ServiceCT5}
-                    className=" rounded-[20px] ImgCusTomMobile h-[25vh] object-none "
+                    className="  ImgCusTomMobile h-[25vh] object-none "
                 />
             </div>
         </div>

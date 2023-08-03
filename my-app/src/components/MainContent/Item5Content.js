@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import ServiceCT5 from "../assets/ServiceCT5.gif";
 const Item5Content = () => {
     return (
-        <div className="bg-premierColor  h-[100vh] ">
+        <div className="bg-premierColor  h-[80vh] ">
             <div className=" pt-[3.1rem]   px-[2.4rem] StyleFlexCol">
                 <div className="border-solid border-white border-[2px] rounded-[15px] py-[20px] px-[10px] mt-[10px] StyleFlexCol">
                     <motion.h2
@@ -34,9 +34,9 @@ const Item5Content = () => {
             </div>
             <div className="flex justify-center  ">
                 <motion.img
-                    initial={{ y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 2 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1 }}
                     src={ServiceCT5}
                     className="  ImgCusTomMobile h-[25vh] object-none "
                 />

@@ -4,7 +4,7 @@ import { CiInstagram } from "react-icons/ci";
 const FooterBlock = () => {
     return (
         <div className=" relative h-[55vh] ">
-            <div className=" absolute z-[999]  grid grid-cols-2 grid-rows-2 gap-10  px-[30px]  inset-0  pt-[60px]">
+            <div className=" absolute z-[999]  grid grid-cols-2 grid-rows-2 gap-10  px-[30px]  inset-0  mt-[60px]">
                 {/* Info1 */}
 
                 <div>

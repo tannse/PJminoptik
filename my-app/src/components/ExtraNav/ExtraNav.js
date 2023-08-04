@@ -11,6 +11,7 @@ const ExtraNav = () => {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
+                    viewport={{ once: true }}
                     className="StyleButtonNav "
                 >
                     Synundersökning
@@ -20,6 +21,7 @@ const ExtraNav = () => {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
+                    viewport={{ once: true }}
                     className="StyleButtonNav"
                 >
                     Glasögon
@@ -29,6 +31,7 @@ const ExtraNav = () => {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
+                    viewport={{ once: true }}
                     className="StyleButtonNav"
                 >
                     Kontaktlinser
@@ -38,6 +41,7 @@ const ExtraNav = () => {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
+                    viewport={{ once: true }}
                     className="StyleButtonNav"
                 >
                     Solglasögon
@@ -49,6 +53,7 @@ const ExtraNav = () => {
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
+                    viewport={{ once: true }}
                     className="w-1/5 flex flex-col justify-center  group over cursor-pointer items-center border-2 rounded-xl border-white hover:shadow-buttonShadow  customAnimation   "
                 >
                     <img
@@ -68,6 +73,7 @@ const ExtraNav = () => {
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
+                    viewport={{ once: true }}
                     className="w-1/5 flex flex-col justify-center group  cursor-pointer items-center border-2 rounded-xl border-white hover:shadow-buttonShadow  customAnimation   "
                 >
                     <img
@@ -87,6 +93,7 @@ const ExtraNav = () => {
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
+                    viewport={{ once: true }}
                     className="w-1/5 flex flex-col justify-center group cursor-pointer items-center border-2 rounded-xl border-white hover:shadow-buttonShadow  customAnimation   "
                 >
                     <img
@@ -106,6 +113,7 @@ const ExtraNav = () => {
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
+                    viewport={{ once: true }}
                     className="w-1/5 flex flex-col justify-center group cursor-pointer items-center border-2 rounded-xl border-white hover:shadow-buttonShadow  customAnimation   "
                 >
                     <img

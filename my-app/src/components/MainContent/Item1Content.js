@@ -8,7 +8,8 @@ const Item1Content = () => {
                     <motion.h2
                         initial={{ y: 50 }}
                         whileInView={{ y: 0 }}
-                        transition={{ duration: 0.3 }}
+                        transition={{ duration: 1.5 }}
+                        viewport={{ once: true }}
                         className="h2CustomMobile"
                     >
                         En ny generation optiker
@@ -17,7 +18,8 @@ const Item1Content = () => {
                     <motion.span
                         initial={{ y: 50 }}
                         whileInView={{ y: 0 }}
-                        transition={{ duration: 0.3 }}
+                        transition={{ duration: 1.5 }}
+                        viewport={{ once: true }}
                         className="TitleCustomMobile"
                     >
                         Vi försöker hela tiden att förbättra och utbilda oss.
@@ -25,7 +27,8 @@ const Item1Content = () => {
                     <motion.p
                         initial={{ y: 50 }}
                         whileInView={{ y: 0 }}
-                        transition={{ duration: 0.3 }}
+                        transition={{ duration: 1.5 }}
+                        viewport={{ once: true }}
                         className="DescCustomMobile"
                     >
                         Allt för att kunna hjälpa dig på bästa sätt. Välkommen
@@ -41,9 +44,10 @@ const Item1Content = () => {
             </div>
             <div className="flex justify-center relative">
                 <motion.img
-                    initial={{ y: 50 }}
-                    whileInView={{ y: 0, opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
                     transition={{ duration: 1.5 }}
+                    viewport={{ once: true }}
                     src={ServiceCT1}
                     className=" ImgCusTomMobile"
                 />

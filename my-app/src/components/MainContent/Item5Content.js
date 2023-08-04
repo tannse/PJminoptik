@@ -9,6 +9,7 @@ const Item5Content = () => {
                         initial={{ y: 50 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1.5 }}
+                        viewport={{ once: true }}
                         className="h2CustomMobile"
                     >
                         Vi är ISO Certifierade
@@ -18,7 +19,8 @@ const Item5Content = () => {
                     <motion.p
                         initial={{ y: 50 }}
                         whileInView={{ y: 0 }}
-                        transition={{ duration: 0.3 }}
+                        transition={{ duration: 1.5 }}
+                        viewport={{ once: true }}
                         className="DescCustomMobile"
                     >
                         Synologen är en medlems organisation med en central
@@ -34,9 +36,10 @@ const Item5Content = () => {
             </div>
             <div className="flex justify-center  ">
                 <motion.img
-                    initial={{ y: 50 }}
-                    whileInView={{ y: 0, opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
                     transition={{ duration: 1.5 }}
+                    viewport={{ once: true }}
                     src={ServiceCT5}
                     className="  ImgCusTomMobile h-[25vh] object-none "
                 />

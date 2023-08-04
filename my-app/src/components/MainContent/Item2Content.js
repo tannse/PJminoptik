@@ -9,6 +9,7 @@ const Item2Content = () => {
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
+                        viewport={{ once: true }}
                         className="h2CustomMobile text-black    "
                     >
                         Bästa servicen
@@ -18,6 +19,7 @@ const Item2Content = () => {
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 1 }}
+                        viewport={{ once: true }}
                         className="TitleCustomMobile text-black"
                     >
                         Min Optik är en del av Synologen somär bäst påbemötande,
@@ -27,6 +29,7 @@ const Item2Content = () => {
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 1 }}
+                        viewport={{ once: true }}
                         className="DescCustomMobile text-black"
                     >
                         Allt för att kunna hjälpa dig på bästa sätt. Välkommen
@@ -44,7 +47,8 @@ const Item2Content = () => {
                 <motion.img
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    transition={{ duration: 1 }}
+                    transition={{ duration: 1.5 }}
+                    viewport={{ once: true }}
                     src={ServiceCT2}
                     className=" ImgCusTomMobile"
                 />

@@ -8,7 +8,8 @@ const Item3Content = () => {
                     <motion.h2
                         initial={{ y: 50 }}
                         whileInView={{ y: 0 }}
-                        transition={{ duration: 0.3 }}
+                        transition={{ duration: 1.5 }}
+                        viewport={{ once: true }}
                         className="h2CustomMobile"
                     >
                         Vi är här för dig
@@ -17,7 +18,8 @@ const Item3Content = () => {
                     <motion.span
                         initial={{ y: 50 }}
                         whileInView={{ y: 0 }}
-                        transition={{ duration: 0.3 }}
+                        transition={{ duration: 1.5 }}
+                        viewport={{ once: true }}
                         className="TitleCustomMobile"
                     >
                         Vi tror på kompetens, valfrihet och omtanke.
@@ -25,7 +27,8 @@ const Item3Content = () => {
                     <motion.p
                         initial={{ y: 50 }}
                         whileInView={{ y: 0 }}
-                        transition={{ duration: 0.3 }}
+                        transition={{ duration: 1.5 }}
+                        viewport={{ once: true }}
                         className="DescCustomMobile"
                     >
                         Hit kan du komma när du behöver en noggrann
@@ -41,9 +44,10 @@ const Item3Content = () => {
             </div>
             <div className="flex justify-center relative">
                 <motion.img
-                    initial={{ y: 50 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.3 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ duration: 1.5 }}
+                    viewport={{ once: true }}
                     src={ServiceCT3}
                     className=" ImgCusTomMobile"
                 />

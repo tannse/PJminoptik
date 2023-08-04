@@ -9,6 +9,7 @@ const Item4Content = () => {
                         initial={{ y: 50 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1.5 }}
+                        viewport={{ once: true }}
                         className="h2CustomMobile text-black"
                     >
                         Ögonläkare nära dig
@@ -18,6 +19,7 @@ const Item4Content = () => {
                         initial={{ y: 50 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1.5 }}
+                        viewport={{ once: true }}
                         className="TitleCustomMobile text-black"
                     >
                         Min Optik erbjuder undersökning av legitimerad
@@ -27,6 +29,7 @@ const Item4Content = () => {
                         initial={{ y: 50 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1.5 }}
+                        viewport={{ once: true }}
                         className="DescCustomMobile text-black"
                     >
                         Hos oss får du bra service Ögonläkare nära dig.Med jämna
@@ -40,9 +43,10 @@ const Item4Content = () => {
             </div>
             <div className="flex justify-center relative">
                 <motion.img
-                    initial={{ y: 50 }}
-                    whileInView={{ y: 0, opacity: 1 }}
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
                     transition={{ duration: 1.5 }}
+                    viewport={{ once: true }}
                     src={ServiceCT4}
                     className=" ImgCusTomMobile object-cover"
                 />

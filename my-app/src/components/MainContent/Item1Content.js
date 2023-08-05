@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 import ServiceCT1 from "../assets/ServiceCT1.png";
 const Item1Content = () => {
     return (
-        <div className="bg-premierColor  h-[100vh] ">
-            <div className=" pt-[3.1rem]   px-[2.4rem] StyleFlexCol">
+        <div className="bg-premierColor  h-fit ">
+            <div className=" pt-[1rem]   px-[2.2rem] StyleFlexCol">
                 <div className="border-solid border-white border-[2px] rounded-[15px] py-[20px] px-[10px] mt-[10px] StyleFlexCol">
                     <motion.h2
-                        initial={{ y: 50 }}
-                        whileInView={{ y: 0 }}
-                        transition={{ duration: 1.5 }}
+                        initial={{ y: 50, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1 }}
                         viewport={{ once: true }}
                         className="h2CustomMobile"
                     >
@@ -16,18 +16,18 @@ const Item1Content = () => {
                     </motion.h2>
                     <hr className="w-[50%] mt-[5px] font-bold" />
                     <motion.span
-                        initial={{ y: 50 }}
-                        whileInView={{ y: 0 }}
-                        transition={{ duration: 1.5 }}
+                        initial={{ y: 50, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1 }}
                         viewport={{ once: true }}
                         className="TitleCustomMobile"
                     >
                         Vi försöker hela tiden att förbättra och utbilda oss.
                     </motion.span>
                     <motion.p
-                        initial={{ y: 50 }}
-                        whileInView={{ y: 0 }}
-                        transition={{ duration: 1.5 }}
+                        initial={{ y: 50, opacity: 0 }}
+                        whileInView={{ y: 0, opacity: 1 }}
+                        transition={{ duration: 1 }}
                         viewport={{ once: true }}
                         className="DescCustomMobile"
                     >
@@ -42,14 +42,14 @@ const Item1Content = () => {
                     </button>
                 </div>
             </div>
-            <div className="flex justify-center relative">
+            <div className="flex ">
                 <motion.img
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 1.5 }}
+                    initial={{ y: 50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1 }}
                     viewport={{ once: true }}
                     src={ServiceCT1}
-                    className=" ImgCusTomMobile"
+                    className=" pt-[20px] relative bottom-0 ImgCusTomMobile"
                 />
             </div>
         </div>

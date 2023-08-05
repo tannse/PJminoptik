@@ -56,6 +56,6 @@
 }
 @layer components {
     .ImgCusTomMobile {
-        @apply w-[100%] h-[45vh]  shadow-Shadow mt-[2rem]  text-center object-cover;
+        @apply w-[100%] h-[35vh]  shadow-Shadow mt-[1.3rem]   text-center object-cover;
     }
 }

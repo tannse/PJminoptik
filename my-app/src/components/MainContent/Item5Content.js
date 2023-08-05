@@ -2,13 +2,13 @@ import { motion } from "framer-motion";
 import ServiceCT5 from "../assets/ServiceCT5.gif";
 const Item5Content = () => {
     return (
-        <div className="bg-premierColor  h-[50%] ">
-            <div className=" pt-[3.1rem]   px-[2.4rem] StyleFlexCol">
+        <div className="bg-premierColor h-[100vh] ">
+            <div className=" pt-[3.1rem]   px-[2.2rem] StyleFlexCol">
                 <div className="border-solid border-white border-[2px] rounded-[15px] py-[20px] px-[10px] mt-[10px] StyleFlexCol">
                     <motion.h2
-                        initial={{ y: 50 }}
+                        initial={{ y: 50, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
-                        transition={{ duration: 1.5 }}
+                        transition={{ duration: 1 }}
                         viewport={{ once: true }}
                         className="h2CustomMobile"
                     >
@@ -19,7 +19,7 @@ const Item5Content = () => {
                     <motion.p
                         initial={{ y: 50 }}
                         whileInView={{ y: 0 }}
-                        transition={{ duration: 1.5 }}
+                        transition={{ duration: 1 }}
                         viewport={{ once: true }}
                         className="DescCustomMobile"
                     >
@@ -38,10 +38,10 @@ const Item5Content = () => {
                 <motion.img
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    transition={{ duration: 1.5 }}
+                    transition={{ duration: 1 }}
                     viewport={{ once: true }}
                     src={ServiceCT5}
-                    className="  ImgCusTomMobile h-[25vh] object-none "
+                    className="  ImgCusTomMobile h-[40vh] object-none "
                 />
             </div>
         </div>

@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 import ServiceCT2 from "../assets/ServiceCT2.jpg";
 const Item2Content = () => {
     return (
-        <div className=" mb-[10rem] h-[100vh] bg-[#fff]">
-            <div className="     px-[2.4rem] StyleFlexCol">
-                <div className="border-solid border-green-700 border-[2px] rounded-[15px] py-[20px] px-[10px] mt-[10rem] StyleFlexCol">
+        <div className="  h-fit bg-[#fff]">
+            <div className="  pt-[3.1rem]      px-[2.2rem] StyleFlexCol">
+                <div className="border-solid border-green-900 border-[2px] rounded-[15px] py-[20px] px-[10px] mt-[10px] StyleFlexCol">
                     <motion.h2
                         initial={{ opacity: 0, y: 50 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -43,14 +43,14 @@ const Item2Content = () => {
                     </button>
                 </div>
             </div>
-            <div className="flex justify-center relative">
+            <div className="flex ">
                 <motion.img
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 1.5 }}
+                    initial={{ y: 50, opacity: 0 }}
+                    whileInView={{ y: 0, opacity: 1 }}
+                    transition={{ duration: 1 }}
                     viewport={{ once: true }}
                     src={ServiceCT2}
-                    className=" ImgCusTomMobile"
+                    className=" relative pt-[20px] ImgCusTomMobile"
                 />
             </div>
         </div>

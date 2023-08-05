@@ -6,7 +6,8 @@ module.exports = {
             Exo: ["exo"],
         },
         screens: {
-            mb: "359px",
+            mb: "320px",
+            mbx: "427px",
             tl: "767px",
             lt: "1023px",
             dt: "1279px",

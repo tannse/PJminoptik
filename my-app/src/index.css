@@ -16,7 +16,7 @@
 }
 @layer components {
     .StyleMenu {
-        @apply absolute  transition-transform transition-all duration-500  bg-premierColor rounded-2xl  w-[90%];
+        @apply absolute  transition-transform transition-all duration-500  bg-premierColor rounded-br-[10px]  w-[90%];
     }
 }
 @layer components {

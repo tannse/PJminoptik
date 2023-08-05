@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { HiOutlineMenu } from "react-icons/hi";
-import { ImExit } from "react-icons/im";
-import { GrFacebook } from "react-icons/gr";
-import { BsInstagram } from "react-icons/bs";
+import { BiExit } from "react-icons/bi";
+import { BiLogoFacebook } from "react-icons/bi";
+import { CiInstagram } from "react-icons/ci";
 import MobileMenu from "./MobileMenu";
 import { BsTelephoneOutbound } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
@@ -18,7 +18,7 @@ const NavBlock = () => {
         <nav className="relative">
             <div className="mb:mx-[35px] dt:ml-[146px] mb:my-[15px] flex justify-between items-center rounded-lg">
                 <img
-                    className=" dt:w-[325px] dt:h-[25%] w-auto h-[65px] ml-  object-cover"
+                    className=" dt:w-[325px] dt:h-[25%] mbx:w-3/5  h-[50px]   object-cover"
                     src={logoOptik}
                     alt="Logo"
                 />
@@ -55,7 +55,7 @@ const NavBlock = () => {
                 </div>
 
                 <HiOutlineMenu
-                    className="  dt:hidden w-[30px] h-[30px] right-[10%] self-center   z-[200] text-[#00564b] cursor-pointer"
+                    className="    dt:hidden w-[30px] h-[30px] z-[200] text-[#00564b] cursor-pointer"
                     onClick={ToggleMenu}
                 ></HiOutlineMenu>
             </div>
@@ -76,7 +76,7 @@ const NavBlock = () => {
                         <h2 className="font-Exo px-[20px]   py-[21px] text-white text-[40px] font-extrabold">
                             Min Optik
                         </h2>
-                        <ImExit
+                        <BiExit
                             className=" w-[30px] h-[30px] mr-[10%]    z-[200] text-white cursor-pointer"
                             onClick={ToggleMenu}
                         />
@@ -85,18 +85,28 @@ const NavBlock = () => {
                     <MobileMenu></MobileMenu>
 
                     <div className=" px-[20px] py-[14px] flex">
-                        <GrFacebook className="text-[40px]  text-white"></GrFacebook>
-                        <BsInstagram className="text-[40px] mx-[10px] text-white"></BsInstagram>
+                        <a
+                            className="flex items-center justify-center text-[25px] rounded-[20px] w-[35px] h-[35px] bg-[#fff]    "
+                            href="./"
+                        >
+                            <BiLogoFacebook className="" />
+                        </a>
+                        <a
+                            className="flex items-center justify-center text-[25px] rounded-[20px] w-[35px] h-[35px] bg-[#fff] ml-2 "
+                            href="./"
+                        >
+                            <CiInstagram />
+                        </a>
                     </div>
                     <div className=" px-[20px] flex  items-center">
                         <div className="text-[20px]  text-white"> Ring</div>
-                        <span className="text-white px-[10px]  text-[20px]  ">
+                        <span className="text-white px-[10px]  font-light text-[20px]  ">
                             +04889999999
                         </span>
                     </div>
                     <div className=" px-[20px] flex  items-center">
                         <AiOutlineMail className="text-[20px]   text-white"></AiOutlineMail>
-                        <span className="text-white px-[10px] text-[20px] italic  py-[20px]">
+                        <span className="text-white px-[10px] text-[20px] font-light  py-[20px]">
                             info@minoptik.se
                         </span>
                     </div>

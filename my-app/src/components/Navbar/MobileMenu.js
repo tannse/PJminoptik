@@ -1,7 +1,7 @@
 import { BiHomeHeart } from "react-icons/bi";
 import { useState } from "react";
 import { FaEye } from "react-icons/fa";
-import { BiGlassesAlt } from "react-icons/bi";
+import { GiMicroscopeLens } from "react-icons/gi";
 import { GiSunglasses } from "react-icons/gi";
 import { GiArchiveResearch } from "react-icons/gi";
 import { TbCalendarTime } from "react-icons/tb";
@@ -22,18 +22,21 @@ const MenuMobile = () => {
         <ul className="">
             <li className="  MenuMobile border-b-[1px] flex    ">
                 <BiHomeHeart className="inline" />
-                <a className=" mt-[5px] px-[10px]" href="./">
+                <a
+                    className=" mt-[5px] font-light text-[20px] px-[10px]"
+                    href="./"
+                >
                     Hem
                 </a>
             </li>
             <li className="MenuMobile border-b-[1px]   border-b-[1px]  ">
                 <a
-                    className=" flex mt-[5px] "
+                    className=" flex items-center font-light text-[20px] mt-[5px] "
                     onClick={SubMenuHandler}
                     href="./"
                 >
-                    <FaEye className="inline mr-2" /> Synundersökning
-                    <MdKeyboardDoubleArrowDown className="ml-[10px]"></MdKeyboardDoubleArrowDown>
+                    <FaEye className=" mr-2" /> Synundersökning
+                    <MdKeyboardDoubleArrowDown className="ml-[10px] text-[20px] animate-pulse"></MdKeyboardDoubleArrowDown>
                 </a>
                 <ul
                     className={
@@ -42,7 +45,7 @@ const MenuMobile = () => {
                             : "  absolute left-[-100%]  "
                     }
                 >
-                    <li className="my-[10px] mx-[30px]  ">
+                    <li className="my-[10px]   mx-[30px]  ">
                         <a
                             className="border-b-[1px] hover:opacity-80"
                             href="https://minoptik.se/vad-gor-en-optiker/"
@@ -54,12 +57,13 @@ const MenuMobile = () => {
             </li>
             <li className="MenuMobile border-b-[1px]   border-b-[1px] hover:opacity-80 ">
                 <a
-                    className=" flex mt-[5px] "
+                    className=" flex items-center font-light mt-[5px] "
                     onClick={SubMenuHandler2}
                     href="https://minoptik.se/torra-ogon"
                 >
-                    <BiGlassesAlt className="inline mr-2" /> Linser och Glasögon
-                    <MdKeyboardDoubleArrowDown className="ml-[10px]"></MdKeyboardDoubleArrowDown>
+                    <GiMicroscopeLens className=" text-[20px] mr-2" /> Linser
+                    och Glasögon
+                    <MdKeyboardDoubleArrowDown className="ml-[10px] text-[20px] animate-pulse"></MdKeyboardDoubleArrowDown>
                 </a>
 
                 <ul
@@ -102,19 +106,28 @@ const MenuMobile = () => {
             </li>
             <li className="MenuMobile border-b-[1px] flex    ">
                 <GiSunglasses className="inline" />
-                <a className=" mt-[5px] px-[10px]" href="./">
+                <a
+                    className=" mt-[5px] text-[20px] font-light px-[10px]"
+                    href="./"
+                >
                     Solglasögon
                 </a>
             </li>
             <li className="MenuMobile border-b-[1px] flex    ">
                 <GiArchiveResearch className="inline" />
-                <a className=" mt-[5px] px-[10px]" href="./">
+                <a
+                    className=" mt-[5px] font-light text-[20px] px-[10px]"
+                    href="./"
+                >
                     Hitta till oss
                 </a>
             </li>
             <li className="MenuMobile border-b-[1px] flex    ">
                 <TbCalendarTime className="inline" />
-                <a className=" mt-[5px] px-[10px]" href="./">
+                <a
+                    className=" mt-[5px] font-light text-[20px] px-[10px]"
+                    href="./"
+                >
                     Boka tid
                 </a>
             </li>

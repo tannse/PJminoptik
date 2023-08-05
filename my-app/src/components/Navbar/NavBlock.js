@@ -18,7 +18,7 @@ const NavBlock = () => {
         <nav className="relative">
             <div className="mb:mx-[35px] dt:ml-[146px] mb:my-[15px] flex justify-between items-center rounded-lg">
                 <img
-                    className=" dt:w-[325px] dt:h-[25%] mbx:w-3/5  h-[50px]   object-cover"
+                    className=" dt:w-[325px] dt:h-[25%] mbx:w-3/4 mbx:h-[60px] h-[50px]   object-cover"
                     src={logoOptik}
                     alt="Logo"
                 />

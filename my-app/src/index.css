@@ -10,7 +10,7 @@
 }
 @layer components {
     .MenuPc {
-        @apply text-[22px] px-[55px] py-[14px] font-semibold text-white items-center
+        @apply text-[18px] px-[55px] py-[14px] font-semibold text-white items-center
         border-gray-500 font-Exo duration-200 ease-in-out active:bg-bgButton uppercase;
     }
 }
@@ -41,7 +41,7 @@
 }
 @layer components {
     .h2CustomMobile {
-        @apply text-[1.5rem] font-bold font-Exo text-white;
+        @apply text-[1.3rem] font-bold font-Exo text-white;
     }
 }
 @layer components {

@@ -87,7 +87,7 @@ const NavBlock = () => {
                     <div className=" px-[20px] py-[14px] flex">
                         <a
                             className="flex items-center justify-center text-[25px] rounded-[20px] w-[35px] h-[35px] bg-[#fff]    "
-                            href="./"
+                            href="https://www.facebook.com/MinOptik"
                         >
                             <BiLogoFacebook className="" />
                         </a>

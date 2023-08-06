@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import ServiceCT3 from "../assets/ServiceCT3.jpg";
 const Item3Content = () => {
     return (
-        <div className="bg-premierColor  h-fit ">
+        <div className="bg-premierColor  h-fit  dt:hidden">
             <div className=" pt-[3.1rem]   px-[2.2rem] StyleFlexCol">
                 <div className="border-solid border-white border-[2px] rounded-[15px] py-[20px] px-[10px] mt-[10px] StyleFlexCol">
                     <motion.h2

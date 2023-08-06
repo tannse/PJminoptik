@@ -6,8 +6,7 @@ const Hero = () => {
             <div className=" absolute dt:items-start dt:w-[100%]  mt-[120px]   dt:mt-[30vh] z-[999] ">
                 <div className="dt:ml-[10%] text-center dt:text-start">
                     <h1 className="  font-Exo drop-shadow-lg  text-[20px]  dt:text-[50px] dt:font-semibold   text-white mb:font-bold drop-shadow-2xl">
-                        VÄLKOMMEN TILL
-                        <span className="text-[#7cf5e1]">MIN OPTIK</span>
+                        VÄLKOMMEN TILL MIN OPTIK
                     </h1>
                     <p className="font-Exo font-semibold     text-white text-[16px] dt:text-[23px] from-neutral-100 drop-shadow-lg">
                         Min Optik är en väletableradoptiker i Vellinge

@@ -45,7 +45,7 @@ const FooterBlock = () => {
                             <li className="text-white capitalize">boka tid</li>
                         </ul>
                     </div>
-                    <div className="mt-[30px]">
+                    <div className="mt-[30px] leading-7">
                         <h3 className="text-[1.2rem] mb-[1rem] font-bold font-Exo text-white">
                             Kontakt
                         </h3>
@@ -67,7 +67,7 @@ const FooterBlock = () => {
                     <div className="flex mt-[0.5rem]">
                         <a
                             className="flex items-center justify-center text-[18px] rounded-[20px] w-[28px] h-[28px] bg-[#fff]    "
-                            href="./"
+                            href="https://www.facebook.com/MinOptik"
                         >
                             <BiLogoFacebook className="" />
                         </a>

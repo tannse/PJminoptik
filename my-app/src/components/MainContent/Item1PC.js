@@ -3,7 +3,7 @@ import ServiceCT1 from "../assets/ServiceCT1.png";
 import { motion } from "framer-motion";
 const Item1PC = () => {
     return (
-        <div className="bg-[#fff] py-[32px] px-[71px] h-[100vh]   relative">
+        <div className="mbx:hidden mb:hidden dt:block bg-[#fff] py-[32px] px-[71px] h-[100vh]   relative">
             <div className="absolute   flex max-w-full  ">
                 <motion.div
                     initial={{ opacity: 0, x: -100 }}

@@ -5,6 +5,7 @@ import ExtraNav from "./components/ExtraNav/ExtraNav";
 import PcMenu from "./components/Navbar/PcMenu";
 import BlockContent from "./components/MainContent/Blockcontent";
 import FooterBlock from "./components/Footer/Footercontent";
+import FooterBlockPC from "./components/Footer/FooterContentPC";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             <ExtraNav />
             <BlockContent />
             <FooterBlock />
+            <FooterBlockPC />
         </div>
     );
 }

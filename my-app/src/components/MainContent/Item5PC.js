@@ -3,7 +3,7 @@ import ItemCerti from "../assets/ServiceCT5.gif";
 import { motion } from "framer-motion";
 const Item5PC = () => {
     return (
-        <div className="mbx:hidden mb:hidden dt:grid grid-cols-12 grid-rows-14 shadow-Shadow  h-[80vh]  relative">
+        <div className="mbx:hidden mb:hidden dt:grid grid-cols-12 grid-rows-14 shadow-Shadow bg h-[50vh]  relative">
             <motion.h3
                 className="text-[40px] col-start-2 col-end-7 row-start-3 font-bold font-Exo text-black"
                 initial={{ translateX: "-30%", opacity: 0 }}
@@ -32,17 +32,22 @@ const Item5PC = () => {
                 whileInView={{ scale: "100%" }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
-                className="StyleButtonNav col-start-2 row-start-8"
+                className="StyleButtonNav group col-start-2 row-start-8"
             >
-                <a href="./">Boka tid online</a>
+                <a
+                    href="./"
+                    className="group-hover:text-[1.5rem] w-[100%] ease-linear duration-150 "
+                >
+                    Boka tid online
+                </a>
             </motion.button>
 
             <motion.img
-                initial={{ opacity: 0, y: -100 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
-                className=" h-[]  col-start-7 col-end-12 row-start-3 row-end-13   object-none z-20"
+                className="   col-start-7 col-end-12 row-start-3 row-end-13   object-none z-20"
                 src={ItemCerti}
                 alt="Service Item"
             />

@@ -1,8 +1,17 @@
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import useScroll from "../Card UI/HandleScroll";
 
 const PcMenu = () => {
+    const scrollPosition = useScroll();
     return (
-        <ul className=" hidden   dt:flex justify-center items-center bg-[#005648] h-[60px] border-[1px] border-b-white">
+        <ul
+            className={`hidden dt:flex justify-center items-center bg-[#005648] h-[60px] border-[1px]
+             border-b-white ${
+                 scrollPosition
+                     ? "dt:fixed  dt:h-[75px] w-[90%] z-[555] top-0 left-[5%] bg-[#005648d7] ease-in-out duration-500"
+                     : ""
+             }`}
+        >
             <li className="  MenuPc  flex  hover:bg-opacity-50   ">
                 <a href="./" alt="Hem">
                     Hem

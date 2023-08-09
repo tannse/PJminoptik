@@ -14,7 +14,9 @@ module.exports = {
         },
         boxShadow: {
             Shadow: " 0px 10px 6px -1px rgba(0,0,0,0.2);",
-            whiteShadow: "0px 14px 6px 0px rgba(255,255,255,0.18);",
+            Shadow100: " 0px 0px 16px 6px rgba(38,31,31,0.41);",
+            whiteShadow: "0px 0px 20px 6px rgba(255,255,255,1.41);",
+            whiteShadow50: "0px 0px 20px 6px rgba(255,255,255,0.41);",
         },
         backgroundColor: {
             bgButton: "#118273",
@@ -22,6 +24,10 @@ module.exports = {
             bgOverlay: "rgba(0, 0, 0, 0.5)",
         },
         extend: {
+            colors: {
+                "custom-green": "#00544a",
+                "custom-teal": "#89bfb9",
+            },
             preload: {
                 none: "none",
                 metadata: "metadata",
@@ -85,6 +91,38 @@ module.exports = {
             11: "11",
             12: "12",
             13: "13",
+        },
+        gridColumnStart: {
+            1: "1",
+            2: "2",
+            3: "3",
+            4: "4",
+            5: "5",
+            6: "6",
+            7: "7",
+            8: "8",
+            9: "9",
+            10: "10",
+            11: "11",
+            12: "12",
+            13: "13",
+            14: "14",
+        },
+        gridColumnEnd: {
+            1: "1",
+            2: "2",
+            3: "3",
+            4: "4",
+            5: "5",
+            6: "6",
+            7: "7",
+            8: "8",
+            9: "9",
+            10: "10",
+            11: "11",
+            12: "12",
+            13: "13",
+            14: "14",
         },
 
         backgroundImage: {

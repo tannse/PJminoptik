@@ -48,13 +48,13 @@ const ExtraNav = () => {
                 </motion.li>
             </ul>
 
-            <ul className="hidden rounded-sm border-stone-300 dt:justify-evenly   dt:flex  dt:w-[100%] bg-premierColor duration-300 ease-in-out transition-all  dt:items-center p-[50px]  dt:object-cover  ">
+            <ul className="hidden rounded-sm border-stone-300 dt:justify-evenly   dt:flex dt:pb-[100px] dt:w-[100%] bg-premierColor duration-300 ease-in-out transition-all  dt:items-center p-[50px]  dt:object-cover  ">
                 <motion.li
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
-                    className="w-1/5 flex flex-col justify-center  group over cursor-pointer items-center border-2 rounded-xl border-white hover:shadow-buttonShadow  customAnimation   "
+                    className="w-1/5 flex flex-col justify-center  group  cursor-pointer items-center border-2 rounded-xl border-white hover:shadow-buttonShadow  customAnimation   "
                 >
                     <img
                         alt="minoptik"

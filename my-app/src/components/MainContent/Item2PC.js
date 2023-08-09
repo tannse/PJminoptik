@@ -27,7 +27,7 @@ const Item2PC = () => {
                 Min Optik är en del av Synologen – somär bäst påbemötande,
                 engagemangoch branschkunskap i Sverige.
             </p>
-            <p className="text-black text-[18px] col-start-7 col-end-12 line-clamp-3 row-start-8 row-end-10 ">
+            <p className="text-black text-[20px] col-start-7 col-end-11 line-clamp-3 row-start-7 row-end-10 ">
                 Det visar en färsk undersökning om kundservice, gjord bland 95
                 utvalda butikskedjor i 15 olika branscher. Personlig service är
                 framgångsreceptet!
@@ -37,9 +37,14 @@ const Item2PC = () => {
                 whileInView={{ scale: "100%" }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
-                className="StyleButtonNav col-start-7 row-start-10"
+                className="StyleButtonNav group col-start-7 row-start-10"
             >
-                <a href="./">Synundersökning</a>
+                <a
+                    href="./"
+                    className="group-hover:text-[1.5rem] w-[100%] ease-linear duration-150 "
+                >
+                    Synundersökning
+                </a>
             </motion.button>
 
             <motion.img
@@ -47,7 +52,7 @@ const Item2PC = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
-                className="  col-start-2 col-end-7 rounded-[10px] h-[90vh] row-start-2 row-end-11  object-cover z-20"
+                className="  shadow-Shadow100 col-start-2 col-end-7 rounded-[999px] h-[90vh] row-start-2 row-end-11 object-cover z-20"
                 src={ServiceCT2}
                 alt="Service Item"
             />

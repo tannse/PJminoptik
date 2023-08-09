@@ -21,8 +21,14 @@ const Hero = () => {
                             glasögon.
                         </span>
 
-                        <button className="StyleButtonNav hover ">
-                            BOKA TID ONLINE
+                        <button className="StyleButtonNav group hover:shadow-whiteShadow50 ease-linear duration-500 ">
+                            <a
+                                className=" ease-linear duration-200 w-[100%]  group-hover:text-[1.5rem]  "
+                                href="./"
+                                alt="BOKA TID"
+                            >
+                                BOKA TID ONLINE
+                            </a>
                         </button>
                     </div>
                 </div>

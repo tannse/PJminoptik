@@ -1,4 +1,3 @@
-import BGfooter from "../Card UI/BGfooter";
 import { BiLogoFacebook } from "react-icons/bi";
 import { CiInstagram } from "react-icons/ci";
 import SynologenImg from "../Card UI/Synologen";
@@ -64,13 +63,13 @@ const FooterBlockPC = () => {
                     </span>
                     <div className="flex justify-center mt-[0.5rem]">
                         <a
-                            className="flex items-center justify-center text-[18px] rounded-[20px] w-[28px] h-[28px] bg-[#fff]    "
+                            className="flex items-center justify-center text-[18px] rounded-[20px] w-[40px] h-[40px] bg-[#fff]    "
                             href="https://www.facebook.com/MinOptik"
                         >
                             <BiLogoFacebook className="" />
                         </a>
                         <a
-                            className="flex items-center justify-center text-[18px] rounded-[20px] w-[28px] h-[28px] bg-[#fff] ml-2 "
+                            className="flex items-center justify-center text-[18px] rounded-[20px] w-[40px] h-[40px] bg-[#fff] ml-2 "
                             href="./"
                         >
                             <CiInstagram />

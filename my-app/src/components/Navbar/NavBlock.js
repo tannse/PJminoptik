@@ -49,8 +49,15 @@ const NavBlock = () => {
                             <span className="ml-1">Delbetalning</span>
                         </div>
                     </div>
-                    <button className=" mb:hidden dt:block mt-[15px] outline-none active:scale-75 transition-transform duration-50 font-Exo font-bold  rounded-[20px] border-[1px] border-solid border-white  bg-[#00564B] text-white w-[164px] h-[43px]">
-                        BOKA TID ONLINE
+                    <button className=" group mb:hidden dt:block mt-[15px] outline-none active:scale-75 transition-transform duration-50 font-Exo font-bold  rounded-[20px] border-[1px] border-solid border-white  bg-[#00564B] text-white w-[164px] h-[43px]">
+                        <a
+                            href="./"
+                            alt="BOKA TID ONLINE"
+                            className="group-hover:text-[1.2rem] w-[100%] ease-linear duration-150"
+                        >
+                            {" "}
+                            BOKA TID ONLINE
+                        </a>
                     </button>
                 </div>
 

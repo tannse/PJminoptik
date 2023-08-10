@@ -7,7 +7,7 @@ import MobileMenu from "./MobileMenu";
 import PcMenu from "./PcMenu";
 import { BsTelephoneOutbound } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
-import logoOptik from "../../assets/logoOptik.svg";
+import logoOptik from "../../assets/logoOptik.png";
 
 const NavBlock = () => {
     const [openMenu, setOpenMenu] = useState(false);

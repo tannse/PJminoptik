@@ -1,7 +1,7 @@
-import BGfooter from "../Card UI/BGfooter";
+import BGfooter from "../../Card UI/BGfooter";
 import { BiLogoFacebook } from "react-icons/bi";
 import { CiInstagram } from "react-icons/ci";
-import SynologenImg from "../Card UI/Synologen";
+import SynologenImg from "../../Card UI/Synologen";
 const FooterBlock = () => {
     return (
         <div className=" relative dt:hidden ">

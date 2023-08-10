@@ -1,5 +1,5 @@
-import Item1Photo from "../assets/Item1Photo 1.png";
-import ServiceCT1 from "../assets/ServiceCT1.png";
+import Item1Photo from "../../assets/Item1Photo 1.png";
+import ServiceCT1 from "../../assets/ServiceCT1.png";
 import { motion } from "framer-motion";
 const Item1PC = () => {
     return (

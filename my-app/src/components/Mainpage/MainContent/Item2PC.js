@@ -1,4 +1,4 @@
-import ServiceCT2 from "../assets/ServiceCT2.jpg";
+import ServiceCT2 from "../../assets/ServiceCT2.jpg";
 import { motion } from "framer-motion";
 const Item2PC = () => {
     return (

@@ -4,9 +4,10 @@ import { BiExit } from "react-icons/bi";
 import { BiLogoFacebook } from "react-icons/bi";
 import { CiInstagram } from "react-icons/ci";
 import MobileMenu from "./MobileMenu";
+import PcMenu from "./PcMenu";
 import { BsTelephoneOutbound } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
-import logoOptik from "../assets/logoOptik.svg";
+import logoOptik from "../../assets/logoOptik.svg";
 
 const NavBlock = () => {
     const [openMenu, setOpenMenu] = useState(false);
@@ -119,6 +120,7 @@ const NavBlock = () => {
                     </div>
                 </div>
             </div>
+            <PcMenu></PcMenu>
         </nav>
     );
 };

@@ -1,4 +1,4 @@
-import optik1 from "../assets/optik1.mp4";
+import optik1 from "../../assets/optik1.mp4";
 
 const Hero = () => {
     return (

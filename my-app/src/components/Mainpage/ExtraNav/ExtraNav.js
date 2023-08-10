@@ -1,7 +1,7 @@
-import Extranav1 from "../assets/Extranav-1.jpg";
-import Extranav2 from "../assets/Extranav-2.jpg";
-import Extranav3 from "../assets/Extranav-3.jpg";
-import Extranav4 from "../assets/Extranav-4.jpg";
+import Extranav1 from "../../assets/Extranav-1.jpg";
+import Extranav2 from "../../assets/Extranav-2.jpg";
+import Extranav3 from "../../assets/Extranav-3.jpg";
+import Extranav4 from "../../assets/Extranav-4.jpg";
 import { motion } from "framer-motion";
 const ExtraNav = () => {
     return (
@@ -48,7 +48,10 @@ const ExtraNav = () => {
                 </motion.li>
             </ul>
 
-            <ul className="hidden rounded-sm border-stone-300 dt:justify-evenly   dt:flex dt:pb-[100px] dt:w-[100%] bg-premierColor duration-300 ease-in-out transition-all  dt:items-center p-[50px]  dt:object-cover  ">
+            <ul
+                className="hidden rounded-sm border-stone-300 dt:justify-evenly   dt:flex dt:pb-[100px] dt:w-[100%] 
+            bg-premierColor duration-300 ease-in-out transition-all  dt:items-center p-[50px]  dt:object-cover  "
+            >
                 <motion.li
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}

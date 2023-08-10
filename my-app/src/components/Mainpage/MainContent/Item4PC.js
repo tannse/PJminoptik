@@ -1,4 +1,4 @@
-import ServiceCT5 from "../assets/ServiceCT5.jpg";
+import ServiceCT5 from "../../assets/ServiceCT5.jpg";
 import { motion } from "framer-motion";
 const Item4PC = () => {
     return (

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ServiceCT1 from "../assets/ServiceCT1.png";
+import ServiceCT1 from "../../assets/ServiceCT1.png";
 const Item1Content = () => {
     return (
         <div className="bg-premierColor  mbx:block  h-fit dt:hidden">

@@ -1,6 +1,6 @@
 import { BiLogoFacebook } from "react-icons/bi";
 import { CiInstagram } from "react-icons/ci";
-import SynologenImg from "../Card UI/Synologen";
+import SynologenImg from "../../Card UI/Synologen";
 const FooterBlockPC = () => {
     return (
         <div className=" relative  ">

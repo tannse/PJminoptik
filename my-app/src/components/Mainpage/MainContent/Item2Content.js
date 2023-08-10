@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import ServiceCT2 from "../assets/ServiceCT2.jpg";
+import ServiceCT2 from "../../assets/ServiceCT2.jpg";
 const Item2Content = () => {
     return (
-        <div className=" dt:hidden h-fit bg-[#d2fdcb]">
+        <div className=" dt:hidden h-fit bg-[#FFF]">
             <div className="  pt-[3.1rem]      px-[2.2rem] StyleFlexCol">
                 <div className="border-solid border-green-900 border-[2px] rounded-[15px] py-[20px] px-[10px] mt-[10px] StyleFlexCol">
                     <motion.h2

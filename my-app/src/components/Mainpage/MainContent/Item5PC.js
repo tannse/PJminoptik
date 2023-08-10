@@ -1,4 +1,4 @@
-import ItemCerti from "../assets/ServiceCT5.gif";
+import ItemCerti from "../../assets/ServiceCT5.gif";
 
 import { motion } from "framer-motion";
 const Item5PC = () => {

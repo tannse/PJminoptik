@@ -1,5 +1,5 @@
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
-import useScroll from "../Card UI/HandleScroll";
+import useScroll from "../../Card UI/HandleScroll";
 
 const PcMenu = () => {
     const scrollPosition = useScroll();

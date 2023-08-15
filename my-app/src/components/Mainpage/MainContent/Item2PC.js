@@ -27,7 +27,7 @@ const Item2PC = () => {
                 Min Optik är en del av Synologen – somär bäst påbemötande,
                 engagemangoch branschkunskap i Sverige.
             </p>
-            <p className="text-black text-[20px] col-start-7 col-end-11 line-clamp-3 row-start-7 row-end-10 ">
+            <p className="text-black text-[20px] col-start-7 col-end-11 line-clamp-3 row-start-8 row-end-12 ">
                 Det visar en färsk undersökning om kundservice, gjord bland 95
                 utvalda butikskedjor i 15 olika branscher. Personlig service är
                 framgångsreceptet!
@@ -37,7 +37,9 @@ const Item2PC = () => {
                 whileInView={{ scale: "100%" }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
-                className="StyleButtonNav group col-start-7 row-start-10"
+                className="StyleButtonNav group col-start-7 row-start-11
+
+                "
             >
                 <a
                     href="./"

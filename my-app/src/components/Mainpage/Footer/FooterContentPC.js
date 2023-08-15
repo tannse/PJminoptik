@@ -1,7 +1,7 @@
 import { BiLogoFacebook } from "react-icons/bi";
 import { CiInstagram } from "react-icons/ci";
 import SynologenImg from "../../Card UI/Synologen";
-const FooterBlockPC = () => {
+const FooterPC = () => {
     return (
         <div className=" relative  ">
             {/* Desktop */}
@@ -65,12 +65,14 @@ const FooterBlockPC = () => {
                         <a
                             className="flex items-center justify-center text-[18px] rounded-[20px] w-[40px] h-[40px] bg-[#fff]    "
                             href="https://www.facebook.com/MinOptik"
+                            target="_blank"
                         >
                             <BiLogoFacebook className="" />
                         </a>
                         <a
                             className="flex items-center justify-center text-[18px] rounded-[20px] w-[40px] h-[40px] bg-[#fff] ml-2 "
-                            href="./"
+                            href="https://www.instagram.com/minoptik/?igshid=NTc4MTIwNjQ2YQ%3D%3D&fbclid=IwAR0vvDrrC2I73ljCZjxU68Yd-_2__zeEznX2P6NNpqVvwhn6ofEW0vJUO7Y"
+                            target="_blank"
                         >
                             <CiInstagram />
                         </a>
@@ -95,4 +97,4 @@ const FooterBlockPC = () => {
         </div>
     );
 };
-export default FooterBlockPC;
+export default FooterPC;

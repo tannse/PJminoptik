@@ -22,7 +22,7 @@ const Item4PC = () => {
             <p className="text-[25px] mt-[1em] text-black font-bold font-Exo  col-start-7 col-end-12 row-start-5 row-end-8 line-clamp-3">
                 Min Optik erbjuder undersökning av legitimerad ögonläkare..
             </p>
-            <p className="text-black text-[20px] col-start-7 col-end-12 font-Exo line-clamp-3 row-start-7 row-end-9 ">
+            <p className="text-black text-[20px] col-start-7 col-end-12 font-Exo line-clamp-3 row-start-8 row-end-10 ">
                 Hos oss får du bra service – Ögonläkare nära dig. Med jämna
                 mellanrum kan du boka tid hos en ögonläkare i vår butik. Se alla
                 lediga tider nedan!
@@ -32,7 +32,7 @@ const Item4PC = () => {
                 whileInView={{ scale: "100%" }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
-                className="StyleButtonNav group col-start-7 row-start-9"
+                className="StyleButtonNav group col-start-7 row-start-10"
             >
                 <a
                     href="./"

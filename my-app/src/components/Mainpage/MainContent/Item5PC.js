@@ -3,7 +3,7 @@ import ItemCerti from "../../assets/ServiceCT5.gif";
 import { motion } from "framer-motion";
 const Item5PC = () => {
     return (
-        <div className="mbx:hidden mb:hidden dt:grid grid-cols-12 grid-rows-14 shadow-Shadow bg h-[50vh]  relative">
+        <div className="mbx:hidden mb:hidden dt:grid grid-cols-12 grid-rows-14 shadow-Shadow bg h-[60vh]  relative">
             <motion.h3
                 className="text-[40px] col-start-2 col-end-7 row-start-3 font-bold font-Exo text-black"
                 initial={{ translateX: "-30%", opacity: 0 }}
@@ -18,10 +18,10 @@ const Item5PC = () => {
                 whileInView={{ width: "70%" }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true }}
-                className="col-start-2 col-end-5 row-start-4  mt-4  border-[1px] border-black"
+                className="col-start-2 col-end-5 row-start-5  mt-4  border-[1px] border-black"
             />
 
-            <p className="text-black text-[18px] font-semibold  font-Exo font- col-start-2 col-end-6 row-start-5 ">
+            <p className="text-black text-[18px] font-semibold  font-Exo font- col-start-2 col-end-6 row-start-6 ">
                 Synologen är en medlemsorganisation med en central ledning som
                 hjälper medlemmarna att driva utvecklingen framåt. Tillsammans
                 skapar vi mervärden som gör att vi stärker vår position och
@@ -32,7 +32,7 @@ const Item5PC = () => {
                 whileInView={{ scale: "100%" }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: true }}
-                className="StyleButtonNav group col-start-2 row-start-8"
+                className="StyleButtonNav group col-start-2 row-start-11"
             >
                 <a
                     href="./"

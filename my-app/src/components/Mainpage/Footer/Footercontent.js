@@ -2,7 +2,7 @@ import BGfooter from "../../Card UI/BGfooter";
 import { BiLogoFacebook } from "react-icons/bi";
 import { CiInstagram } from "react-icons/ci";
 import SynologenImg from "../../Card UI/Synologen";
-const FooterBlock = () => {
+const FooterMobile = () => {
     return (
         <div className=" relative dt:hidden ">
             {/* Mobile */}
@@ -69,6 +69,8 @@ const FooterBlock = () => {
                         <a
                             className="flex items-center justify-center text-[18px] rounded-[20px] w-[28px] h-[28px] bg-[#fff]    "
                             href="https://www.facebook.com/MinOptik"
+                            target="_blank"
+                            rel="noreferrer"
                         >
                             <BiLogoFacebook className="" />
                         </a>
@@ -94,4 +96,4 @@ const FooterBlock = () => {
         </div>
     );
 };
-export default FooterBlock;
+export default FooterMobile;

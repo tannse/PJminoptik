@@ -8,7 +8,7 @@ const Img1Between = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 2 }}
                 src={ServiceCT1}
-                className=" absolute w-[80%] top-[-25vh] shadow-Shadow  rounded-[20px] text-center object-cover h-[45vh]"
+                className=" ImgCusTomMobile"
             />
         </div>
     );

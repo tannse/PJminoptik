@@ -32,7 +32,7 @@ const PcMenu = () => {
                                 alt="Kontaklinser "
                                 className=" duration-[0.5s] ease-in-out "
                             >
-                                Vad göra en Optiker?
+                                Vad gör en Optiker?
                             </Link>
                         </li>
                     </ul>
@@ -52,7 +52,7 @@ const PcMenu = () => {
                           duration-[0.4s] ease-in-out group-hover:scale-100 "
                         >
                             <Link
-                                to="./"
+                                to="/Offer"
                                 alt="Kontaklinser "
                                 className=" duration-[0.5s] ease-in-out"
                             >

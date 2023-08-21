@@ -32,7 +32,7 @@ const NavBlock = () => {
                         LÖR: 10:00 – 13.00{" "}
                     </span>
                     <span className="font-Exo  text-center text-20">
-                        SÖN :STÄNGT
+                        SÖN-MÅN: STÄNGT
                     </span>
                 </div>
                 <div className=" relative mt-[-2%] flex flex-col   items-center">

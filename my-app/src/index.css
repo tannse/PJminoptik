@@ -59,3 +59,18 @@
         @apply w-[100%] h-[35vh]  shadow-Shadow mt-[1.3rem]   text-center object-cover;
     }
 }
+@layer components {
+    .DescCustomPC {
+        @apply text-[1.rem] font-medium font-Exo;
+    }
+}
+@layer components {
+    .h2CustomPC {
+        @apply text-[3rem] font-bold font-Exo text-white;
+    }
+}
+@layer components {
+    .h3CustomPC {
+        @apply text-[1.3rem] font-bold font-Exo text-white;
+    }
+}

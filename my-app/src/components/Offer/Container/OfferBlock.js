@@ -1,24 +1,14 @@
-import ContainerData from "./ContainerOffer";
-import OfferLens from "../Lens/OfferLens";
+import OfferPost1 from "../OfferList/OfferPost1";
 import NavBlock from "../../Mainpage/Navbar/NavBlock";
-import AdvantagesLens from "../Lens/AdvantageLens";
+import OfferPost2 from "../OfferList/OfferPost2";
+import OfferPost3 from "../OfferList/OfferPost3";
 const OfferBlock = () => {
-    const offerTitle = ContainerData.offer.title;
-    const offerDescription = ContainerData.offer.description;
-    const advantagesTitle = ContainerData.advantages.title;
-    const advantagesSubTitle = ContainerData.advantages.subTitle;
-
     return (
         <div>
             <NavBlock />
-            <OfferLens
-                offerTitle={offerTitle}
-                offerDescription={offerDescription}
-            />
-            <AdvantagesLens
-                advantagesTitle={advantagesTitle}
-                advantagesSubTitle={advantagesSubTitle}
-            />
+            <OfferPost1 />
+            <OfferPost2 />
+            <OfferPost3 />
         </div>
     );
 };

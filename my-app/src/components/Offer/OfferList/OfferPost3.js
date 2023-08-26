@@ -1,6 +1,3 @@
-import OfferImage1 from "../../assets/OfferImage1.jpg";
-import OfferImage2 from "../../assets/OfferImage2.jpg";
-import OfferImage3 from "../../assets/OfferImage3.jpg";
 const OfferPost3 = () => {
     return (
         <section className="h-[100vh] flex justify-center mt-[120px]">
@@ -54,20 +51,6 @@ const OfferPost3 = () => {
                             Läser mer här
                         </button>
                     </div>
-                </div>
-                <div className=" flex justify-between">
-                    <img
-                        src={OfferImage1}
-                        className="h-[40vh] rounded-[30px] mt-[130px]"
-                    ></img>
-                    <img
-                        src={OfferImage2}
-                        className="h-[40vh] rounded-[30px]"
-                    ></img>
-                    <img
-                        src={OfferImage3}
-                        className="h-[40vh] rounded-[30px] mt-[-130px]"
-                    ></img>
                 </div>
             </div>
         </section>

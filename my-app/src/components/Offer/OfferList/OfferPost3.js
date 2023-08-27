@@ -1,6 +1,6 @@
 const OfferPost3 = () => {
     return (
-        <section className="h-[100vh] flex justify-center mt-[120px]">
+        <section className="h-[55vh] flex justify-center mt-[120px]">
             <div className="w-[calc(100%-240px)]  ">
                 <div className="w-[50%] ">
                     <h2

@@ -7,6 +7,7 @@ const OfferPost1 = (props) => {
                 <div className="flex bg-premierColor items-center shadow-Shadow100 rounded-[20px]">
                     <img
                         src={CardOptik}
+                        alt="CardOptik"
                         className=" w-2/4 h-[50vh] object-none"
                     />
                     <div className="w-2/4">

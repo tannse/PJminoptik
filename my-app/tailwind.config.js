@@ -25,6 +25,7 @@ module.exports = {
         },
         extend: {
             colors: {
+                "custom-darkgreen": "#024F45",
                 "custom-green": "#00544a",
                 "custom-teal": "#89bfb9",
             },
@@ -126,7 +127,7 @@ module.exports = {
         },
 
         backgroundImage: {
-            "background-footer": "url('/src/components/assets/FOOTER.jpg')",
+            "background-footer": "url('./components/assets/FOOTER.jpg')",
         },
     },
     variants: {

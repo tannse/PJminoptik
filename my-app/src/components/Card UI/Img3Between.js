@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ServiceCT3 from "../assets/"
+import ServiceCT3 from "../../assets/ServiceCT3.jpg";
 const Img3Between = () => {
     return (
         <div className="flex justify-center relative">
@@ -7,7 +7,7 @@ const Img3Between = () => {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 2 }}
-                src={./}
+                src={ServiceCT3}
                 className=" ImgCusTomMobile"
             />
         </div>

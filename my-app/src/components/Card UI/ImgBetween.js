@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ServiceCT1 from "../assets/ServiceCT1.png";
+import ServiceCT1 from "../../assets/ServiceCT1.png";
 const Img1Between = () => {
     return (
         <div className="flex justify-center relative">

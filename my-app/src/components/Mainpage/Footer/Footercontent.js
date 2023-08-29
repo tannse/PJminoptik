@@ -90,8 +90,8 @@ const FooterMobile = () => {
                     <hr className="w-5/6 border-dashed relative top-[30px]  " />
                 </div>
             </div>
+            <BGfooter />
 
-            <BGfooter></BGfooter>
             {/* Desktop */}
         </div>
     );

@@ -1,11 +1,12 @@
 import { BiLogoFacebook } from "react-icons/bi";
 import { CiInstagram } from "react-icons/ci";
 import SynologenImg from "../../Card UI/Synologen";
+
 const FooterPC = () => {
     return (
-        <div className=" relative  ">
+        <div className=" relative mbx:hidden mb:hidden dt:block   ">
             {/* Desktop */}
-            <div className=" absolute  z-[999] h-[60vh] mbx:hidden mb:hidden dt:grid grid-cols-12 grid-rows-8 ">
+            <div className=" absolute  z-[999] h-[60vh]  dt:grid grid-cols-12 grid-rows-8 ">
                 {/* Info1 */}
 
                 <div className=" leading-7 col-start-2 col-end-4 row-start-3 ">
@@ -66,6 +67,7 @@ const FooterPC = () => {
                             className="flex items-center justify-center text-[18px] rounded-[20px] w-[40px] h-[40px] bg-[#fff]    "
                             href="https://www.facebook.com/MinOptik"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             <BiLogoFacebook className="" />
                         </a>
@@ -73,6 +75,7 @@ const FooterPC = () => {
                             className="flex items-center justify-center text-[18px] rounded-[20px] w-[40px] h-[40px] bg-[#fff] ml-2 "
                             href="https://www.instagram.com/minoptik/?igshid=NTc4MTIwNjQ2YQ%3D%3D&fbclid=IwAR0vvDrrC2I73ljCZjxU68Yd-_2__zeEznX2P6NNpqVvwhn6ofEW0vJUO7Y"
                             target="_blank"
+                            rel="noreferrer"
                         >
                             <CiInstagram />
                         </a>
@@ -92,8 +95,7 @@ const FooterPC = () => {
                     <p className="text-white">Skapad av Tanne</p>
                 </div>
             </div>
-
-            <div className="  relative h-[60vh] bg-cover position bg-right bg-background-footer brightness-50"></div>
+            <div className="  relative h-[60vh] bg-cover bg-background-footer bg-center  brightness-50"></div>
         </div>
     );
 };

@@ -28,6 +28,15 @@ const PcMenu = () => {
                     >
                         <li className=" text-[16px] font-semibold hover:text-[20px] z-[100] translate-x-[-100%] p-[15px] bg-premierColor hover:bg-opacity-50   scale-0 group-hover:translate-x-[0]    duration-[0.5s] ease-in-out group-hover:scale-100 ">
                             <Link
+                                to="/VisionCare"
+                                alt="VisionCare "
+                                className=" duration-[0.5s] ease-in-out "
+                            >
+                                Synvård
+                            </Link>
+                        </li>
+                        <li className=" text-[16px] font-semibold hover:text-[20px] z-[100] translate-x-[-100%] p-[15px] bg-premierColor hover:bg-opacity-50   scale-0 group-hover:translate-x-[0]    duration-[0.5s] ease-in-out group-hover:scale-100 ">
+                            <Link
                                 to="/About"
                                 alt="Kontaklinser "
                                 className=" duration-[0.5s] ease-in-out "

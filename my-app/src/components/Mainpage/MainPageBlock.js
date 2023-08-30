@@ -5,8 +5,6 @@ import BlockContent from "./MainContent/Blockcontent";
 import FooterBlock from "./Footer/FooterBlock";
 import React, { useState, useEffect } from "react";
 
-import CircularProgress from "@mui/material/CircularProgress";
-
 const MainPageBlock = () => {
     const [Loading, setLoading] = useState("true");
     const ComponentStyle = {

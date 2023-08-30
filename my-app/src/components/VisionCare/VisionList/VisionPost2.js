@@ -1,7 +1,7 @@
 import WellcomeImg from "../../assets/WellcomeImg.jpg";
 const VisionPost2 = () => {
     return (
-        <div className=" flex justify-center items-center bg-[#f6faf6] h-[90vh]">
+        <div className=" flex justify-center items-center bg-[#f6faf6] h-[100vh]">
             <div className="w-[calc(100%-240px)]    ">
                 <div className="flex justify-between items-center ">
                     <img

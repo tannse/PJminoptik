@@ -17,6 +17,7 @@ module.exports = {
             Shadow100: " 0px 0px 16px 6px rgba(38,31,31,0.41);",
             whiteShadow: "0px 0px 20px 6px rgba(255,255,255,1.41);",
             whiteShadow50: "0px 0px 20px 6px rgba(255,255,255,0.41);",
+            GreenShadow: " -1px 5px 23px 2px rgba(0,86,75,0.46);",
         },
         backgroundColor: {
             bgButton: "#118273",

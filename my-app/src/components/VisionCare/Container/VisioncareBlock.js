@@ -4,15 +4,14 @@ import FooterBlock from "../../Mainpage/Footer/FooterBlock";
 import VisionPost1 from "../VisionList/VisionPost1";
 import VisionPost2 from "../VisionList/VisionPost2";
 import VisionPost3 from "../VisionList/VisionPost3";
-import Divider from "@mui/material/Divider";
 const VisioncareBlock = () => {
     return (
         <div>
             <NavBlock />
             <VisionPost1 />
-            <Divider />
+
             <VisionPost2 />
-            <Divider />
+
             <VisionPost3 />
             <FooterBlock />
         </div>

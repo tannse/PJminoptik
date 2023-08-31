@@ -4,36 +4,35 @@ import ExtraNav from "./ExtraNav/ExtraNav";
 import BlockContent from "./MainContent/Blockcontent";
 import FooterBlock from "./Footer/FooterBlock";
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
+import { ShowComponent } from "../Card UI/Animation";
 
 const MainPageBlock = () => {
     const [Loading, setLoading] = useState("true");
-    const ComponentStyle = {
-        opacity: Loading ? 0 : 1,
-        transition: "opacity 0.8s",
-    };
+
     useEffect(() => {
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 1000);
+        }, 1200);
         return () => {
             clearTimeout(timer);
         };
     }, []);
 
     return (
-        <div style={ComponentStyle}>
+        <motion.div {...ShowComponent}>
             <NavBlock />
             {Loading ? (
                 ""
             ) : (
-                <div>
+                <motion.div {...ShowComponent}>
                     <Hero />
                     <ExtraNav />
                     <BlockContent />
                     <FooterBlock />
-                </div>
+                </motion.div>
             )}
-        </div>
+        </motion.div>
     );
 };
 export default MainPageBlock;

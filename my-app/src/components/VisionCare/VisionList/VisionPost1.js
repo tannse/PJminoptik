@@ -1,13 +1,20 @@
 import lottaImg from "../../assets/lotta-optik.png";
+import { motion } from "framer-motion";
+import { ShowRightAnimate } from "../../Card UI/Animation";
+import { ShowLeftAnimate } from "../../Card UI/Animation";
+import { ShowUpAnimate } from "../../Card UI/Animation";
 const VisionPost1 = () => {
     return (
         <div className="h-[85vh] flex justify-center mt-7">
             <div className="w-[calc(100%-240px)]  ">
                 <div className="flex gap-x-[9rem] items-center  h-[75vh] ">
                     <div className="w-2/5 flex flex-col gap-y-5 ">
-                        <h2 className=" text-[2.5rem]  text-custom-darkgreen font-Exo text-  font-extrabold">
+                        <motion.h2
+                            {...ShowRightAnimate}
+                            className=" text-[2.5rem]  text-custom-darkgreen font-Exo text-  font-extrabold"
+                        >
                             TÄNK PÅ DIN HÄLSA!
-                        </h2>
+                        </motion.h2>
                         <h3
                             className=" h3CustomPC font-semibold text-custom-darkgreen
                 "
@@ -29,12 +36,16 @@ const VisionPost1 = () => {
                             huvudvärk ofta eller om du måste kisa för att kunna
                             läsa vad det står i mobilen.
                         </p>
-                        <button className="StyleButtonNav w-1/3 capitalize">
+                        <motion.button
+                            {...ShowUpAnimate}
+                            className="StyleButtonNav w-1/3 capitalize"
+                        >
                             {" "}
                             SE LEDIGA TIDER
-                        </button>
+                        </motion.button>
                     </div>
-                    <img
+                    <motion.img
+                        {...ShowLeftAnimate}
                         src={lottaImg}
                         alt="lottaImg"
                         className=" w-[40%] rounded-tl-[200px] rounded-br-[200px] h-[70vh] object-cover"

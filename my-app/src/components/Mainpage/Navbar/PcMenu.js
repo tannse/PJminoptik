@@ -109,7 +109,7 @@ const PcMenu = () => {
                 </Link>
             </li>
             <li className="MenuPc  flex    ">
-                <Link className="  " to="./">
+                <Link className="  " to="/BokaTid">
                     Boka tid
                 </Link>
             </li>

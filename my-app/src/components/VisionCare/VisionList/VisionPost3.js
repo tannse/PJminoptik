@@ -2,10 +2,15 @@ import { BiLogoFacebook } from "react-icons/bi";
 import { CiInstagram } from "react-icons/ci";
 import IconResure from "../../assets/ResusBank.png";
 import { AiOutlineMail } from "react-icons/ai";
+import { motion } from "framer-motion";
+import { ShowDownAnimate } from "../../Card UI/Animation";
 
 const VisionPost3 = () => {
     return (
-        <section className=" flex justify-center  mt-[30px] h-[50vh]">
+        <motion.section
+            {...ShowDownAnimate}
+            className=" flex justify-center  mt-[30px] h-[50vh]"
+        >
             <div className="w-[calc(100%-25%)]">
                 <div className="bg-premierColor rounded-[30px]  shadow-GreenShadow px-[20px] h-[40vh]  ">
                     <div className="px-[20px] py-[40px] flex flex-col justify-center  h-fit ">
@@ -14,7 +19,7 @@ const VisionPost3 = () => {
                         </h2>
                         <div className="flex mt-[50px] justify-between">
                             <div className="flex w-2/6 gap-y-[10px] py-[10px] flex-col items-center border-[3px] rounded-[30px] border-solid border-white">
-                                <img src={IconResure}></img>
+                                <img src={IconResure} alt="Reasure Bank" />
                                 <span className="text-[16px] text-white font-bold font-Exo">
                                     DELBETALNING
                                 </span>
@@ -54,14 +59,14 @@ const VisionPost3 = () => {
                                     <p className="text-white text-[20px] mr-[20px]">
                                         ANSVARA SÅ FORT VI KAN
                                     </p>
-                                    <AiOutlineMail className="text-[30px]   text-white"></AiOutlineMail>
+                                    <AiOutlineMail className="text-[30px] animate-bounce  text-white"></AiOutlineMail>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.section>
     );
 };
 export default VisionPost3;

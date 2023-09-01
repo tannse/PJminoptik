@@ -31,3 +31,9 @@ export const ShowComponent = {
     transition: { duration: 0.8 },
     viewport: { once: true },
 };
+export const ShowScale = {
+    initial: { scale: 0 },
+    whileInView: { scale: 1 },
+    transition: { duration: 0.3 },
+    viewport: { once: true },
+};

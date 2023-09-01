@@ -12,33 +12,33 @@ const PcMenu = () => {
                      : ""
              }`}
         >
-            <li className="  MenuPc  flex  hover:bg-opacity-50   ">
+            <li className="  MenuPc  flex  hover:bg-[#ffffffe1]  hover:text-[#306860]   ">
                 <Link to="/" alt="Hem">
                     Hem
                 </Link>
             </li>
-            <li className="MenuPc  group transition-all  relative     ">
+            <li className="MenuPc  group transition-all hover:bg-[#ffffffe1]  hover:text-[#306860]  relative     ">
                 <Link className=" flex justify-center  " to="./">
                     Synundersökning
                     <MdKeyboardDoubleArrowDown className="group-hover:rotate-180 self-center duration-200 ease-linear ml-[10px]"></MdKeyboardDoubleArrowDown>
                     <ul
                         className="absolute   
-                        duration-400 ease-linear scale-0 group-hover:scale-100 text-center  top-[2.4em] w-fit  p-[15px] z-[100] self-start"
+                        duration-400 ease-linear scale-0 group-hover:scale-100 text-center  top-[2.4em] w-fit  p-[15px] z-[100] self-start "
                     >
-                        <li className=" text-[16px] font-semibold hover:text-[20px] z-[100] translate-x-[-100%] p-[15px] bg-premierColor hover:bg-opacity-50   scale-0 group-hover:translate-x-[0]    duration-[0.2s] ease-in-out group-hover:scale-100 ">
+                        <li className="text-[16px] text-white font-semibold  z-[100] translate-x-[-100%]  bg-premierColor hover:bg-[#ffffffe1]  hover:text-[#306860]   scale-0 group-hover:translate-x-[0]    duration-[0.2s] ease-in-out group-hover:scale-100 ">
                             <Link
                                 to="/VisionCare"
                                 alt="VisionCare "
-                                className=" duration-[0.2s] ease-in-out "
+                                className=" block h-[3rem] translate-y-[10px]  duration-[0.2s] ease-in-out "
                             >
                                 Synvård
                             </Link>
                         </li>
-                        <li className=" text-[16px] font-semibold hover:text-[20px] z-[100] translate-x-[-100%] p-[15px] bg-premierColor hover:bg-opacity-50   scale-0 group-hover:translate-x-[0]    duration-[0.2s] ease-in-out group-hover:scale-100 ">
+                        <li className=" text-[16px] text-white font-semibold  z-[100] translate-x-[-100%]  bg-premierColor hover:bg-[#ffffffe1]  hover:text-[#306860]  scale-0 group-hover:translate-x-[0]    duration-[0.2s] ease-in-out group-hover:scale-100 ">
                             <Link
                                 to="/About"
                                 alt="Kontaklinser "
-                                className=" duration-[0.2s] ease-in-out "
+                                className="  block h-[3rem] translate-y-[10px] px-[10px] duration-[0.2s] ease-in-out "
                             >
                                 Vad gör en Optiker?
                             </Link>
@@ -46,70 +46,82 @@ const PcMenu = () => {
                     </ul>
                 </Link>
             </li>
-            <li className="MenuPc  group transition-all  relative">
+            <li className="MenuPc  group transition-all hover:bg-[#ffffffe1]  hover:text-[#306860] relative">
                 <Link className=" flex justify-center  " to="./">
                     Linser och Glasögon
                     <MdKeyboardDoubleArrowDown className="group-hover:rotate-180 self-center duration-200 ease-linear ml-[10px] "></MdKeyboardDoubleArrowDown>
                     <ul
                         className=" absolute   
-                      duration-400 ease-linear scale-0 group-hover:scale-100  top-[2.5em] w-fit  p-[15px] z-[100]"
+                      duration-400 ease-linear scale-0 group-hover:scale-100  top-[2.4em] p-[15px] w-fit  text-center z-[100]"
                     >
                         <li
-                            className=" text-[16px] font-semibold hover:text-[20px] z-[100] translate-x-[-100%]
-                         p-[15px] bg-premierColor hover:bg-opacity-70    scale-0 group-hover:translate-x-[0]  
-                          duration-[0.4s] ease-in-out group-hover:scale-100 "
+                            className=" text-[16px] font-semibold  z-[100] translate-x-[-100%] text-white bg-premierColor
+                            hover:bg-[#ffffffe1]  hover:text-[#306860]    scale-0 group-hover:translate-x-[0]  
+                          duration-[0.2s] ease-in-out group-hover:scale-100 "
                         >
                             <Link
                                 to="/Offer"
                                 alt="Kontaklinser "
-                                className=" duration-[0.2s] ease-in-out"
+                                className=" block  h-[3rem] translate-y-[10px] duration-[0.2s] ease-in-out"
                             >
                                 Kontaktlinser
                             </Link>
                         </li>
                         <li
-                            className="  text-[16px] font-semibold hover:text-[20px] z-[100] translate-x-[-100%]
-                         p-[15px] bg-premierColor hover:bg-opacity-50 
+                            className="  text-[16px] font-semibold  z-[100] translate-x-[-100%] text-white
+                         bg-premierColor hover:bg-[#ffffffe1]  hover:text-[#306860]
                           scale-0 group-hover:translate-x-[0]  
-                          duration-[0.6s] ease-in-out group-hover:scale-100 "
+                          duration-[0.2s] ease-in-out group-hover:scale-100 "
                         >
-                            <Link to="./" alt="Arbetglasögon">
+                            <Link
+                                to="./"
+                                alt="Arbetglasögon"
+                                className="block  h-[3rem] translate-y-[10px] px-[10px] duration-[0.2s] ease-in-out"
+                            >
                                 Arbetglasögon
                             </Link>
                         </li>
                         <li
-                            className="  text-[16px] font-semibold hover:text-[20px] z-[100] translate-x-[-100%]
-                         p-[15px] bg-premierColor hover:bg-opacity-50   scale-0 group-hover:translate-x-[0]  
-                          duration-[0.8s] ease-in-out group-hover:scale-100  "
+                            className="  text-[16px] font-semibold  z-[100] translate-x-[-100%] text-white
+                         bg-premierColor hover:bg-[#ffffffe1]  hover:text-[#306860]   scale-0 group-hover:translate-x-[0]  
+                          duration-[0.2s] ease-in-out group-hover:scale-100  "
                         >
-                            <Link to="./" alt="Glasögon till barn">
+                            <Link
+                                className="block  h-[3rem] translate-y-[10px] px-[10px] duration-[0.2s] ease-in-out"
+                                to="./"
+                                alt="Glasögon till barn"
+                            >
                                 Glasögon till barn
                             </Link>
                         </li>
                         <li
-                            className="  text-[16px] font-semibold hover:text-[20px] z-[100] translate-x-[-100%]
-                         p-[15px] bg-premierColor hover:bg-opacity-50   scale-0 group-hover:translate-x-[0]  
-                          duration-[1s] ease-in-out group-hover:scale-100  "
+                            className="  text-[16px] font-semibold  z-[100] translate-x-[-100%] text-white
+                          bg-premierColor hover:bg-[#ffffffe1]  hover:text-[#306860]   scale-0 group-hover:translate-x-[0]  
+                          duration-[0.2sease-in-out group-hover:scale-100  "
                         >
-                            <Link to="./" alt="Torra ögon">
+                            <Link
+                                to="./"
+                                alt="Torra ögon "
+                                className="block  h-[3rem] translate-y-[10px] px-[10px] duration-[0.2s] ease-in-out"
+                            >
                                 Torra ögon
                             </Link>
                         </li>
                     </ul>
                 </Link>
             </li>
-            <li className="MenuPc  flex    ">
-                <Link className="  " to="./">
+            <li className="MenuPc text-white  flex hover:bg-[#ffffffe1]  hover:text-[#306860]   ">
+                <Link className="   " to="./">
                     Solglasögon
                 </Link>
             </li>
-            <li className="MenuPc  flex    ">
+            <li className="MenuPc  flex text-white   hover:bg-[#ffffffe1]  hover:text-[#306860]   ">
                 <Link className="  " to="./">
                     Hitta till oss
                 </Link>
             </li>
-            <li className="MenuPc  flex    ">
-                <Link className="  " to="/BokaTid">
+            <li className="MenuPc  flex text-white  flex hover:bg-[#ffffffe1]  hover:text-[#306860]  ">
+                <Link className=" " to="/BokaTid">
                     Boka tid
                 </Link>
             </li>

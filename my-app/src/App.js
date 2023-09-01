@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import MainPageBlock from "./components/Mainpage/MainPageBlock";
 import OfferBlock from "./components/Offer/Container/OfferBlock";
 import VisioncareBlock from "./components/VisionCare/Container/VisioncareBlock";
-import BookingPage from "./components/Card UI/BookingPage";
+
 import React, { useEffect } from "react";
 const LazyAbout = React.lazy(() =>
     import("../src/components/About/Container/AboutPageBlock")
@@ -30,7 +30,6 @@ function App() {
                 />
                 <Route path="/Offer" element={<OfferBlock />} />
                 <Route path="/VisionCare" element={<VisioncareBlock />} />
-                <Route path="/BokaTid" element={<BookingPage />} />
             </Routes>
             <ScrollToCurrentLocation></ScrollToCurrentLocation>
         </div>

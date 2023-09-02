@@ -18,7 +18,7 @@ const VisionPost3 = () => {
                             Hej! Vad kan vi hjälpa till med?
                         </h2>
                         <div className="flex mt-[50px] justify-between">
-                            <div className="flex w-2/6 gap-y-[10px] py-[10px] flex-col items-center border-[3px] rounded-[30px] border-solid border-white">
+                            <div className="flex w-2/6 hover:translate-y-[-10px] cursor-pointer hover:shadow-whiteShadow duration-500  gap-y-[10px] py-[10px] flex-col items-center border-[3px] rounded-[30px] border-solid border-white">
                                 <img src={IconResure} alt="Reasure Bank" />
                                 <span className="text-[16px] text-white font-bold font-Exo">
                                     DELBETALNING
@@ -28,7 +28,7 @@ const VisionPost3 = () => {
                                     räntefritt
                                 </p>
                             </div>
-                            <div className="flex gap-y-[10px] rounded-[30px] flex-col items-center justify-center border-[3px] w-1/6 border-solid border-white">
+                            <div className="flex gap-y-[10px] hover:translate-y-[-10px] hover:shadow-whiteShadow duration-500 cursor-pointer rounded-[30px] flex-col items-center justify-center border-[3px] w-1/6 border-solid border-white">
                                 <span className="text-[16px] text-white font-bold font-Exo">
                                     FOLJA OSS!
                                 </span>
@@ -51,7 +51,7 @@ const VisionPost3 = () => {
                                     </a>
                                 </div>
                             </div>
-                            <div className="flex gap-y-[10px] rounded-[30px]  flex-col items-center justify-center border-[3px] text-white w-2/6 border-solid border-white">
+                            <div className="flex gap-y-[10px] hover:translate-y-[-10px] hover:shadow-whiteShadow duration-500 cursor-pointer rounded-[30px]  flex-col items-center justify-center border-[3px] text-white w-2/6 border-solid border-white">
                                 <span className="text-[16px] font-bold font-Exo">
                                     SKICKA EMAIL TILL OSS!
                                 </span>

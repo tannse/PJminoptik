@@ -7,7 +7,7 @@ const OfferPost2 = (props) => {
                     <img
                         src={OfferImage}
                         alt="Store Optik"
-                        className="w-2/5  rounded-xl object-cover"
+                        className="bg-[#fff] w-2/5  rounded-xl object-cover"
                     />
                     <div className="w-[55%] ">
                         <h2 className="h2CustomPC text-[#00544a]">

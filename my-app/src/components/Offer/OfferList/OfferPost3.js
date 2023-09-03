@@ -1,8 +1,11 @@
+import { motion } from "framer-motion";
+import { ShowLeftAnimate } from "../../Card UI/Animation";
+
 const OfferPost3 = () => {
     return (
         <section className="h-[55vh] flex justify-center mt-[120px]">
             <div className="w-[calc(100%-240px)]  ">
-                <div className="w-[50%] ">
+                <motion.div {...ShowLeftAnimate} className="w-[50%]  ">
                     <h2
                         className="h2CustomPC text-[#00544a]
                         "
@@ -51,7 +54,7 @@ const OfferPost3 = () => {
                             Läser mer här
                         </button>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </section>
     );

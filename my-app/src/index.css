@@ -74,3 +74,8 @@
         @apply text-[1.3rem] font-bold font-Exo text-white;
     }
 }
+@layer utilities {
+    .matrix-3D {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+}

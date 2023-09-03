@@ -28,13 +28,13 @@ const VisionPost3 = () => {
                                     räntefritt
                                 </p>
                             </div>
-                            <div className="flex gap-y-[10px] hover:translate-y-[-10px] hover:shadow-whiteShadow duration-500 cursor-pointer rounded-[30px] flex-col items-center justify-center border-[3px] w-1/6 border-solid border-white">
+                            <div className="flex gap-y-[10px]  rounded-[30px] flex-col items-center justify-center border-[3px] w-1/6 border-solid border-white">
                                 <span className="text-[16px] text-white font-bold font-Exo">
                                     FOLJA OSS!
                                 </span>
                                 <div className="flex">
                                     <a
-                                        className="flex items-center justify-center text-[30px] rounded-[20px] w-[40px] h-[40px] bg-[#fff]    "
+                                        className="hover:translate-y-[-10px] hover:shadow-whiteShadow duration-300  flex items-center justify-center text-[30px] rounded-[20px] w-[40px] h-[40px] bg-[#fff]    "
                                         href="https://www.facebook.com/MinOptik"
                                         target="_blank"
                                         rel="noreferrer"
@@ -42,7 +42,7 @@ const VisionPost3 = () => {
                                         <BiLogoFacebook className="" />
                                     </a>
                                     <a
-                                        className="flex items-center justify-center text-[30px] rounded-[20px] w-[40px] h-[40px] bg-[#fff] ml-2 "
+                                        className="hover:translate-y-[-10px] hover:shadow-whiteShadow duration-300  flex items-center justify-center text-[30px] rounded-[20px] w-[40px] h-[40px] bg-[#fff] ml-2 "
                                         href="https://www.instagram.com/minoptik/?igshid=NTc4MTIwNjQ2YQ%3D%3D&fbclid=IwAR0vvDrrC2I73ljCZjxU68Yd-_2__zeEznX2P6NNpqVvwhn6ofEW0vJUO7Y"
                                         target="_blank"
                                         rel="noreferrer"

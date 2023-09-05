@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ShowUpAnimate } from "../../Card UI/Animation";
 import { ShowRightAnimate } from "../../Card UI/Animation";
 import { ShowLeftAnimate } from "../../Card UI/Animation";
-import { ShowScale } from "../../Card UI/Animation";
+
 const TopContentData = (props) => {
     const { Title, Desc1, Desc2 } = props.Data;
     return (

@@ -121,7 +121,7 @@ const PcMenu = () => {
                 </Link>
             </li>
             <li className="MenuPc  flex text-white  flex hover:bg-[#ffffffe1]  hover:text-[#306860]  ">
-                <Link className=" " to="/BokaTid">
+                <Link className=" " to="/Booking">
                     Boka tid
                 </Link>
             </li>

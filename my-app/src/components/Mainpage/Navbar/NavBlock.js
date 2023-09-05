@@ -8,6 +8,7 @@ import PcMenu from "./PcMenu";
 import { BsTelephoneOutbound } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import logoOptik from "../../assets/logoOptik.png";
+import { Link } from "react-router-dom";
 
 const NavBlock = () => {
     const [openMenu, setOpenMenu] = useState(false);
@@ -51,14 +52,13 @@ const NavBlock = () => {
                         </div>
                     </div>
                     <button className=" group mb:hidden dt:block mt-[15px] outline-none active:scale-75 transition-transform duration-50 font-Exo font-bold  rounded-[20px] border-[1px] border-solid border-white  bg-[#00564B] text-white w-[164px] h-[43px]">
-                        <a
-                            href="./"
+                        <Link
+                            to="/Booking"
                             alt="BOKA TID ONLINE"
                             className="group-hover:text-[1.2rem] w-[100%] ease-linear duration-150"
                         >
-                            {" "}
                             BOKA TID ONLINE
-                        </a>
+                        </Link>
                     </button>
                 </div>
 

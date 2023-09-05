@@ -1,11 +1,19 @@
+import React, { useState } from "react";
 import { BiLogoFacebook } from "react-icons/bi";
 import { CiInstagram } from "react-icons/ci";
 import IconResure from "../../assets/ResusBank.png";
 import { AiOutlineMail } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { ShowDownAnimate } from "../../Card UI/Animation";
+import SupportMenu from "../Support/SupportMenu";
 
 const VisionPost3 = () => {
+    const [support, setSupport] = useState(false);
+    const HandleSupportPage = (e) => {
+        e.preventDefault();
+        setSupport(!support);
+        console.log("Da click");
+    };
     return (
         <motion.section
             {...ShowDownAnimate}
@@ -28,7 +36,7 @@ const VisionPost3 = () => {
                                     räntefritt
                                 </p>
                             </div>
-                            <div className="flex gap-y-[10px]  rounded-[30px] flex-col items-center justify-center border-[3px] w-1/6 border-solid border-white">
+                            <div className="flex gap-y-[10px] hover:shadow-whiteShadow hover:translate-y-[-10px] duration-300 rounded-[30px] flex-col items-center justify-center border-[3px] w-1/6 border-solid border-white">
                                 <span className="text-[16px] text-white font-bold font-Exo">
                                     FOLJA OSS!
                                 </span>
@@ -51,7 +59,10 @@ const VisionPost3 = () => {
                                     </a>
                                 </div>
                             </div>
-                            <div className="flex gap-y-[10px] hover:translate-y-[-10px] hover:shadow-whiteShadow duration-500 cursor-pointer rounded-[30px]  flex-col items-center justify-center border-[3px] text-white w-2/6 border-solid border-white">
+                            <div
+                                onClick={HandleSupportPage}
+                                className="flex gap-y-[10px] hover:translate-y-[-10px] hover:shadow-whiteShadow duration-500 cursor-pointer rounded-[30px]  flex-col items-center justify-center border-[3px] text-white w-2/6 border-solid border-white"
+                            >
                                 <span className="text-[16px] font-bold font-Exo">
                                     SKICKA EMAIL TILL OSS!
                                 </span>
@@ -62,6 +73,7 @@ const VisionPost3 = () => {
                                     <AiOutlineMail className="text-[30px] animate-bounce  text-white"></AiOutlineMail>
                                 </div>
                             </div>
+                            <SupportMenu support={support} />
                         </div>
                     </div>
                 </div>

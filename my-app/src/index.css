@@ -79,3 +79,8 @@
         transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
     }
 }
+@layer components {
+    .Hidden-scroll-bar::-webkit-scrollbar {
+        display: none;
+    }
+}

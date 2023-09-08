@@ -1,9 +1,10 @@
 import "./App.css";
+import React, { useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import MainPageBlock from "./components/Mainpage/MainPageBlock";
 import OfferBlock from "./components/Offer/Container/OfferBlock";
 import VisioncareBlock from "./components/VisionCare/Container/VisioncareBlock";
-import React, { useEffect } from "react";
+
 const LazyAbout = React.lazy(() =>
     import("../src/components/About/Container/AboutPageBlock")
 );

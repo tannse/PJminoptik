@@ -7,15 +7,17 @@ import { motion } from "framer-motion";
 import { ShowDownAnimate } from "../../Card UI/Animation";
 import { AiFillWechat } from "react-icons/ai";
 import { LiaTimesSolid } from "react-icons/lia";
+import SupportByMail from "../SupportByMail";
+import useSupportMail from "../HandleSupport";
 
-const VisionPost3 = () => {
-    const [support, setSupport] = useState(true);
-    const [overlay, setOverlay] = useState(true);
+const VisionPost3 = (props) => {
+    const { supportMail, handleSupportMail } = useSupportMail();
+    const [support, setSupport] = useState(false);
 
     const HandleSupportOption = (e) => {
         setSupport(!support);
-        setOverlay(!overlay);
     };
+
     return (
         <motion.section
             {...ShowDownAnimate}
@@ -71,7 +73,7 @@ const VisionPost3 = () => {
                                 </span>
                                 <div className="flex ">
                                     <p className="text-white text-[20px] mr-[20px]">
-                                        ANSVARA SÅ FORT VI KAN
+                                        VI SVARAR SÅ FORT VI KAN
                                     </p>
                                     <AiOutlineMail className="text-[30px] animate-bounce  text-white"></AiOutlineMail>
                                 </div>
@@ -82,14 +84,14 @@ const VisionPost3 = () => {
                             <div
                                 onClick={HandleSupportOption}
                                 className={`bg-bgOverlay w-full top-0 left-0 h-[100vh] transition-transform ease-in-out duration-500 ${
-                                    overlay ? "hidden " : " fixed w-full"
-                                }`}
+                                    support ? "fixed w-full" : "hidden"
+                                } `}
                             ></div>
                             <div
                                 className={`fixed z-[999] left-[30%] flex justify-center transition-all ease-in-out duration-500  ${
                                     support
-                                        ? " top-[-100%]  opacity-0"
-                                        : "  top-[25%] opacity-100"
+                                        ? " top-[25%] opacity-100 "
+                                        : " top-[-100%]  opacity-0 "
                                 }`}
                             >
                                 <div className=" relative border-[1px] border-solid border-white bg-premierColor w-[680px] rounded-xl ">
@@ -101,7 +103,10 @@ const VisionPost3 = () => {
                                         <h1 className="text-center pb-[25px] text-[2.5rem] font-semibold text-[#fff]">
                                             Kontakta oss
                                         </h1>
-                                        <div className="bg-[#fff] text-[20px]  ">
+                                        <div
+                                            onClick={handleSupportMail}
+                                            className="bg-[#fff] text-[20px]   "
+                                        >
                                             <div className=" px-[40px] py-[40px] group hover:bg-premierColor hover:text-white duration-300 cursor-pointer   flex  border-[1px] border-[#fff] ">
                                                 <AiOutlineMail className="group-hover:animate-bounce text-[30px]" />
                                                 <div className="ml-[20px] flex items-center">
@@ -115,6 +120,7 @@ const VisionPost3 = () => {
                                                     </span>
                                                 </div>
                                             </div>
+
                                             <div className=" px-[40px] border-t-[#123830] hover:bg-premierColor group hover:text-white duration-300 cursor-pointer border-[1px]  py-[40px] flex ">
                                                 <AiFillWechat className="group-hover:animate-bounce text-[30px]" />
                                                 <div className="ml-[20px] flex items-center">
@@ -132,8 +138,10 @@ const VisionPost3 = () => {
                                         </div>
                                     </div>
                                 </div>
+                                {supportMail && <SupportByMail />}
                             </div>
                         </section>
+                        {/* SupportMail */}
                     </div>
                 </div>
             </div>

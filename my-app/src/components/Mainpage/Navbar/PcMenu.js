@@ -6,7 +6,7 @@ const PcMenu = () => {
     return (
         <nav>
             <ul
-                className={`hidden dt:flex justify-center items-center bg-[#005648] h-[60px] border-[1px]
+                className={`hidden z-[10000] dt:flex justify-center items-center bg-[#005648] h-[60px] border-[1px]
              border-b-white ${
                  scrollPosition
                      ? "dt:fixed  dt:h-[60px] w-[90%] z-[555] top-0 left-[5%] bg-[#005648d7] ease-in-out duration-700"

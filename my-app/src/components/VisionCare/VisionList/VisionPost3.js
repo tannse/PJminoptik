@@ -12,10 +12,11 @@ import useSupportMail from "../HandleSupport";
 
 const VisionPost3 = (props) => {
     const { supportMail, handleSupportMail } = useSupportMail();
-    const [support, setSupport] = useState(false);
+    const [support, setSupport] = useState("");
 
     const HandleSupportOption = (e) => {
         setSupport(!support);
+        console.log(support);
     };
 
     return (
@@ -29,13 +30,13 @@ const VisionPost3 = (props) => {
                         <h2 className="h2CustomPC self-center">
                             Hej! Vad kan vi hjälpa till med?
                         </h2>
-                        <div className="flex mt-[50px] justify-between">
+                        <div className="flex mt-[20px] justify-between">
                             <div className="flex w-2/6 hover:translate-y-[-10px] cursor-pointer hover:shadow-whiteShadow duration-500  gap-y-[10px] py-[10px] flex-col items-center border-[3px] rounded-[30px] border-solid border-white">
                                 <img src={IconResure} alt="Reasure Bank" />
                                 <span className="text-[16px] text-white font-bold font-Exo">
                                     DELBETALNING
                                 </span>
-                                <p className="text-white">
+                                <p className="text-white text-center">
                                     Dela upp din betalning - upp till 12 mån
                                     räntefritt
                                 </p>
@@ -79,15 +80,16 @@ const VisionPost3 = (props) => {
                                 </div>
                             </div>
                         </div>
-                        {/* Support Option */}
                         <section>
+                            {support === true && (
+                                <div
+                                    onClick={HandleSupportOption}
+                                    className="bg-bgOverlay fixed w-full w-full top-0 left-0 h-[100vh] transition-transform ease-in-out duration-500 "
+                                ></div>
+                            )}
+                            {/* Support Option */}
                             <div
                                 onClick={HandleSupportOption}
-                                className={`bg-bgOverlay w-full top-0 left-0 h-[100vh] transition-transform ease-in-out duration-500 ${
-                                    support ? "fixed w-full" : "hidden"
-                                } `}
-                            ></div>
-                            <div
                                 className={`fixed z-[999] left-[30%] flex justify-center transition-all ease-in-out duration-500  ${
                                     support
                                         ? " top-[25%] opacity-100 "
@@ -103,11 +105,16 @@ const VisionPost3 = (props) => {
                                         <h1 className="text-center pb-[25px] text-[2.5rem] font-semibold text-[#fff]">
                                             Kontakta oss
                                         </h1>
-                                        <div
-                                            onClick={handleSupportMail}
-                                            className="bg-[#fff] text-[20px]   "
-                                        >
-                                            <div className=" px-[40px] py-[40px] group hover:bg-premierColor hover:text-white duration-300 cursor-pointer   flex  border-[1px] border-[#fff] ">
+                                        <div className="bg-[#fff] text-[20px]   ">
+                                            <div
+                                                onClick={() => {
+                                                    if (support) {
+                                                        handleSupportMail();
+                                                        setSupport(false);
+                                                    }
+                                                }}
+                                                className=" px-[40px] py-[40px] group hover:bg-premierColor hover:text-white duration-300 cursor-pointer   flex  border-[1px] border-[#fff] "
+                                            >
                                                 <AiOutlineMail className="group-hover:animate-bounce text-[30px]" />
                                                 <div className="ml-[20px] flex items-center">
                                                     <p>Meila till Oss!</p>
@@ -138,10 +145,10 @@ const VisionPost3 = (props) => {
                                         </div>
                                     </div>
                                 </div>
-                                {supportMail && <SupportByMail />}
                             </div>
                         </section>
                         {/* SupportMail */}
+                        {supportMail === true && <SupportByMail />}
                     </div>
                 </div>
             </div>

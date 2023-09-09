@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
-import VisionPost3 from "./VisionList/VisionPost3";
+import { useState } from "react";
+
 const useSupportMail = () => {
     const [supportMail, setSupportMail] = useState(false);
 
-    const handleSupportMail = (e) => {
+    const handleSupportMail = () => {
         setSupportMail(!supportMail);
-        console.log(supportMail);
     };
 
-    return { supportMail, handleSupportMail };
+    return { supportMail, setSupportMail, handleSupportMail };
 };
+
 export default useSupportMail;

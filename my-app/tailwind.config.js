@@ -22,7 +22,7 @@ module.exports = {
         backgroundColor: {
             bgButton: "#118273",
             premierColor: "#00544a",
-            bgOverlay: "rgba(0, 0, 0, 0.1)",
+            bgOverlay: "rgba(0, 0, 0, 0.25)",
         },
         extend: {
             colors: {

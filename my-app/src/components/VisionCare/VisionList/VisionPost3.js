@@ -7,25 +7,24 @@ import { motion } from "framer-motion";
 import { ShowDownAnimate } from "../../Card UI/Animation";
 import { AiFillWechat } from "react-icons/ai";
 import { LiaTimesSolid } from "react-icons/lia";
+import useSupportMail from "../useSupportMail";
 import SupportByMail from "../SupportByMail";
-import useSupportMail from "../HandleSupport";
 
 const VisionPost3 = (props) => {
     const { supportMail, handleSupportMail } = useSupportMail();
-    const [support, setSupport] = useState("");
+    const [activeTag, setActiveTag] = useState(false);
 
-    const HandleSupportOption = (e) => {
-        setSupport(!support);
-        console.log(support);
+    const HandleOpenOpenTag = (e) => {
+        setActiveTag(!activeTag);
     };
 
     return (
         <motion.section
             {...ShowDownAnimate}
-            className=" flex justify-center  mt-[30px] h-[50vh]"
+            className=" flex justify-center  mt-[30px] h-[50vh] "
         >
             <div className="w-[calc(100%-25%)]">
-                <div className="bg-premierColor rounded-[30px]  shadow-GreenShadow px-[20px] h-[40vh]  ">
+                <div className="bg-premierColor rounded-[30px]  shadow-GreenShadow px-[20px] h-[40vh]  z-[400] ">
                     <div className="px-[20px] py-[40px] flex flex-col justify-center  h-fit ">
                         <h2 className="h2CustomPC self-center">
                             Hej! Vad kan vi hjälpa till med?
@@ -66,7 +65,7 @@ const VisionPost3 = (props) => {
                             </div>
 
                             <div
-                                onClick={HandleSupportOption}
+                                onClick={HandleOpenOpenTag}
                                 className="flex gap-y-[10px] hover:translate-y-[-10px] hover:shadow-whiteShadow duration-500 cursor-pointer rounded-[30px]  flex-col items-center justify-center border-[3px] text-white w-2/6 border-solid border-white"
                             >
                                 <span className="text-[16px] font-bold font-Exo">
@@ -81,17 +80,16 @@ const VisionPost3 = (props) => {
                             </div>
                         </div>
                         <section>
-                            {support === true && (
+                            {activeTag === true && (
                                 <div
-                                    onClick={HandleSupportOption}
-                                    className="bg-bgOverlay fixed w-full w-full top-0 left-0 h-[100vh] transition-transform ease-in-out duration-500 "
+                                    onClick={HandleOpenOpenTag}
+                                    className="bg-bgOverlay fixed w-full w-full top-0 left-0 h-[100vh] transition-transform ease-in-out z-[400]  duration-500 "
                                 ></div>
                             )}
                             {/* Support Option */}
                             <div
-                                onClick={HandleSupportOption}
                                 className={`fixed z-[999] left-[30%] flex justify-center transition-all ease-in-out duration-500  ${
-                                    support
+                                    activeTag
                                         ? " top-[25%] opacity-100 "
                                         : " top-[-100%]  opacity-0 "
                                 }`}
@@ -99,7 +97,7 @@ const VisionPost3 = (props) => {
                                 <div className=" relative border-[1px] border-solid border-white bg-premierColor w-[680px] rounded-xl ">
                                     <div className="px-[40px] py-[40px] font-Exo">
                                         <LiaTimesSolid
-                                            onClick={HandleSupportOption}
+                                            onClick={HandleOpenOpenTag}
                                             className="absolute text-white left-[92%] top-[5%] text-26 font-semibold hover:rotate-90 hover:text-32 cursor-pointer duration-300 "
                                         />
                                         <h1 className="text-center pb-[25px] text-[2.5rem] font-semibold text-[#fff]">
@@ -107,12 +105,7 @@ const VisionPost3 = (props) => {
                                         </h1>
                                         <div className="bg-[#fff] text-[20px]   ">
                                             <div
-                                                onClick={() => {
-                                                    if (support) {
-                                                        handleSupportMail();
-                                                        setSupport(false);
-                                                    }
-                                                }}
+                                                onClick={handleSupportMail}
                                                 className=" px-[40px] py-[40px] group hover:bg-premierColor hover:text-white duration-300 cursor-pointer   flex  border-[1px] border-[#fff] "
                                             >
                                                 <AiOutlineMail className="group-hover:animate-bounce text-[30px]" />

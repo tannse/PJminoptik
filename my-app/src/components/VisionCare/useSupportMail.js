@@ -2,12 +2,14 @@ import { useState } from "react";
 
 const useSupportMail = () => {
     const [supportMail, setSupportMail] = useState(false);
-
     const handleSupportMail = () => {
-        setSupportMail(!supportMail);
+        if (supportMail) {
+            setSupportMail(false);
+        } else {
+            setSupportMail(!supportMail);
+        }
     };
-
-    return { supportMail, setSupportMail, handleSupportMail };
+    return { supportMail, handleSupportMail };
 };
 
 export default useSupportMail;

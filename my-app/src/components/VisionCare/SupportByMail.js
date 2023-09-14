@@ -1,10 +1,39 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { LiaTimesSolid } from "react-icons/lia";
-
+import emailjs from "@emailjs/browser";
 import useSupportMail from "./useSupportMail";
 
 const SupportByMail = (props) => {
     const { supportMail, handleSupportMail } = useSupportMail();
+    const [userSelect, setUserSelect] = useState("");
+    const form = useRef();
+    const HandleuserSelect = (e) => {
+        const selectValue = e.target.value;
+        setUserSelect(selectValue);
+    };
+    useEffect(() => {
+        console.log(userSelect);
+    }, [userSelect]);
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                "service_6f7dy2j",
+                "template_562qjqg",
+                form.current,
+                "7bxnr4RHq4tD3rmaK"
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    alert("Tack for att kontact till oss");
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+    };
 
     return (
         <section className={`${supportMail ? "hidden " : " "}`}>
@@ -49,7 +78,11 @@ const SupportByMail = (props) => {
                                     </span>{" "}
                                     är obligatoriska
                                 </span>
-                                <div className="flex flex-col text-custom-darkgreen font-bold gap-3">
+                                <form
+                                    ref={form}
+                                    onSubmit={sendEmail}
+                                    className="flex flex-col text-custom-darkgreen font-bold gap-3"
+                                >
                                     <div className="grid grid-cols-2 gap-x-[25px] ">
                                         <div className=" mb-[25px] ">
                                             <span className="mb-[10px] ">
@@ -58,13 +91,21 @@ const SupportByMail = (props) => {
                                                     *
                                                 </span>{" "}
                                             </span>
-                                            <input className=" rounded-lg border-[0.5px] p-[15px] border-solid  w-full" />
+                                            <input
+                                                type="text"
+                                                name="user_first_name"
+                                                className=" rounded-lg border-[0.5px] p-[15px] border-solid  w-full"
+                                            />
                                         </div>
                                         <div className=" mb-[25px] ">
                                             <span className="mb-[10px]">
                                                 Efternamn
                                             </span>
-                                            <input className="rounded-lg border-[1px] p-[15px] border-solid  w-full" />
+                                            <input
+                                                type="text"
+                                                name="user_last_name"
+                                                className="rounded-lg border-[1px] p-[15px] border-solid  w-full"
+                                            />
                                         </div>
                                     </div>
                                     <div>
@@ -75,16 +116,36 @@ const SupportByMail = (props) => {
                                                     *
                                                 </span>{" "}
                                             </span>
-                                            <input className="rounded-lg border-[1px] p-[15px] border-solid  w-full" />
+                                            <input
+                                                type="email"
+                                                name="user_email"
+                                                className="rounded-lg border-[1px] p-[15px] border-solid  w-full"
+                                            />
                                         </div>
                                         <div className=" mb-[25px]">
-                                            <span>
+                                            <label>
                                                 Vad handlar ditt ärende om?
                                                 <span className="text-[#fe4f4f] ml-[5px] font-extrabold text-[15px]">
                                                     *
                                                 </span>{" "}
-                                            </span>
-                                            <input className="rounded-lg border-[1px] p-[15px] border-solid  w-full" />
+                                            </label>
+                                            <select
+                                                value={userSelect}
+                                                type="select"
+                                                name="user_select"
+                                                onChange={HandleuserSelect}
+                                                className="rounded-lg border-[1px] p-[15px] border-solid  w-full"
+                                            >
+                                                <option>
+                                                    Minoptik Glasögonabonnemang
+                                                </option>
+                                                <option>
+                                                    Köpa på Minoptik.se
+                                                </option>
+                                                <option>KontakLinser</option>
+                                                <option>Synundersökning</option>
+                                                <option>Annat frågor</option>
+                                            </select>
                                         </div>
                                         <div className=" ">
                                             <span>
@@ -93,7 +154,11 @@ const SupportByMail = (props) => {
                                                     *
                                                 </span>{" "}
                                             </span>
-                                            <input className="rounded-lg border-[1px] min-h-[100px] p-[15px] border-solid  w-full" />
+                                            <textarea
+                                                type="text"
+                                                name="user_info"
+                                                className="rounded-lg border-[1px] min-h-[100px] p-[15px] border-solid  w-full"
+                                            />
                                         </div>
                                         <p className="DescCustomPC my-[15px]">
                                             För att kunna hjälpa dig behöver vi
@@ -108,6 +173,8 @@ const SupportByMail = (props) => {
                                                 födelsedatum (ÅÅÅÅMMDD)
                                             </span>
                                             <input
+                                                type="text"
+                                                name="user_info"
                                                 className="rounded-lg border-[1px] p-[15px] border-solid  w-full"
                                                 placeholder="Ange till exempel ordernummer eller annan relevant information"
                                             />
@@ -119,7 +186,7 @@ const SupportByMail = (props) => {
                                             Skicka
                                         </button>
                                     </div>
-                                </div>
+                                </form>
                             </div>
                         </div>
                     </div>

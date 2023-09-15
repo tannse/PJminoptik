@@ -92,6 +92,7 @@ const SupportByMail = (props) => {
                                                 </span>{" "}
                                             </span>
                                             <input
+                                                required
                                                 type="text"
                                                 name="user_first_name"
                                                 className=" rounded-lg border-[0.5px] p-[15px] border-solid  w-full"
@@ -102,6 +103,7 @@ const SupportByMail = (props) => {
                                                 Efternamn
                                             </span>
                                             <input
+                                                required
                                                 type="text"
                                                 name="user_last_name"
                                                 className="rounded-lg border-[1px] p-[15px] border-solid  w-full"
@@ -117,6 +119,7 @@ const SupportByMail = (props) => {
                                                 </span>{" "}
                                             </span>
                                             <input
+                                                required
                                                 type="email"
                                                 name="user_email"
                                                 className="rounded-lg border-[1px] p-[15px] border-solid  w-full"
@@ -137,7 +140,7 @@ const SupportByMail = (props) => {
                                                 className="rounded-lg border-[1px] p-[15px] border-solid  w-full"
                                             >
                                                 <option>
-                                                    Minoptik Glasögonabonnemang
+                                                    Glasögonabonnemang
                                                 </option>
                                                 <option>
                                                     Köpa på Minoptik.se
@@ -173,8 +176,9 @@ const SupportByMail = (props) => {
                                                 födelsedatum (ÅÅÅÅMMDD)
                                             </span>
                                             <input
+                                                required
                                                 type="text"
-                                                name="user_info"
+                                                name="user_personal"
                                                 className="rounded-lg border-[1px] p-[15px] border-solid  w-full"
                                                 placeholder="Ange till exempel ordernummer eller annan relevant information"
                                             />

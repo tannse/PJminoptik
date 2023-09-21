@@ -1,13 +1,12 @@
 import "./App.css";
-import React, { useEffect } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import MainPageBlock from "./components/Mainpage/MainPageBlock";
 import OfferBlock from "./components/Offer/Container/OfferBlock";
 import VisioncareBlock from "./components/VisionCare/Container/VisioncareBlock";
-
-const LazyAbout = React.lazy(() =>
-    import("../src/components/About/Container/AboutPageBlock")
-);
+import ErrorPage from "./components/Card UI/ErrorPage";
+import AboutPageBlock from "./components/About/Container/AboutPageBlock";
+import ShareLayout from "./components/Card UI/ShareLayout";
 
 function App() {
     const ScrollToCurrentLocation = () => {
@@ -18,20 +17,21 @@ function App() {
     };
     return (
         <div className="app">
-            <Routes>
-                <Route path="/" element={<MainPageBlock />} />
-                <Route
-                    path="/About"
-                    element={
-                        <React.Suspense fallback="Loading...">
-                            <LazyAbout></LazyAbout>
-                        </React.Suspense>
-                    }
-                />
-                <Route path="/Offer" element={<OfferBlock />} />
-                <Route path="/VisionCare" element={<VisioncareBlock />} />
-            </Routes>
-            <ScrollToCurrentLocation></ScrollToCurrentLocation>
+            <Suspense fallback={<div>Loading...</div>}>
+                <Routes>
+                    <Route path="/" element={<MainPageBlock />} />
+                    <Route element={<ShareLayout />}>
+                        <Route path="/About" element={<AboutPageBlock />} />
+                        <Route path="/Offer" element={<OfferBlock />} />
+                        <Route
+                            path="/VisionCare"
+                            element={<VisioncareBlock />}
+                        />
+                        <Route path="*" element={<ErrorPage />} />
+                    </Route>
+                </Routes>
+                <ScrollToCurrentLocation></ScrollToCurrentLocation>
+            </Suspense>
         </div>
     );
 }

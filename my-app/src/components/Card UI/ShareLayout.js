@@ -1,5 +1,5 @@
-import NavBlock from "../Mainpage/Navbar/NavBlock";
-import FooterBlock from "../Mainpage/Footer/FooterBlock";
+import NavBlock from "../page/Mainpage/Navbar/NavBlock";
+import FooterBlock from "../page/Mainpage/Footer/FooterBlock";
 import { Outlet } from "react-router-dom";
 const ShareLayout = ({ children }) => {
     return (
@@ -7,6 +7,7 @@ const ShareLayout = ({ children }) => {
             <header>
                 <NavBlock></NavBlock>
             </header>
+
             <main>
                 <Outlet />
             </main>

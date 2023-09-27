@@ -61,7 +61,7 @@
 }
 @layer components {
     .DescCustomPC {
-        @apply text-[1.rem] font-medium font-Exo;
+        @apply text-[1.2rem] font-medium font-Exo;
     }
 }
 @layer components {

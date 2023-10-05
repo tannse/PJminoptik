@@ -3,14 +3,14 @@ import { HiOutlineMenu } from "react-icons/hi";
 import { BiExit } from "react-icons/bi";
 import { BiLogoFacebook } from "react-icons/bi";
 import { CiInstagram } from "react-icons/ci";
-import MobileMenu from "./MobileMenu";
-import PcMenu from "./PcMenu";
+import MobileMenu from "../../Navbar/MobileMenu";
+import PcMenu from "../../Navbar/PcMenu";
 import { BsTelephoneOutbound } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import logoOptik from "../../../assets/logoOptik.png";
 import { Link } from "react-router-dom";
 
-const NavBlock = () => {
+const Header = () => {
     const [openMenu, setOpenMenu] = useState(false);
     const ToggleMenu = (e) => {
         setOpenMenu(!openMenu);
@@ -124,4 +124,4 @@ const NavBlock = () => {
         </nav>
     );
 };
-export default NavBlock;
+export default Header;

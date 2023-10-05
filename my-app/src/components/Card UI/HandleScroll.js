@@ -14,7 +14,6 @@ const useScroll = () => {
 
         window.addEventListener("scroll", handleScroll);
 
-        // Cleanup function để loại bỏ sự kiện khi component bị hủy bỏ hoặc thay đổi
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };

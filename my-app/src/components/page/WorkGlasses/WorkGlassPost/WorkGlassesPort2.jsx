@@ -1,13 +1,13 @@
 import Arbetglas1 from "../../../assets/Arbetglas1.jpg";
-import { Button } from "@material-tailwind/react";
+
 const WorkGlassPost2 = (props) => {
     const { title, desc, job } = props;
-    console.log("job", job);
 
     return (
         <>
             <div className="font-Exo grid h-[100vh] grid-cols-12 grid-rows-12 bg-[#fbfbfb]      ">
                 <img
+                    alt="arbetGlas"
                     className="  rounded-xl shadow-Shadow col-start-8 col-end-12 row-start-2 row-end-12 w-full h-full object-cover "
                     src={Arbetglas1}
                 />

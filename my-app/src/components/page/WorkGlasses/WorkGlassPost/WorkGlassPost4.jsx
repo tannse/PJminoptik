@@ -1,11 +1,12 @@
 import Arbetglas5 from "../../../assets/Arbetglas5.jpg";
-import { Button } from "@material-tailwind/react";
+
 export const WorkGlassPost4 = (props) => {
     const { title, desc } = props;
     return (
         <>
             <div className="font-Exo grid h-[60vh] grid-cols-12 grid-rows-7 bg   bg-[#fbfbfb]  ">
                 <img
+                    alt="arbet Glas"
                     className=" animate-bounce rounded-[100%] shadow-Shadow  col-start-8 col-end-10 row-start-2
                      row-end-6 w-full h-full object-none "
                     src={Arbetglas5}

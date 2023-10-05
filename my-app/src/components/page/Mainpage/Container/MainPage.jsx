@@ -1,13 +1,13 @@
-import NavBlock from "./Navbar/NavBlock";
-import Hero from "./HeroLayer/Hero";
-import ExtraNav from "./ExtraNav/ExtraNav";
-import BlockContent from "./MainContent/Blockcontent";
-import FooterBlock from "./Footer/FooterBlock";
+import Header from "../Header/Container/Header";
+import Hero from "../Hero/Hero";
+import ExtraNav from "../ExtraNav/ExtraNav";
+import BlockContent from "../MainContent/Blockcontent";
+import FooterBlock from "../Footer/FooterBlock";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { ShowComponent } from "../../Card UI/Animation";
+import { ShowComponent } from "../../../Card UI/Animation";
 
-const MainPageBlock = () => {
+const MainPage = () => {
     const [Loading, setLoading] = useState("true");
 
     useEffect(() => {
@@ -20,8 +20,11 @@ const MainPageBlock = () => {
     }, []);
 
     return (
-        <motion.div {...ShowComponent}>
-            <NavBlock />
+        <motion.div
+            className="Hidden-scroll-bar overflow-y-auto"
+            {...ShowComponent}
+        >
+            <Header />
             {Loading ? (
                 ""
             ) : (
@@ -35,4 +38,4 @@ const MainPageBlock = () => {
         </motion.div>
     );
 };
-export default MainPageBlock;
+export default MainPage;

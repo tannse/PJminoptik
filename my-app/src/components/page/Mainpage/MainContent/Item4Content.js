@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import ServiceCT4 from "../../../assets/ServiceCT5.jpg";
+import { Button } from "@material-tailwind/react";
+
 const Item4Content = () => {
     return (
         <div className="bg-white  h-fit dt:hidden">
@@ -36,9 +38,9 @@ const Item4Content = () => {
                         mellanrum kan du boka tid hos en ögonläkare i vår butik.
                         Se alla lediga tider nedan.
                     </motion.p>
-                    <button className="  dt:block mt-[15px] outline-none  active:scale-75 transition-transform duration-50 font-Exo font-bold  rounded-[10px] shadow-Shadow px-[15px] border-white border-[2px] border-solid text-white  bg-bgButton   h-[43px]">
+                    <Button className="  dt:block mt-[15px] outline-none  active:scale-75 transition-transform duration-50 font-Exo font-bold  rounded-[10px] shadow-Shadow px-[15px] border-white border-[2px] border-solid text-white  bg-bgButton   h-[43px]">
                         Se lediga tider
-                    </button>
+                    </Button>
                 </div>
             </div>
             <div className="flex justify-center ">

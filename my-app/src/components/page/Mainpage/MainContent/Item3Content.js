@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import ServiceCT3 from "../../../assets/ServiceCT3.jpg";
+import { Button } from "@material-tailwind/react";
+
 const Item3Content = () => {
     return (
         <div className="bg-premierColor  h-fit  dt:hidden">
@@ -37,9 +39,7 @@ const Item3Content = () => {
                         bara vill ta en espresso och inspireras av det senaste
                         glasögonmodet.
                     </motion.p>
-                    <button className="  dt:block mt-[15px] outline-none  active:scale-75 transition-transform duration-50 font-Exo font-bold  rounded-[10px] shadow-Shadow px-[15px] border-white border-[2px] border-solid text-white  bg-bgButton   h-[43px]">
-                        Boka tid online
-                    </button>
+                    <Button className=" StyleButtonNav">Boka tid online</Button>
                 </div>
             </div>
             <div className="flex justify-center ">

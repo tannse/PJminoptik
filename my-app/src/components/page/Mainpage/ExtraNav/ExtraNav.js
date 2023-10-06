@@ -2,6 +2,7 @@ import Extranav1 from "../../../assets/Extranav-1.jpg";
 import Extranav2 from "../../../assets/Extranav-2.jpg";
 import Extranav3 from "../../../assets/Extranav-3.jpg";
 import Extranav4 from "../../../assets/Extranav-4.jpg";
+import { Button } from "@material-tailwind/react";
 import { motion } from "framer-motion";
 const ExtraNav = () => {
     return (
@@ -12,9 +13,8 @@ const ExtraNav = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
-                    className="StyleButtonNav "
                 >
-                    Synundersökning
+                    <Button className="StyleButtonNav ">Synundersökning</Button>
                 </motion.li>
 
                 <motion.li
@@ -22,9 +22,8 @@ const ExtraNav = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
-                    className="StyleButtonNav"
                 >
-                    Glasögon
+                    <Button className="StyleButtonNav">Glasögon</Button>
                 </motion.li>
 
                 <motion.li
@@ -32,9 +31,8 @@ const ExtraNav = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
-                    className="StyleButtonNav"
                 >
-                    Kontaktlinser
+                    <Button className="StyleButtonNav">Kontaktlinser</Button>
                 </motion.li>
 
                 <motion.li
@@ -42,9 +40,8 @@ const ExtraNav = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
-                    className="StyleButtonNav"
                 >
-                    Solglasögon
+                    <Button className="StyleButtonNav">Solglasögon</Button>
                 </motion.li>
             </ul>
 

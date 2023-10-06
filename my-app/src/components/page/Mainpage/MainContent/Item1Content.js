@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import ServiceCT1 from "../../../assets/ServiceCT1.png";
+import { Button } from "@material-tailwind/react";
 
 const Item1Content = () => {
     return (
@@ -38,9 +39,9 @@ const Item1Content = () => {
                         kvalitéer som marknaden har att erbjuda. Kom in i
                         butiken så visar vi mer med hjälp av bl.a. Zeiss.
                     </motion.p>
-                    <button className="  dt:block mt-[15px] outline-none  active:scale-75 transition-transform duration-50 font-Exo font-bold  rounded-[10px] shadow-Shadow px-[15px] border-white border-[2px] border-solid text-white  bg-bgButton   h-[43px]">
+                    <Button className="  dt:block mt-[15px] outline-none  active:scale-75 transition-transform duration-50 font-Exo font-bold  rounded-[10px] shadow-Shadow px-[15px] border-white border-[2px] border-solid text-white  bg-bgButton   h-[43px]">
                         LÄS MER OCH HITTA TILL OSS
-                    </button>
+                    </Button>
                 </div>
             </div>
             <div className="flex ">

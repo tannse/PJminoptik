@@ -32,7 +32,7 @@ const Item1PC = () => {
                 marknaden har att erbjuda. Kom in i butiken så visar vi mer med
                 hjälp av bl.a. Zeiss.
             </p>
-            <Button className="mt-[15px] flex items-center justify-center   StyleButtonNav w-[300px]  h-[60px]    group  col-start-2 row-start-10">
+            <Button className="StyleButtonNav  col-start-2 row-start-10">
                 LÄS MER OCH HITTA TILL OSS
             </Button>
 

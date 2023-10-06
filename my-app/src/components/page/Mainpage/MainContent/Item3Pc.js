@@ -36,12 +36,7 @@ const Item3PC = () => {
                 viewport={{ once: true }}
                 className="StyleButtonNav group shadow-whiteShadow50 col-start-2 row-start-10"
             >
-                <a
-                    href="./"
-                    className="group-hover:text-[1.5rem] w-[100%] ease-linear duration-150 "
-                >
-                    Boka tid online
-                </a>
+                <a href="./">Boka tid online</a>
             </motion.button>
 
             <motion.img

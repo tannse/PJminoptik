@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import ServiceCT5 from "../../../assets/ServiceCT5.gif";
+import { Button } from "@material-tailwind/react";
+
 const Item5Content = () => {
     return (
         <div className="bg-premierColor h-[100vh] dt:hidden ">
@@ -29,9 +31,9 @@ const Item5Content = () => {
                         stärkervår position och konkurrenskraft som en
                         sammanslutning av experter.
                     </motion.p>
-                    <button className="  dt:block mt-[15px] outline-none  active:scale-75 transition-transform duration-50 font-Exo font-bold  rounded-[10px] shadow-Shadow px-[15px] border-white border-[2px] border-solid text-white  bg-bgButton   h-[43px]">
+                    <Button className="  dt:block mt-[15px] outline-none  active:scale-75 transition-transform duration-50 font-Exo font-bold  rounded-[10px] shadow-Shadow px-[15px] border-white border-[2px] border-solid text-white  bg-bgButton   h-[43px]">
                         Läser mer här
-                    </button>
+                    </Button>
                 </div>
             </div>
             <div className="flex justify-center  ">

@@ -24,7 +24,7 @@
 
 @layer components {
     .StyleButtonNav {
-        @apply select-none  active:scale-75 cursor-pointer  shadow-Shadow  transition-transform  duration-100 uppercase font-Exo font-bold text-[20px] mt-[15px] flex items-center justify-center   rounded-[10px] border-[1px] border-solid border-white  bg-bgButton text-white min-w-[330PX]  h-[60px];
+        @apply select-none    shadow-Shadow  uppercase font-Exo font-bold text-[20px] mt-[15px] flex items-center justify-center   rounded-[10px] border-[1px] border-solid border-white  bg-bgButton text-white min-w-[330PX]  h-[60px];
     }
 }
 @layer components {

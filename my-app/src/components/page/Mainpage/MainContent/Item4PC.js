@@ -34,12 +34,7 @@ const Item4PC = () => {
                 viewport={{ once: true }}
                 className="StyleButtonNav group col-start-7 row-start-10"
             >
-                <a
-                    href="./"
-                    className="group-hover:text-[1.5rem] w-[100%] ease-linear duration-150 "
-                >
-                    Se lediga tider
-                </a>
+                <a href="./">Se lediga tider</a>
             </motion.button>
 
             <motion.img

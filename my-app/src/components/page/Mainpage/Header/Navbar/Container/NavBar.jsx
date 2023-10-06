@@ -1,6 +1,5 @@
 import { BiHomeHeart } from "react-icons/bi";
-import { useState } from "react";
-
+import { useState, useRef } from "react";
 import { GiMicroscopeLens } from "react-icons/gi";
 import { GiSunglasses } from "react-icons/gi";
 import { GiArchiveResearch } from "react-icons/gi";
@@ -11,13 +10,16 @@ import { BiLogoFacebook } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
 import { CiInstagram } from "react-icons/ci";
 import { MenuItems } from "../MenuItems";
-
 import DropDownMenu from "../DropDownMenu";
+import useScroll from "../../../../../Card UI/HandleScroll";
 
 const NavBar = (props) => {
-    const { onOpenMenu } = props;
-
+    const { onOpenMenu, setOpenMenu } = props;
+    const scrollPosition = useScroll();
     const [openSubMenu, setSubOpenMenu] = useState(null);
+    const closeNav = () => {
+        setOpenMenu(!onOpenMenu);
+    };
 
     const handleOpenSubMenu = (index) => {
         if (openSubMenu === index) {
@@ -33,7 +35,7 @@ const NavBar = (props) => {
                 onOpenMenu ? "NavBar_SubItem--active" : "NavBar-SubItem--close"
             }`}
         >
-            <h2 className="font-Exo px-[35px] mt-[10px] text-white text-[40px] font-extrabold">
+            <h2 className="font-Exo px-[30px] mt-[10px] text-white text-[40px] font-extrabold">
                 Min Optik
             </h2>
             <ul className=" MenuMobile border-b-0 mt-[10px] ">
@@ -55,9 +57,27 @@ const NavBar = (props) => {
                                         </button>
 
                                         {openSubMenu === index && (
-                                            <DropDownMenu
-                                                subMenus={item.subMenu}
-                                            ></DropDownMenu>
+                                            <ul>
+                                                {item.subMenu?.map(
+                                                    (submenuitem, index) => (
+                                                        <li
+                                                            onClick={closeNav}
+                                                            className="list-disc text-[20px]   ml-[3.5rem] py-2"
+                                                            key={index}
+                                                        >
+                                                            <Link
+                                                                to={
+                                                                    submenuitem.url
+                                                                }
+                                                            >
+                                                                {
+                                                                    submenuitem.title
+                                                                }
+                                                            </Link>
+                                                        </li>
+                                                    )
+                                                )}
+                                            </ul>
                                         )}
                                     </>
                                 )}
@@ -75,9 +95,27 @@ const NavBar = (props) => {
                                         </button>
 
                                         {openSubMenu === index && (
-                                            <DropDownMenu
-                                                subMenus={item.subMenu}
-                                            ></DropDownMenu>
+                                            <ul>
+                                                {item.subMenu?.map(
+                                                    (submenuitem, index) => (
+                                                        <li
+                                                            onClick={closeNav}
+                                                            className="list-disc text-[20px]   ml-[3.5rem] py-2"
+                                                            key={index}
+                                                        >
+                                                            <Link
+                                                                to={
+                                                                    submenuitem.url
+                                                                }
+                                                            >
+                                                                {
+                                                                    submenuitem.title
+                                                                }
+                                                            </Link>
+                                                        </li>
+                                                    )
+                                                )}
+                                            </ul>
                                         )}
                                     </>
                                 )}
@@ -137,18 +175,22 @@ const NavBar = (props) => {
                                 {index === 6 && (
                                     <div className="MenuMobile flex-row items-center">
                                         <a
-                                            alt="facebook"
-                                            href="www.facebook.com/MinOptik"
+                                            className="flex items-center justify-center  rounded-[20px]  w-[40px] h-[40px] bg-[#fff]    "
+                                            href="https://www.facebook.com/MinOptik"
+                                            target="_blank"
+                                            rel="noreferrer"
                                         >
-                                            <BiLogoFacebook className=" w-[40px] h-[40px] boder-solid border-[1px] rounded-md  " />
+                                            <BiLogoFacebook className=" text-custom-darkgreen text-[25px]" />
+                                        </a>
+                                        <a
+                                            className="flex items-center justify-center text-[18px] rounded-[20px] w-[40px] h-[40px] bg-[#fff] mx-2 "
+                                            href="https://www.instagram.com/minoptik/?igshid=NTc4MTIwNjQ2YQ%3D%3D&fbclid=IwAR0vvDrrC2I73ljCZjxU68Yd-_2__zeEznX2P6NNpqVvwhn6ofEW0vJUO7Y"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <CiInstagram className=" text-custom-darkgreen text-[25px]  " />
                                         </a>
 
-                                        <a
-                                            alt="instalgram"
-                                            href="https://www.instagram.com/minoptik/?igshid=NTc4MTIwNjQ2YQ%3D%3D&fbclid=IwAR0vvDrrC2I73ljCZjxU68Yd-_2__zeEznX2P6NNpqVvwhn6ofEW0vJUO7Y"
-                                        >
-                                            <CiInstagram className=" w-[40px] h-[40px]  boder-solid border-[1px] rounded-md  ml-4 mr-4 " />
-                                        </a>
                                         {item.title}
                                     </div>
                                 )}

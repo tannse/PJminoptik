@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 const DropDownMenu = (props) => {
     const { subMenus } = props;
+
     return (
         <ul>
             {subMenus?.map((submenuitem, index) => (

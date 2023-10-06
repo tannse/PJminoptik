@@ -1,26 +1,31 @@
-import { useState } from "react";
+import { useState, useEffect, Contex } from "react";
 import { HiOutlineMenu } from "react-icons/hi";
-import { BiExit } from "react-icons/bi";
-import { BiLogoFacebook } from "react-icons/bi";
-import { CiInstagram } from "react-icons/ci";
-import MobileMenu from "../../Navbar/MobileMenu";
-import PcMenu from "../../Navbar/PcMenu";
+import NavBar from "../Navbar/Container/NavBar";
 import { BsTelephoneOutbound } from "react-icons/bs";
+import { BiExit } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
-import logoOptik from "../../../assets/logoOptik.png";
+import logoOptik from "../../../../assets/logoOptik.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
     const [openMenu, setOpenMenu] = useState(false);
-    const ToggleMenu = (e) => {
+    useEffect(() => {
+        const htmlElement = document.documentElement;
+        htmlElement.style.overflow = openMenu ? "hidden" : "auto";
+        return () => {
+            htmlElement.style.overflow = "auto";
+        };
+    }, [openMenu]);
+
+    const HandleOpenMenu = () => {
         setOpenMenu(!openMenu);
     };
 
     return (
-        <nav className="relative">
+        <header className="relative">
             <div className="mb:mx-[35px] dt:ml-[146px] mb:my-[15px] flex justify-between items-center rounded-lg">
                 <img
-                    className=" dt:w-[325px] dt:h-[25%] mbx:w-3/4 mbx:h-[60px] h-[50px]   object-cover"
+                    className=" w-[70%]  dt:w-[325px] dt:h-[25%]   object-cover"
                     src={logoOptik}
                     alt="Logo"
                 />
@@ -61,67 +66,30 @@ const Header = () => {
                         </Link>
                     </button>
                 </div>
-
-                <HiOutlineMenu
-                    className="    dt:hidden w-[30px] h-[30px] z-[200] text-[#00564b] cursor-pointer"
-                    onClick={ToggleMenu}
-                ></HiOutlineMenu>
+                {openMenu ? (
+                    <BiExit
+                        className=" dt:hidden w-[30px] h-[30px] text-[#fff] z-[5000]  cursor-pointer"
+                        onClick={HandleOpenMenu}
+                    />
+                ) : (
+                    <HiOutlineMenu
+                        className=" relative float-right   dt:hidden w-[30px] h-[30px] text-[#00564b]   ] z-[5000]  cursor-pointer"
+                        onClick={HandleOpenMenu}
+                    ></HiOutlineMenu>
+                )}
             </div>
 
-            <div
-                className={`dt:hidden  w-[100%] bg-bgOverlay h-[100%] top-0 z-[100] transition-transform ease-in-out duration-500  ${
+            <NavBar onOpenMenu={openMenu} setOpenMenu={setOpenMenu} />
+
+            {/* <div
+                className={` w-[100%] bg-bgOverlay h-[100%] top-0 z-[100] transition-transform ease-in-out duration-500 dt:hidden  ${
                     openMenu ? " fixed  opacity-100  " : " opacity-0 "
                 }`}
             >
-                <div
-                    className={`StyleMenu ${
-                        openMenu
-                            ? "translate-x-0 opacity-100"
-                            : "translate-x-[-100%] opacity-0"
-                    }`}
-                >
-                    <div className="flex items-center justify-between ">
-                        <h2 className="font-Exo px-[20px]   py-[21px] text-white text-[40px] font-extrabold">
-                            Min Optik
-                        </h2>
-                        <BiExit
-                            className=" w-[30px] h-[30px] mr-[10%]    z-[200] text-white cursor-pointer"
-                            onClick={ToggleMenu}
-                        />
-                    </div>
-
-                    <MobileMenu></MobileMenu>
-
-                    <div className=" px-[20px] py-[14px] flex">
-                        <a
-                            className="flex items-center justify-center text-[25px] rounded-[20px] w-[35px] h-[35px] bg-[#fff]    "
-                            href="https://www.facebook.com/MinOptik"
-                        >
-                            <BiLogoFacebook className="" />
-                        </a>
-                        <a
-                            className="flex items-center justify-center text-[25px] rounded-[20px] w-[35px] h-[35px] bg-[#fff] ml-2 "
-                            href="./"
-                        >
-                            <CiInstagram />
-                        </a>
-                    </div>
-                    <div className=" px-[20px] flex  items-center">
-                        <div className="text-[20px]  text-white"> Ring</div>
-                        <span className="text-white px-[10px]  font-light text-[20px]  ">
-                            +04889999999
-                        </span>
-                    </div>
-                    <div className=" px-[20px] flex  items-center">
-                        <AiOutlineMail className="text-[20px]   text-white"></AiOutlineMail>
-                        <span className="text-white px-[10px] text-[20px] font-light  py-[20px]">
-                            info@minoptik.se
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <PcMenu></PcMenu>
-        </nav>
+                <div></div>
+            </div> */}
+        </header>
     );
 };
+
 export default Header;

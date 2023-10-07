@@ -37,6 +37,11 @@
         @apply flex  items-center flex-col;
     }
 }
+@layer component {
+    .StyleLinkFooter {
+        @apply text-white list-disc ml-3 py-1 capitalize;
+    }
+}
 @layer components {
     .StyleTitle {
         @apply text-[1.25rem] font-semibold text-white;
@@ -59,7 +64,8 @@
 }
 @layer components {
     .ImgCusTomMobile {
-        @apply w-[100%] h-[35vh]  shadow-Shadow mt-[1.3rem]   text-center object-cover;
+        @apply w-[100%] h-[35vh]  
+         mt-[1.3rem]   text-center object-cover;
     }
 }
 @layer components {

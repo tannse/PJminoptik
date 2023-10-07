@@ -10,26 +10,24 @@ const FooterMobile = () => {
                 {/* Info1 */}
 
                 <div className="leading-7">
-                    <h3 className="text-[1.2rem] mb-[1rem] font-bold font-Exo text-white">
+                    <h3 className="text-[1.2rem] font-bold font-Exo text-white">
                         Linser & Glasögon
                     </h3>
                     <ul>
-                        <li className="text-white  capitalize">Kontaklinser</li>
-                        <li className="text-white capitalize">
-                            Arbetsglasögon
-                        </li>
-                        <li className="text-white capitalize">Torra ögon</li>
-                        <li className="text-white capitalize">
-                            Glasögon till barn
-                        </li>
-                        <li className="text-white capitalize">Solglasögon</li>
+                        <li className="StyleLinkFooter ">Kontaklinser</li>
+                        <li className="StyleLinkFooter">Arbetsglasögon</li>
+                        <li className="StyleLinkFooter">Torra ögon</li>
+                        <li className="StyleLinkFooter">Glasögon till barn</li>
+                        <li className="StyleLinkFooter">Solglasögon</li>
                     </ul>
                 </div>
                 <div className="leading-9">
                     <h3 className="text-[1.2rem] mb-[1rem] font-bold font-Exo text-white">
                         Synundersökning
                     </h3>
-                    <p className="text-white capitalize">Vad gör en optiker</p>
+                    <ul>
+                        <li className="StyleLinkFooter">Vad gör en optiker</li>
+                    </ul>
                 </div>
 
                 {/* Info2 */}
@@ -40,25 +38,22 @@ const FooterMobile = () => {
                             Information
                         </h3>
                         <ul>
-                            <li className="text-white capitalize">
-                                delbetalning
-                            </li>
-                            <li className="text-white capitalize">boka tid</li>
+                            <li className="StyleLinkFooter">delbetalning</li>
+                            <li className="StyleLinkFooter">boka tid</li>
                         </ul>
                     </div>
                     <div className="mt-[30px] leading-7">
                         <h3 className="text-[1.2rem] mb-[1rem] font-bold font-Exo text-white">
                             Kontakt
                         </h3>
-                        <span className="text-white block">
-                            {" "}
-                            Hitta till oss
-                        </span>
-                        <span className="text-white block"> Chat med oss</span>
-                        <span className="text-white block italic">
-                            {" "}
-                            Ringa 0798999999
-                        </span>
+                        <ul>
+                            <li className="StyleLinkFooter"> Hitta till oss</li>
+
+                            <li className="StyleLinkFooter ">
+                                {" "}
+                                Ringa 0798999999
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div className="mt-[20px]">

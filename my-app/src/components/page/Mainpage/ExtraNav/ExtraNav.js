@@ -9,7 +9,7 @@ const ExtraNav = () => {
         <div>
             <ul className="h-[80vh] mbx:h-[60vh] scroll-none dt:hidden flex flex-col items-center justify-evenly mx-[36px]">
                 <motion.li
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 25 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
@@ -18,7 +18,7 @@ const ExtraNav = () => {
                 </motion.li>
 
                 <motion.li
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
@@ -27,7 +27,7 @@ const ExtraNav = () => {
                 </motion.li>
 
                 <motion.li
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
@@ -36,7 +36,7 @@ const ExtraNav = () => {
                 </motion.li>
 
                 <motion.li
-                    initial={{ opacity: 0, y: 30 }}
+                    initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
@@ -46,8 +46,8 @@ const ExtraNav = () => {
             </ul>
 
             <ul
-                className="hidden rounded-sm border-stone-300 dt:justify-evenly   dt:flex dt:pb-[100px] dt:w-[100%] 
-            bg-premierColor duration-300 ease-in-out transition-all  dt:items-center p-[50px]  dt:object-cover  "
+                className="hidden rounded-sm border-stone-400 dt:justify-evenly   dt:flex dt:pb-[100px] dt:w-[100%] 
+            bg-premierColor duration-200 ease-in-out transition-all  dt:items-center p-[50px]  dt:object-cover  "
             >
                 <motion.li
                     initial={{ opacity: 0, y: 50 }}
@@ -58,7 +58,7 @@ const ExtraNav = () => {
                 >
                     <img
                         alt="minoptik"
-                        className=" group-hover:brightness-[65%]  w-[100%] h-[30vh] object-cover   customAnimation   rounded-t-xl   "
+                        className=" group-hover:brightness-[65%]  w-[100%] h-[20vh] object-cover   customAnimation   rounded-t-xl   "
                         src={Extranav1}
                     ></img>
                     <a
@@ -78,7 +78,7 @@ const ExtraNav = () => {
                 >
                     <img
                         alt="minoptik"
-                        className=" group-hover:brightness-[65%] w-[100%] h-[30vh] object-cover   customAnimation   rounded-t-xl   "
+                        className=" group-hover:brightness-[65%] w-[100%] h-[20vh] object-cover   customAnimation   rounded-t-xl   "
                         src={Extranav2}
                     ></img>
                     <a
@@ -98,7 +98,7 @@ const ExtraNav = () => {
                 >
                     <img
                         alt="minoptik"
-                        className=" group-hover:brightness-[65%] w-[100%] h-[30vh] object-cover   customAnimation   rounded-t-xl   "
+                        className=" group-hover:brightness-[65%] w-[100%] h-[20vh] object-cover   customAnimation   rounded-t-xl   "
                         src={Extranav3}
                     ></img>
                     <a
@@ -118,7 +118,7 @@ const ExtraNav = () => {
                 >
                     <img
                         alt="minoptik"
-                        className=" group-hover:brightness-[65%] w-[100%] h-[30vh] object-cover   customAnimation   rounded-t-xl   "
+                        className=" group-hover:brightness-[65%] w-[100%] h-[20vh] object-cover   customAnimation   rounded-t-xl   "
                         src={Extranav4}
                     ></img>
                     <a

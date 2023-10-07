@@ -8,7 +8,7 @@ const Item1Content = () => {
             <div className=" pt-[1rem]   px-[2.2rem] StyleFlexCol">
                 <div className="border-solid border-white border-[2px] rounded-[15px] py-[20px] px-[10px] mt-[10px] StyleFlexCol">
                     <motion.h2
-                        initial={{ y: 50, opacity: 0 }}
+                        initial={{ y: 30, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
@@ -16,9 +16,9 @@ const Item1Content = () => {
                     >
                         En ny generation optiker
                     </motion.h2>
-                    <hr className="w-[50%] mt-[5px] font-bold" />
+                    <hr className="w-[30%] mt-[5px] font-bold" />
                     <motion.span
-                        initial={{ y: 50, opacity: 0 }}
+                        initial={{ y: 30, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
@@ -27,7 +27,7 @@ const Item1Content = () => {
                         Vi försöker hela tiden att förbättra och utbilda oss.
                     </motion.span>
                     <motion.p
-                        initial={{ y: 50, opacity: 0 }}
+                        initial={{ y: 30, opacity: 0 }}
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
@@ -39,14 +39,14 @@ const Item1Content = () => {
                         kvalitéer som marknaden har att erbjuda. Kom in i
                         butiken så visar vi mer med hjälp av bl.a. Zeiss.
                     </motion.p>
-                    <Button className="  dt:block mt-[15px] outline-none  active:scale-75 transition-transform duration-50 font-Exo font-bold  rounded-[10px] shadow-Shadow px-[15px] border-white border-[2px] border-solid text-white  bg-bgButton   h-[43px]">
+                    <Button className="  dt:block mt-[15px] outline-none  active:scale-75 transition-transform duration-30 font-Exo font-bold  rounded-[10px] shadow-Shadow px-[15px] border-white border-[2px] border-solid text-white  bg-bgButton   h-[43px]">
                         LÄS MER OCH HITTA TILL OSS
                     </Button>
                 </div>
             </div>
             <div className="flex ">
                 <motion.img
-                    initial={{ y: 50, opacity: 0 }}
+                    initial={{ y: 30, opacity: 0 }}
                     whileInView={{ y: 0, opacity: 1 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}

@@ -52,7 +52,7 @@ const FooterPC = () => {
                         Kontakt
                     </h3>
                     <span className="text-white block"> Hitta till oss</span>
-                    <span className="text-white block"> Chat med oss</span>
+
                     <span className="text-white block italic">
                         {" "}
                         Ringa 0798999999

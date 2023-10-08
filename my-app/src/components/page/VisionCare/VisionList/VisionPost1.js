@@ -8,8 +8,8 @@ const VisionPost1 = () => {
         <div className="h-fit dt:h-[85vh] relative flex flex-col items-center justify-center mb-[50px] ">
             <div className="w-[calc(100%-10%)]">
                 <div className="flex  dt:gap-x-[9rem]   dt:h-[75vh] ">
-                    <div className=" flex flex-col   dt:w-2/5 dt:gap-y-5 ">
-                        <div className="mt-[20px] flex flex-col gap-4">
+                    <div className=" flex flex-col items-center   dt:w-2/5 dt:gap-y-5 ">
+                        <div className="mt-[20px] flex flex-col items-center justify-center gap-4">
                             <motion.h2
                                 {...ShowRightAnimate}
                                 className=" text-[2.5rem]    text-custom-darkgreen font-Exo   font-extrabold"

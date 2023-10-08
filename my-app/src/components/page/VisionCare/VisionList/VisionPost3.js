@@ -23,13 +23,13 @@ const VisionPost3 = (props) => {
     };
 
     return (
-        <motion.section
-            {...ShowDownAnimate}
-            className=" flex justify-center   mt-[30px] h-fit "
-        >
+        <div className=" flex justify-center   mt-[30px] h-fit ">
             <div className="w-[calc(100%-10%)]">
                 <div className="bg-premierColor dt:rounded-[30px] dt:shadow-GreenShadow dt:px-[20px] dt:h-[40vh]  z-[400] ">
-                    <div className="dt:px-[20px] dt:py-[40px] flex flex-col item justify-center gap-5  h-fit ">
+                    <motion.div
+                        {...ShowDownAnimate}
+                        className="dt:px-[20px] dt:py-[40px] flex flex-col item justify-center gap-5  h-fit "
+                    >
                         <h2 className="h2CustomPC text-[1.5rem] text-center py-[20px]  rounded-[20%] text-[#fff]">
                             Hej! Vad kan vi hjälpa till med?
                         </h2>
@@ -78,7 +78,7 @@ const VisionPost3 = (props) => {
                                 </span>
                                 <div className="flex dt:top-[10px]">
                                     <a
-                                        className="hover:translate-y-[-10px] hover:shadow-whiteShadow duration-[500ms]  flex items-center justify-center text-[30px] rounded-[20px] w-[40px] h-[40px] bg-[#fff]    "
+                                        className="dt:hover:translate-y-[-10px] dt:hover:shadow-whiteShadow duration-[500ms]  flex items-center justify-center text-[30px] rounded-[20px] w-[40px] h-[40px] bg-[#fff]    "
                                         href="https://www.facebook.com/MinOptik"
                                         target="_blank"
                                         rel="noreferrer"
@@ -86,7 +86,7 @@ const VisionPost3 = (props) => {
                                         <BiLogoFacebook />
                                     </a>
                                     <a
-                                        className="hover:translate-y-[-10px] hover:shadow-whiteShadow duration-[500ms]  flex items-center justify-center text-[30px] rounded-[20px] w-[40px] h-[40px] bg-[#fff] ml-2 "
+                                        className="dt:hover:translate-y-[-10px] dt:hover:shadow-whiteShadow duration-[500ms]  flex items-center justify-center text-[30px] rounded-[20px] w-[40px] h-[40px] bg-[#fff] ml-2 "
                                         href="https://www.instagram.com/minoptik/?igshid=NTc4MTIwNjQ2YQ%3D%3D&fbclid=IwAR0vvDrrC2I73ljCZjxU68Yd-_2__zeEznX2P6NNpqVvwhn6ofEW0vJUO7Y"
                                         target="_blank"
                                         rel="noreferrer"
@@ -180,10 +180,10 @@ const VisionPost3 = (props) => {
                         {/* SupportMail */}
                         {supportMail === true && <SupportByMail />}
                         {notification === true && <NotificationBuild />}
-                    </div>
+                    </motion.div>
                 </div>
             </div>
-        </motion.section>
+        </div>
     );
 };
 export default VisionPost3;

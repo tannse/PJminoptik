@@ -25,16 +25,44 @@ const VisionPost3 = (props) => {
     return (
         <motion.section
             {...ShowDownAnimate}
-            className=" flex justify-center  mt-[30px] h-[50vh] "
+            className=" flex justify-center   mt-[30px] h-fit "
         >
-            <div className="w-[calc(100%-25%)]">
-                <div className="bg-premierColor rounded-[30px]  shadow-GreenShadow px-[20px] h-[40vh]  z-[400] ">
-                    <div className="px-[20px] py-[40px] flex flex-col justify-center  h-fit ">
-                        <h2 className="h2CustomPC self-center">
+            <div className="w-[calc(100%-10%)]">
+                <div className="bg-premierColor dt:rounded-[30px] dt:shadow-GreenShadow dt:px-[20px] dt:h-[40vh]  z-[400] ">
+                    <div className="dt:px-[20px] dt:py-[40px] flex flex-col item justify-center gap-5  h-fit ">
+                        <h2 className="h2CustomPC text-[1.5rem] text-center py-[20px]  rounded-[20%] text-[#fff]">
                             Hej! Vad kan vi hjälpa till med?
                         </h2>
-                        <div className="flex mt-[20px] justify-between">
-                            <div className="flex w-2/6 hover:translate-y-[-10px] cursor-pointer hover:shadow-whiteShadow duration-500  gap-y-[10px] py-[10px] flex-col items-center border-[3px] rounded-[30px] border-solid border-white">
+                        <div className="flex flex-col  dt:flex-row mt-[20px] justify-between">
+                            {/* Support Customer PC by Tag */}
+                            <div className="flex flex-col items-center gap-2">
+                                <h3 className="text-[20px] font-semibold  text-white">
+                                    Kundservice
+                                </h3>
+                                <p className="DescCustomPC text-center text-white">
+                                    MinOptik Kundservice hjälper till med frågor
+                                    om Lifestyle Glasögonabonnemang, Lifestyle
+                                    Linsabonnemang, köp på Minoptik.se och
+                                    frågor om företagsavtal.{" "}
+                                </p>
+                                <p className="DescCustomPC text-center text-white">
+                                    Öppettider: TIS - FRE: 10:00 – 18.00 <br />
+                                    LÖR: 10:00 – 13.00 <br />
+                                    SÖN-MÅN: STÄNGT
+                                </p>
+                                <p className="DescCustomPC text-white">
+                                    E-post: customerservice@synsam.com
+                                </p>
+                                <p className="DescCustomPC text-white">
+                                    Telefon: 08 - 400 50 450
+                                </p>
+                                <p className="DescCustomPC text-white">
+                                    Adress: Kompanigatan 2 A 235 31 Vellinge
+                                </p>
+                            </div>
+                            <hr className="mt-[10px]" />
+                            {/* Support Customer on PC view  */}
+                            <div className=" hidden dt:flex dt:w-2/6 dt:hover:translate-y-[-10px] cursor-pointer dt:hover:shadow-whiteShadow duration-500  gap-y-[10px] dt:py-[10px] flex-col items-center dt:border-[3px] dt:rounded-[30px] dt:border-solid dt:border-white">
                                 <img src={IconResure} alt="Reasure Bank" />
                                 <span className="text-[16px] text-white font-bold font-Exo">
                                     DELBETALNING
@@ -44,11 +72,11 @@ const VisionPost3 = (props) => {
                                     räntefritt
                                 </p>
                             </div>
-                            <div className="flex gap-y-[10px] hover:shadow-whiteShadow hover:translate-y-[-10px] duration-300 rounded-[30px] flex-col items-center justify-center border-[3px] w-1/6 border-solid border-white">
+                            <div className="flex mt-[10px] gap-y-[10px] dt:hover:shadow-whiteShadow dt:hover:translate-y-[-10px] duration-300 rounded-[30px] flex-col items-center justify-center dt:border-[3px] dt:w-1/6 dt:border-solid dt:border-white">
                                 <span className="text-[16px] text-white font-bold font-Exo">
                                     FOLJA OSS!
                                 </span>
-                                <div className="flex top-[10px]">
+                                <div className="flex dt:top-[10px]">
                                     <a
                                         className="hover:translate-y-[-10px] hover:shadow-whiteShadow duration-[500ms]  flex items-center justify-center text-[30px] rounded-[20px] w-[40px] h-[40px] bg-[#fff]    "
                                         href="https://www.facebook.com/MinOptik"
@@ -68,9 +96,11 @@ const VisionPost3 = (props) => {
                                 </div>
                             </div>
 
+                            <div></div>
+                            {/* Support Customer PC by Tag */}
                             <div
                                 onClick={HandleOpenOpenTag}
-                                className="flex gap-y-[10px] hover:translate-y-[-10px] hover:shadow-whiteShadow duration-500 cursor-pointer rounded-[30px]  flex-col items-center justify-center border-[3px] text-white w-2/6 border-solid border-white"
+                                className="hidden gap-y-[10px] hover:translate-y-[-10px] hover:shadow-whiteShadow duration-500 cursor-pointer rounded-[30px] dt:flex  dt:flex-col dt:items-center dt:justify-center border-[3px] dt:text-white dt:w-2/6 dt:border-solid dt:border-white"
                             >
                                 <span className="text-[16px] font-bold font-Exo">
                                     SKICKA EMAIL TILL OSS!

@@ -4,13 +4,11 @@ import VisionPost3 from "../VisionList/VisionPost3";
 
 const VisioncareBlock = () => {
     return (
-        <div>
+        <>
             <VisionPost1 />
-
             <VisionPost2 />
-
             <VisionPost3 />
-        </div>
+        </>
     );
 };
 export default VisioncareBlock;

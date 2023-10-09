@@ -42,7 +42,7 @@ const NavBar = (props) => {
                                 {index === 1 && (
                                     <>
                                         <button
-                                            className="ItemMenuPC   flex-row items-center"
+                                            className="ItemMenuPC    flex-row items-center"
                                             onClick={() =>
                                                 handleOpenSubMenu(index)
                                             }
@@ -58,7 +58,7 @@ const NavBar = (props) => {
                                                     (submenuitem, index) => (
                                                         <li
                                                             onClick={closeNav}
-                                                            className=" DescCustom list-disc  ml-[3.5rem] py-2"
+                                                            className=" DescCustom text-start list-disc  ml-[5rem] py-2"
                                                             key={index}
                                                         >
                                                             <Link
@@ -96,7 +96,7 @@ const NavBar = (props) => {
                                                     (submenuitem, index) => (
                                                         <li
                                                             onClick={closeNav}
-                                                            className=" DescCustom list-disc  ml-[3.5rem] py-2"
+                                                            className=" DescCustom text-start list-disc  ml-[5rem] py-2"
                                                             key={index}
                                                         >
                                                             <Link

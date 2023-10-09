@@ -3,14 +3,20 @@
 @tailwind utilities;
 
 @layer components {
-    .MenuMobile {
+    .BlockMenuMobile {
         @apply text-[22px] px-[20px] w-[100%] py-[14px] font-semibold text-white  border-b-[1px] flex  flex-col
         border-gray-500 font-Exo duration-200 ease-in;
     }
 }
 
 @layer components {
-    .MenuPc {
+    .BlockStylePC {
+        @apply flex justify-center items-center bg-[#005648] border-[1px] h-[60px]
+                 border-b-white;
+    }
+}
+@layer components {
+    .ItemMenuPC {
         @apply text-[16px] px-[55px] py-[14px] font-semibold text-white items-center
         cursor-pointer  flex  hover:bg-[#ffffffe1]  hover:text-[#306860]
         border-gray-500 font-Exo duration-200 ease-in-out active:bg-bgButton uppercase;
@@ -58,8 +64,9 @@
     }
 }
 @layer components {
-    .DescCustomMobile {
-        @apply pt-[0.6rem] text-[16px] font-medium text-white text-center;
+    .DescCustom {
+        @apply text-[16px] py-[14px] font-semibold text-white 
+         text-center;
     }
 }
 @layer components {
@@ -97,7 +104,7 @@
 }
 @layer components {
     .StickyNav {
-        @apply fixed  dt:h-[60px] w-[90%] z-[555] top-0 left-[5%] bg-[#005648d7] ease-in-out duration-700;
+        @apply fixed top-0 left-0   dt:w-[90%] left-[5%]   z-[10000]  bg-[#fff] ease-in-out duration-700;
     }
 }
 @layer components {
@@ -109,16 +116,5 @@
 @layer components {
     .NavBar_SubItem--active {
         @apply translate-x-0;
-    }
-}
-
-@layer components {
-    .DropDown-hidden {
-        @apply hidden;
-    }
-}
-@layer components {
-    .DropDown-Show {
-        @apply block;
     }
 }

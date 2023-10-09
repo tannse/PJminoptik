@@ -22,7 +22,7 @@ const Item2Content = () => {
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
-                        className="TitleCustomMobile text-black"
+                        className="DescCustom text-black"
                     >
                         Min Optik är en del av Synologen somär bäst påbemötande,
                         engagemangoch branschkunskap i Sverige.
@@ -32,7 +32,7 @@ const Item2Content = () => {
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
-                        className="DescCustomMobile text-black"
+                        className="DescCustom text-black"
                     >
                         Allt för att kunna hjälpa dig på bästa sätt. Välkommen
                         att inspireras! Vi har den senaste tekniken för att visa

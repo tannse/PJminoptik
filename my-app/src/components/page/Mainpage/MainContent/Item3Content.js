@@ -31,7 +31,7 @@ const Item3Content = () => {
                         whileInView={{ y: 0 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
-                        className="DescCustomMobile"
+                        className="DescCustom "
                     >
                         Hit kan du komma när du behöver en noggrann
                         synundersökning av vår optiker Charlotta, köpa

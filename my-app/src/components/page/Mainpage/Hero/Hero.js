@@ -4,7 +4,7 @@ import { Button } from "@material-tailwind/react";
 const Hero = () => {
     return (
         <div className="relative z-10 flex justify-center  ">
-            <div className=" absolute dt:items-start dt:w-[100%]  mt-[120px]   dt:mt-[30vh] z-[999] ">
+            <div className=" absolute    mt-[120px] dt:w-[100%] dt:items-start  dt:mt-[35vh] z-[999] ">
                 <div className="dt:ml-[10%] text-center dt:text-start">
                     <h1 className="  font-Exo drop-shadow-lg  text-[20px]  dt:text-[50px] dt:font-semibold   text-white mb:font-bold drop-shadow-2xl">
                         VÄLKOMMEN TILL MIN OPTIK
@@ -29,7 +29,7 @@ const Hero = () => {
                 </div>
             </div>
             <video
-                className="w-[100%] max-w-[100%] mb:h-[80vh] object-cover brightness-[60%] "
+                className="w-[100%] max-w-[100%] h-[80vh] dt:h[70vh] object-cover brightness-[60%] "
                 autoPlay="autoplay"
                 playsInline="playsinline"
                 loop={true}

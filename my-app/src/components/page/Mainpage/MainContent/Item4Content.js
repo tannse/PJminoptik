@@ -22,7 +22,7 @@ const Item4Content = () => {
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
-                        className="TitleCustomMobile text-black"
+                        className="DescCustom text-black"
                     >
                         Min Optik erbjuder undersökning av legitimerad
                         ögonläkare.
@@ -32,7 +32,7 @@ const Item4Content = () => {
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
-                        className="DescCustomMobile text-black"
+                        className="DescCustom text-black"
                     >
                         Hos oss får du bra service Ögonläkare nära dig.Med jämna
                         mellanrum kan du boka tid hos en ögonläkare i vår butik.

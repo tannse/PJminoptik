@@ -8,9 +8,11 @@ import { ShowDownAnimate } from "../../../Card UI/Animation";
 import NotificationBuild from "../../../Card UI/notification";
 import { AiFillWechat } from "react-icons/ai";
 import { LiaTimesSolid } from "react-icons/lia";
+import { ShowUpAnimate } from "../../../Card UI/Animation";
 import useSupportMail from "../useSupportMail";
 import SupportByMail from "../SupportByMail";
 import useNotification from "../useNotification";
+import { Button } from "@material-tailwind/react";
 
 const VisionPost3 = (props) => {
     const { supportMail, handleSupportMail } = useSupportMail();
@@ -35,7 +37,7 @@ const VisionPost3 = (props) => {
                         </h2>
                         <div className="flex flex-col  dt:flex-row mt-[20px] justify-between">
                             {/* Support Customer PC by Tag */}
-                            <div className="flex flex-col items-center gap-2">
+                            <div className="flex flex-col justify-center items-center gap-2">
                                 <h3 className="text-[20px] font-semibold  text-white">
                                     Kundservice
                                 </h3>
@@ -72,6 +74,12 @@ const VisionPost3 = (props) => {
                                     räntefritt
                                 </p>
                             </div>
+                            <Button
+                                {...ShowUpAnimate}
+                                className="StyleButtonNav self-center min-w-[40%]  uppercase"
+                            >
+                                Boka Tid
+                            </Button>
                             <div className="flex mt-[10px] gap-y-[10px] dt:hover:shadow-whiteShadow dt:hover:translate-y-[-10px] duration-300 rounded-[30px] flex-col items-center justify-center dt:border-[3px] dt:w-1/6 dt:border-solid dt:border-white">
                                 <span className="text-[16px] text-white font-bold font-Exo">
                                     FOLJA OSS!

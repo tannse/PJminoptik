@@ -23,7 +23,7 @@ const Item5Content = () => {
                         whileInView={{ y: 0 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
-                        className="DescCustomMobile"
+                        className="DescCustom"
                     >
                         Synologen är en medlems organisation med en central
                         ledning som hjälper medlem marnaatt driva utvecklingen

@@ -31,7 +31,7 @@ const Item1Content = () => {
                         whileInView={{ y: 0, opacity: 1 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
-                        className="DescCustomMobile"
+                        className="DescCustom"
                     >
                         Allt för att kunna hjälpa dig på bästa sätt. Välkommen
                         att inspireras! Vi har den senaste tekniken för att visa

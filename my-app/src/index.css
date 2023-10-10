@@ -30,7 +30,7 @@
 
 @layer components {
     .StyleButtonNav {
-        @apply select-none text-[0.9rem]   shadow-Shadow  uppercase font-Exo font-bold text-[20px] mt-[15px] flex items-center justify-center   rounded-[10px] border-[1px] border-solid border-white  bg-premierColor text-white min-w-[330PX]  h-[60px];
+        @apply select-none text-[0.9rem]   shadow-Shadow  uppercase font-Exo font-bold text-[20px] flex items-center justify-center   rounded-[10px] border-[1px] border-solid border-white  bg-premierColor p-[10px] text-white min-w-fit min-h-fit;
     }
 }
 @layer components {
@@ -78,7 +78,7 @@
 }
 @layer components {
     .h2CustomMobile {
-        @apply text-[1.3rem] text-center font-bold font-Exo text-white;
+        @apply text-[1.5rem] text-center font-bold font-Exo text-white;
     }
 }
 @layer components {

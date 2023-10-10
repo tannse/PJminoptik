@@ -10,25 +10,25 @@ import {
 
 const OfferPostImg = () => {
     return (
-        <div className="h-[60vh] flex justify-center">
-            <div className="w-[calc(100%-240px)] flex gap-x-[50px] justify-between  ">
+        <div className="h-fit dt:h-[60vh] flex  justify-center dt:mt-0 mt-[3rem]">
+            <div className="w-[calc(100%-20%)] flex flex-col dt:flex-row gap-8  dt:gap-x-[50px] dt:justify-between  ">
                 <motion.img
                     {...ShowLeftAnimate}
                     alt="OfferImage"
                     src={OfferImage1}
-                    className=" shadow-Shadow100 h-[40vh] w-2/6 rounded-[30px] mt-[130px]"
+                    className=" dt:shadow-Shadow100 h-[40vh] object-cover dt:w-2/6 rounded-[30px] dt:mt-[130px]"
                 ></motion.img>
                 <motion.img
                     {...ShowDownAnimate}
                     alt="OfferImage"
                     src={OfferImage2}
-                    className=" shadow-Shadow100 h-[40vh] w-2/6 rounded-[30px]"
+                    className=" dt:shadow-Shadow100 h-[40vh] object-cover dt:w-2/6 rounded-[30px]"
                 ></motion.img>
                 <motion.img
                     {...ShowRightAnimate}
                     alt="OfferImage"
                     src={OfferImage3}
-                    className=" shadow-Shadow100 h-[40vh]  w-2/6 rounded-[30px] mt-[-130px]"
+                    className=" dt:shadow-Shadow100 h-[40vh] object-cover  dt:w-2/6 rounded-[30px] dt:mt-[-130px] mb-[20px] dt:mb-0"
                 ></motion.img>
             </div>
         </div>

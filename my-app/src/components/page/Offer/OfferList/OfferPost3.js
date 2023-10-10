@@ -3,25 +3,28 @@ import { ShowLeftAnimate } from "../../../Card UI/Animation";
 
 const OfferPost3 = () => {
     return (
-        <section className="h-[55vh] flex justify-center mt-[120px]">
-            <div className="w-[calc(100%-240px)]  ">
-                <motion.div {...ShowLeftAnimate} className="w-[50%]  ">
+        <section className="h-fit flex flex-col items-center dt:flex-row justify-center mt-[5rem] ">
+            <div className="w-[calc(100%-20%)]  ">
+                <motion.div
+                    {...ShowLeftAnimate}
+                    className="dt:w-[50%] flex flex-col gap-5  "
+                >
                     <h2
-                        className="h2CustomPC text-[#00544a]
+                        className="h2CustomMobile text-[#00544a]
                         "
                     >
                         VÄLKOMMEN TILL VÅR NYA TJÄNST LENSREFILL
                     </h2>
-                    <hr className="mt-3 w-[50%] " />
+                    <hr className="dt:mt-3 dt:w-[50%] " />
                     <p className="DescCustomPC  mt-5">
                         Tjänsten är framtagen för att underlätta för dig som
                         konsument att beställa hem nya linser när de gamla
                         håller på att ta slut. Det hela är mycket enkelt!
                     </p>
-                    <h3 className="h3CustomPC text-[#00544a] mt-5 ">
+                    <h3 className="h3CustomPC text-[#00544a] dt:mt-5 ">
                         Följ nedanstående steg och kom igång redan idag:
                     </h3>
-                    <div className="mt-5 ml-5">
+                    <div className="flex flex-col gap-6 dt:mt-5 dt:ml-5">
                         <ol start={1} className="list-decimal ">
                             <li className="DescCustomPC">
                                 Ladda ner valfri QR-läsare till din smarta

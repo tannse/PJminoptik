@@ -1,33 +1,36 @@
 import CardOptik from "../../../assets/CardOptik.png";
 import { motion } from "framer-motion";
 import { ShowRightAnimate, ShowRotate } from "../../../Card UI/Animation";
+import { Button } from "@material-tailwind/react";
 import React from "react";
 const OfferPost1 = (props) => {
     return (
-        <div className="h-[55vh] flex justify-center mt-7">
-            <div className="w-[calc(100%-240px)]  ">
-                <div className="flex bg-premierColor items-center shadow-Shadow100 rounded-[20px]">
+        <div className="  w-full dt:h-[55vh] flex justify-center mt-7">
+            <div className="w-[calc(100%-20%)]">
+                <div className="flex flex-col items-center justify-center bg-premierColor h-[70vh] dt:[60vh]  dt:flex-row  shadow-Shadow100 ">
                     <motion.img
                         {...ShowRotate}
                         src={CardOptik}
                         alt="CardOptik"
-                        className=" pointer-events-none  transition duration-600 ease-linear w-2/4 h-[50vh] object-none"
+                        className=" pointer-events-none  transition duration-600 ease-linear object-cover dt:w-2/4 dt:h-[50vh] dt:object-none"
                     />
-                    <motion.div {...ShowRightAnimate} className="w-2/4">
-                        <h1 className="text-[3.4rem] font-Exo text-white  font-extrabold">
+                    <motion.div
+                        {...ShowRightAnimate}
+                        className="flex flex-col gap-y-6 items-center dt:w-2/4"
+                    >
+                        <h1 className="h2CustomMobile font-Exo text-white  font-extrabold">
                             ERBJUDANDE KONTAKTLINSER
                         </h1>
                         <p
-                            className="DescCustomPC text-white
+                            className="DescCustomMobile text-center text-white
                         "
                         >
                             Prova marknadens bästa linser hos din lokala optiker
                             i Vellinge – till samma pris som på internet!
                         </p>
-                        <button className="StyleButtonNav capitalize">
-                            {" "}
+                        <Button className="StyleButtonNav w-[30px] capitalize">
                             SE LEDIGA TIDER
-                        </button>
+                        </Button>
                     </motion.div>
                 </div>
             </div>

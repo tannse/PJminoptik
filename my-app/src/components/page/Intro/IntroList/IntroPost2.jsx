@@ -8,7 +8,7 @@ const IntroPost2 = (props) => {
                         {title}
                     </h2>
                     <hr className="self-center w-[51vw] mt-[21px]" />
-                    <ul className="  px-[20px] mt-[41px] list-disc">
+                    <ul className="  px- mt-[41px] list-disc">
                         <li className="text-[1rem] font-semibold font-Exo text-[#118273]">
                             {option.first}
                         </li>
@@ -53,8 +53,10 @@ const IntroPost2 = (props) => {
                         </span>
                         {desc.sixth}
                     </p>
-                    <button className=" StyleButtonNav">BOKA TID ONLINE</button>
                 </div>
+                <button className=" StyleButtonNav mt-[20px]">
+                    BOKA TID ONLINE
+                </button>
             </div>
         </div>
     );

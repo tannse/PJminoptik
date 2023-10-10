@@ -25,12 +25,12 @@ const VisionPost3 = (props) => {
     };
 
     return (
-        <div className=" flex justify-center items-center    mt-[30px] h-[100vh] dt:h-[70vh] ">
+        <div className=" flex justify-center items-center mt-[30px] h-[100vh] dt:h-[70vh] ">
             <div className="w-[calc(100%-10%)]">
-                <div className="bg-premierColor dt:shadow-GreenShadow    z-[400]">
+                <div className="bg-premierColor dt:shadow-GreenShadow z-[400]">
                     <motion.div
                         {...ShowDownAnimate}
-                        className=" dt:py-[40px] flex flex-col  justify-center gap-5  h-fit "
+                        className=" dt:py-[40px] flex flex-col  justify-center gap-7  h-fit "
                     >
                         <h2 className="h2CustomPC text-[1.5rem] text-center py-[20px]  rounded-[20%] text-[#fff]">
                             Hej! Vad kan vi hjälpa till med?
@@ -76,7 +76,7 @@ const VisionPost3 = (props) => {
                             </div>
                             <Button
                                 {...ShowUpAnimate}
-                                className="StyleButtonNav dt:hidden self-center min-w-[40%]  uppercase"
+                                className="StyleButtonNav dt:hidden self-center min-w-[40%] mt-[20px]  uppercase"
                             >
                                 Boka Tid
                             </Button>

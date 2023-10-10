@@ -36,7 +36,7 @@ const NavPC = () => {
                             </li>
                             <li className=" text-[16px] text-white font-semibold  z-[100] translate-x-[-100%]  bg-premierColor hover:bg-[#ffffffe1]  hover:text-[#306860]  scale-0 group-hover:translate-x-[0]    duration-[0.2s] ease-in-out group-hover:scale-100 ">
                                 <Link
-                                    to="/About"
+                                    to="/Introduction"
                                     alt="Kontaklinser "
                                     className="  block h-[3rem] translate-y-[10px] px-[10px] duration-[0.2s] ease-in-out "
                                 >

@@ -6,7 +6,7 @@ const FooterMobile = () => {
     return (
         <div className=" relative dt:hidden ">
             {/* Mobile */}
-            <div className="  absolute z-[999] h-[90%]   grid grid-cols-2 grid-rows-3  gap-x-8  px-[30px]  inset-0  mt-[20px]">
+            <div className="  absolute z-[999] h-[85vh]   grid grid-cols-2 grid-rows-3  gap-x-8  px-[30px]  inset-0  mt-[20px] ">
                 {/* Info1 */}
 
                 <div className="leading-7">

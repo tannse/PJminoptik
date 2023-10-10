@@ -25,19 +25,19 @@ const VisionPost3 = (props) => {
     };
 
     return (
-        <div className=" flex justify-center   mt-[30px] h-fit ">
+        <div className=" flex justify-center items-center    mt-[30px] h-[100vh] dt:h-[70vh] ">
             <div className="w-[calc(100%-10%)]">
-                <div className="bg-premierColor dt:rounded-[30px] dt:shadow-GreenShadow dt:px-[20px] dt:h-[40vh]  z-[400] ">
+                <div className="bg-premierColor dt:shadow-GreenShadow    z-[400]">
                     <motion.div
                         {...ShowDownAnimate}
-                        className="dt:px-[20px] dt:py-[40px] flex flex-col item justify-center gap-5  h-fit "
+                        className=" dt:py-[40px] flex flex-col  justify-center gap-5  h-fit "
                     >
                         <h2 className="h2CustomPC text-[1.5rem] text-center py-[20px]  rounded-[20%] text-[#fff]">
                             Hej! Vad kan vi hjälpa till med?
                         </h2>
-                        <div className="flex flex-col  dt:flex-row mt-[20px] justify-between">
-                            {/* Support Customer PC by Tag */}
-                            <div className="flex flex-col justify-center items-center gap-2">
+                        <div className="flex flex-col  dt:flex-row gap-x-8  justify-center">
+                            {/* Support Customer Mobile View*/}
+                            <div className="dt:hidden flex flex-col justify-center items-center gap-2">
                                 <h3 className="text-[20px] font-semibold  text-white">
                                     Kundservice
                                 </h3>
@@ -64,23 +64,23 @@ const VisionPost3 = (props) => {
                             </div>
                             <hr className="mt-[10px]" />
                             {/* Support Customer on PC view  */}
-                            <div className=" hidden dt:flex dt:w-2/6 dt:hover:translate-y-[-10px] cursor-pointer dt:hover:shadow-whiteShadow duration-500  gap-y-[10px] dt:py-[10px] flex-col items-center dt:border-[3px] dt:rounded-[30px] dt:border-solid dt:border-white">
+                            <div className=" hidden dt:flex dt:w-[25%] dt:hover:translate-y-[-10px] cursor-pointer dt:hover:shadow-whiteShadow duration-500  gap-y-[10px] dt:py-[10px] flex-col items-center dt:border-[3px] dt:rounded-[30px] dt:border-solid dt:border-white">
                                 <img src={IconResure} alt="Reasure Bank" />
                                 <span className="text-[16px] text-white font-bold font-Exo">
                                     DELBETALNING
                                 </span>
                                 <p className="text-white text-center">
-                                    Dela upp din betalning - upp till 12 mån
-                                    räntefritt
+                                    Dela upp din betalning. <br />
+                                    Upp till 12 mån räntefritt
                                 </p>
                             </div>
                             <Button
                                 {...ShowUpAnimate}
-                                className="StyleButtonNav self-center min-w-[40%]  uppercase"
+                                className="StyleButtonNav dt:hidden self-center min-w-[40%]  uppercase"
                             >
                                 Boka Tid
                             </Button>
-                            <div className="flex mt-[10px] gap-y-[10px] dt:hover:shadow-whiteShadow dt:hover:translate-y-[-10px] duration-300 rounded-[30px] flex-col items-center justify-center dt:border-[3px] dt:w-1/6 dt:border-solid dt:border-white">
+                            <div className="flex mt-[10px] gap-y-[10px] dt:hover:shadow-whiteShadow dt:hover:translate-y-[-10px] duration-300 rounded-[30px] flex-col items-center justify-center dt:border-[3px] dt:w-[25%] dt:border-solid dt:border-white">
                                 <span className="text-[16px] text-white font-bold font-Exo">
                                     FOLJA OSS!
                                 </span>
@@ -108,7 +108,7 @@ const VisionPost3 = (props) => {
                             {/* Support Customer PC by Tag */}
                             <div
                                 onClick={HandleOpenOpenTag}
-                                className="hidden gap-y-[10px] hover:translate-y-[-10px] hover:shadow-whiteShadow duration-500 cursor-pointer rounded-[30px] dt:flex  dt:flex-col dt:items-center dt:justify-center border-[3px] dt:text-white dt:w-2/6 dt:border-solid dt:border-white"
+                                className="hidden gap-y-[10px] hover:translate-y-[-10px] hover:shadow-whiteShadow duration-500 cursor-pointer rounded-[30px] dt:flex  dt:flex-col dt:items-center dt:justify-center border-[3px] dt:text-white dt:w-[25%] dt:border-solid dt:border-white"
                             >
                                 <span className="text-[16px] font-bold font-Exo">
                                     SKICKA EMAIL TILL OSS!

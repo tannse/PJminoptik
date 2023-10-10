@@ -4,9 +4,9 @@ import SynologenImg from "../../../Card UI/Synologen";
 
 const FooterPC = () => {
     return (
-        <div className=" relative mbx:hidden mb:hidden dt:block   ">
+        <div className=" relative mbx:hidden hidden  dt:block">
             {/* Desktop */}
-            <div className=" absolute  z-[300] h-[60vh]  dt:grid grid-cols-12 grid-rows-8 ">
+            <div className=" absolute  z-[300] h-[50vh] dt:grid grid-cols-12 grid-rows-8 ">
                 {/* Info1 */}
 
                 <div className=" leading-7 col-start-2 col-end-4 row-start-3 ">
@@ -95,7 +95,7 @@ const FooterPC = () => {
                     <p className="text-white">Skapad av Tanne</p>
                 </div>
             </div>
-            <div className="  relative h-[60vh] bg-cover bg-background-footer bg-center  brightness-50"></div>
+            <div className="  relative h-[50vh] bg-cover bg-background-footer bg-center  brightness-50"></div>
         </div>
     );
 };

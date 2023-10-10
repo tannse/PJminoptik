@@ -10,7 +10,7 @@ const VisionPost1 = () => {
                 <div className="flex  dt:gap-x-[9rem] dt:justify-center dt:border-[1px] dt:border-solid dt:border-[#8369691c] dt:bg-[#f9f9f9] dt:h-[80vh] ">
                     <div className=" flex flex-col  items-center  ">
                         <div className="mt-[20px] flex flex-col dt:flex-row dt:justify-evenly items-center  gap-4">
-                            <div className="flex flex-col items-center justify-center dt:w-2/5">
+                            <div className="flex flex-col gap-y-[20px] items-center justify-center dt:w-2/5">
                                 <motion.h2
                                     {...ShowRightAnimate}
                                     className=" text-[2.5rem]  text-custom-darkgreen font-Exo   font-extrabold"

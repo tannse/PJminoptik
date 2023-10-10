@@ -9,7 +9,7 @@ const IntroPost3 = (props) => {
                     {title}
                 </h3>
                 <video
-                    className="w-full mb-[90px] shadow-Shadow100 rounded-[20px] max-w-full dt:h-[70vh] object-cover brightness-60"
+                    className="w-full mb-[90px] shadow-Shadow100 rounded-[20px] max-w-full h-[40vh] dt:h-[70vh] object-cover brightness-60"
                     autoPlay
                     playsInline
                     loop

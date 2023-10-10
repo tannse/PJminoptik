@@ -8,14 +8,14 @@ const IntroPost1 = (props) => {
     const { title, desc } = props;
 
     return (
-        <div className=" bg-premierColor dt:bg-[#fff] flex flex-col items-center h-[100vh] dt:h-[80vh] ">
+        <div className=" bg-premierColor dt:bg-[#fff] flex flex-col items-center h-fit dt:h-[80vh] ">
             <motion.h1
                 {...ShowUpAnimate}
                 className=" text-center font-bold font-Exo text-[#fff] dt:text-[#00564B] py-[28px] text-[3rem]"
             >
                 {title}
             </motion.h1>
-            <div className=" w-[calc(100%-20%)] flex justify-center h-[70vh] dt:h-[50vh] dt:rounded-full dt:bg-premierColor  ">
+            <div className=" w-[calc(100%-20%)]  flex justify-center h-[80vh] dt:h-[50vh] dt:rounded-full dt:bg-premierColor  ">
                 <div className=" flex flex-col   items-center dt:justify-center dt:flex-row dt:w-[calc(100%-7em)]">
                     <motion.div
                         className=" ml-[5%] flex  flex-col dt:self-center "
@@ -34,7 +34,7 @@ const IntroPost1 = (props) => {
 
                     <motion.img
                         {...ShowRightAnimate}
-                        className="   shadow-whiteShadow object-cover  dt:w-2/5  h-[70%] dt:h-[40vh] dt:rounded-full mt-[3rem]   "
+                        className="   shadow-whiteShadow object-cover h-[30vh] dt:w-2/5  dt:h-[40vh] dt:rounded-full mt-[2rem]  "
                         alt="Vad Gora En Optik"
                         src={AboutPhoto}
                     />

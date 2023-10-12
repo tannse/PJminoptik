@@ -4,31 +4,31 @@ const IntroPost2 = (props) => {
         <div className="w-full h-fit flex justify-center relative ">
             <div className="w-[calc(100%-20%)]   flex flex-col items-center  ">
                 <div className="   flex flex-col   ">
-                    <h2 className="h2CustomMobile  dt:h2CustomPC text-[#118273] mt-[20px]">
+                    <h2 className="h2CustomMobile  text-custom-darkgreen dt:text-[2.5rem] mt-[20px]">
                         {title}
                     </h2>
                     <hr className="self-center w-[51vw] mt-[21px]" />
                     <ul className="  px- mt-[41px] list-disc">
-                        <li className="text-[1rem] font-semibold font-Exo text-[#118273]">
+                        <li className="DescCustomMobile font-semibold font-Exo text-[#118273]">
                             {option.first}
                         </li>
-                        <li className="text-[1rem] font-semibold font-Exo text-[#118273]">
+                        <li className="DescCustomMobile font-semibold font-Exo text-[#118273]">
                             {option.second}
                         </li>
-                        <li className="text-[1rem] font-semibold font-Exo text-[#118273]">
+                        <li className="DescCustomMobile font-semibold font-Exo text-[#118273]">
                             {option.third}
                         </li>
                     </ul>
                 </div>
                 <div className="mt-[51px] ">
-                    <h3 className="text-[1rem] font-semibold font-Exo text-[#118273]">
+                    <h3 className="DescCustomMobile font-semibold font-Exo text-[#118273]">
                         {option.first}
                     </h3>
                     <p className="mt-[11px] text-14">{desc.first}</p>
                     <p className="mt-[21px] text-14">{desc.second}</p>
                 </div>
                 <div className="mt-[51px] ">
-                    <h3 className="text-[1rem] font-semibold font-Exo text-[#118273]">
+                    <h3 className="DescCustomMobile font-semibold font-Exo text-[#118273]">
                         {" "}
                         {option.second}
                     </h3>

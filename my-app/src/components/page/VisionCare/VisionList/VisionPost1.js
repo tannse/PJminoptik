@@ -5,7 +5,7 @@ import { ShowLeftAnimate } from "../../../Card UI/Animation";
 import { ShowUpAnimate } from "../../../Card UI/Animation";
 const VisionPost1 = () => {
     return (
-        <div className="h-fit dt:h-[85vh] relative flex flex-col dt:flex-row  items-center justify-center mb-[50px] ">
+        <div className="h-fit dt:h-[85vh] relative flex flex-col dt:flex-row  items-center justify-center  mt-[4.3rem] mb-[50px] ">
             <div className="w-[calc(100%-10%)]">
                 <div className="flex  dt:gap-x-[9rem] dt:justify-center dt:border-[1px] dt:border-solid dt:border-[#8369691c] dt:bg-[#f9f9f9] dt:h-[80vh] ">
                     <div className=" flex flex-col  items-center  ">

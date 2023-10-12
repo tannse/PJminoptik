@@ -25,9 +25,9 @@ const VisionPost3 = (props) => {
     };
 
     return (
-        <div className=" flex justify-center items-center mt-[30px] h-[100vh] dt:h-[70vh] ">
+        <div className=" flex justify-center items-center mt-[30px] h-[100vh] dt:h-[70vh]  ">
             <div className="w-[calc(100%-10%)]">
-                <div className="bg-premierColor dt:shadow-GreenShadow z-[400]">
+                <div className="bg-premierColor rounded-[5%] dt:shadow-GreenShadow z-[400]">
                     <motion.div
                         {...ShowDownAnimate}
                         className=" dt:py-[40px] flex flex-col  justify-center gap-7  h-fit "

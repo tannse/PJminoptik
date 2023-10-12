@@ -30,7 +30,7 @@ const NavBar = (props) => {
 
     return (
         <nav
-            className={`z-[3000] fixed top-[10%] w-[100%] h-[90vh] Hidden-scroll-bar opacity-95 overflow-y-auto backdrop-blur-md  transition-all ease-linear duration-100  dt:hidden border-b-white  bg-premierColor ${
+            className={`z-[3000] fixed top-[9%] w-[100%] h-[90vh] Hidden-scroll-bar opacity-95 overflow-y-auto backdrop-blur-md  transition-all ease-linear duration-100  dt:hidden border-b-white  bg-premierColor ${
                 onOpenMenu ? "NavBar_SubItem--active" : "NavBar-SubItem--close"
             }`}
         >

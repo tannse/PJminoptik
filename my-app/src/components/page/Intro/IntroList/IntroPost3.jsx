@@ -5,7 +5,7 @@ const IntroPost3 = (props) => {
     return (
         <div className="w-full flex justify-center items-center">
             <div className="w-[calc(100%-20%)]">
-                <h3 className="h2CustomMobile mt-[50px]  dt:mt-[124px] mb-[50px] font-Exo font-semibold text-[#118273]">
+                <h3 className=" mt-[50px]  dt:mt-[124px] mb-[50px] font-Exo font-semibold text-center dt:h2CustomPC dt:text-custom-darkgreen">
                     {title}
                 </h3>
                 <video

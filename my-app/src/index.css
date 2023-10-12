@@ -30,7 +30,7 @@
 
 @layer components {
     .StyleButtonNav {
-        @apply select-none text-[0.9rem]   shadow-Shadow  uppercase font-Exo font-bold text-[20px] flex items-center justify-center   rounded-[10px] border-[1px] border-solid border-white  bg-premierColor p-[10px] text-white min-w-fit min-h-fit;
+        @apply select-none text-[0.9rem]   shadow-Shadow  uppercase font-Exo font-bold text-[20px] flex items-center justify-center   rounded-[10px] border-[1px] border-solid border-white  bg-premierColor p-[10px] text-white min-w-[220px] min-h-[50px];
     }
 }
 @layer components {
@@ -61,7 +61,7 @@
 }
 @layer components {
     .DescCustom {
-        @apply text-[16px] py-[14px] font-semibold text-white 
+        @apply text-[1.1rem] py-[14px] font-semibold text-white 
          text-center;
     }
 }
@@ -105,12 +105,12 @@
 }
 @layer components {
     .StickyNav {
-        @apply fixed top-0 left-0   dt:w-[100%]    z-[10000]  bg-[#fff] ease-in-out duration-700;
+        @apply fixed dt:top-0 left-0   dt:w-[100%]   scroll-smooth z-[10000]  bg-[#fff] ease-in-out duration-700;
     }
 }
 @layer components {
     .NavBar-SubItem--close {
-        @apply translate-x-[-100%];
+        @apply translate-x-[100%];
     }
 }
 

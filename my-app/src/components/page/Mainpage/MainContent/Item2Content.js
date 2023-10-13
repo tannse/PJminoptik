@@ -40,7 +40,7 @@ const Item2Content = () => {
                         kvalitéer som marknaden har att erbjuda. Kom in i
                         butiken så visar vi mer med hjälp av bl.a. Zeiss.
                     </motion.p>
-                    <Button className="  dt:block mt-[15px] StyleButtonNav font-Exo font-bold  rounded-[10px] shadow-Shadow px-[15px] border-white border-[2px] border-solid text-white  bg-bgButton   h-[43px]">
+                    <Button className="  dt:block mt-[15px] StyleButtonNav font-Exo font-bold  rounded-[10px] shadow-Shadow px-[15px] border-white border-[2px] border-solid text-white  bg-bgButton">
                         LÄS MER OCH HITTA TILL OSS
                     </Button>
                 </div>

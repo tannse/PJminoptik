@@ -63,10 +63,10 @@ const WorkGlasses = () => {
                 desc={PostDataWG[2].desc}
                 job={PostDataWG[2].job}
             />
-            {/* <WorkGlassPost4
+            <WorkGlassPost4
                 title={PostDataWG[3].title}
                 desc={PostDataWG[3].desc}
-            /> */}
+            />
         </>
     );
 };

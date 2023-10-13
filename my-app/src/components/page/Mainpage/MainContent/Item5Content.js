@@ -43,7 +43,7 @@ const Item5Content = () => {
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
                     src={ServiceCT5}
-                    className="  ImgCusTomMobile h-[40vh] object-none "
+                    className="  ImgCusTomMobile h-fit  object-cover dt:object-none "
                 />
             </div>
         </div>

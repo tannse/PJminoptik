@@ -26,7 +26,7 @@ const Header = () => {
 
     return (
         <header
-            className={`flex  top-0 left-0  dt:relative dt:flex-col bg-[#fff]  z-[10000] ${
+            className={`flex  top-0 left-0   Hidden-scroll-bar  overflow-y-auto  dt:relative dt:flex-col bg-[#fff]  z-[10000] ${
                 scrollPosition ? "StickyNav" : ""
             }`}
         >

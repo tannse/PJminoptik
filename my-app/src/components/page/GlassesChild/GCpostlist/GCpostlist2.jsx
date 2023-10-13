@@ -5,8 +5,8 @@ const GCpostlist2 = (props) => {
 
     return (
         <>
-            <div className="font-Exo grid h-[130vh] grid-cols-12 grid-rows-12  gap-y-10 bg-[#fbfbfb]">
-                <h1 className="col-start-2 col-end-11 dt:col-end-7 row-start-2 row-end-2 text-[2rem] dt:text-[3rem] font-bold dt:mt-[-10px] text-custom-darkgreen">
+            <div className="font-Exo grid h-[110vh] grid-cols-12 grid-rows-12  gap-y-10 bg-[#fbfbfb]">
+                <h1 className="col-start-2 col-end-11 dt:col-end-7 row-start-1 row-end-2 text-[2rem] dt:text-[3rem] font-bold mt-[40px] dt:mt-[-10px] text-custom-darkgreen">
                     {title}
                 </h1>
                 <img

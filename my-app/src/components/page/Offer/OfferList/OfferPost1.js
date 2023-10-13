@@ -5,14 +5,14 @@ import { Button } from "@material-tailwind/react";
 import React from "react";
 const OfferPost1 = (props) => {
     return (
-        <div className="flex justify-center  mt-[6.3rem] dt:mt-[2rem]">
+        <div className="flex justify-center  mt-[4.3rem] dt:mt-[2rem]">
             <div className="w-[calc(100%-20%)]">
                 <div className="flex flex-col items-center rounded-xl justify-center bg-premierColor h-[70vh]  dt:h-[60vh]  dt:flex-row  shadow-Shadow ">
                     <motion.img
                         {...ShowRotate}
                         src={CardOptik}
                         alt="CardOptik"
-                        className=" pointer-events-none h-[20vh]  transition duration-600 ease-linear object-cover dt:w-2/4 dt:h-[50vh] dt:object-none"
+                        className=" pointer-events-none h-[25vh]  transition duration-600 ease-linear object-cover dt:w-2/4 dt:h-[50vh] dt:object-none"
                     />
                     <motion.div
                         {...ShowRightAnimate}
@@ -22,7 +22,7 @@ const OfferPost1 = (props) => {
                             ERBJUDANDE KONTAKTLINSER
                         </h1>
                         <p
-                            className="DescCustomMobile text-center text-white
+                            className="DescCustomMobile text-center dt:text-[1.5rem] text-white
                         "
                         >
                             Prova marknadens bästa linser hos din lokala optiker

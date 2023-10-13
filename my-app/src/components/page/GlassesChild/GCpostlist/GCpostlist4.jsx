@@ -4,7 +4,7 @@ const GCpostlist4 = (props) => {
 
     return (
         <>
-            <div className="font-Exo grid h-[130vh] grid-cols-12 grid-rows-12  ">
+            <div className="font-Exo grid h-[100vh] grid-cols-12 grid-rows-12 bg-[#fbfbfb] ">
                 <h1 className="col-start-2 col-end-12 dt:col-start-5 dt:col-end-10 row-start-2 text-[2rem] dt:text-[3rem]  font-bold ml-[5px] mt-[-30px] text-custom-darkgreen">
                     {title}
                 </h1>

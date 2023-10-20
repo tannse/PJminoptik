@@ -10,7 +10,7 @@ import {
 
 const OfferPostImg = () => {
     return (
-        <div className="h-fit dt:h-[60vh] flex  justify-center items-center dt:mt-[2rem] mt-[3rem]">
+        <div className="h-fit dt:h-[60vh] flex justify-center items-center dt:mt-[2rem] mt-[3rem]">
             <div className="w-[calc(100%-20%)] ">
                 <div className="flex flex-col dt:flex-row gap-8 dt: dt:gap-x-[50px] dt:justify-between  ">
                     <motion.img

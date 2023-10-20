@@ -21,7 +21,8 @@ const GlassChild = () => {
             title: "HUR BRA SER DITT BARN?!",
             desc: {
                 first: "Det kan självklart vara svårt att avgöra om ett barn har synproblem. ",
-                second: "Vissa saker kan man däremot ta som tecken på ett eventuellt synproblem: om spädbarnet gnuggar sig ovanligt mycket i ögonen om man ser att barnet har en onormalt formad pupill; onormala rörelser hos ögonen skelning; eller om barnet trillar eller går in i saker ofta.  Uppvisar barnet något av detta, bör man kontakta en optiker eller ögonläkare för en synkontroll. ",
+                second: "Vissa saker kan man däremot ta som tecken på ett eventuellt synproblem: om spädbarnet gnuggar sig ovanligt mycket i ögonen om man ser att barnet har en onormalt formad pupill; ",
+                third: " onormala rörelser hos ögonen skelning; eller om barnet trillar eller går in i saker ofta.  Uppvisar barnet något av detta, bör man kontakta en optiker eller ögonläkare för en synkontroll.",
             },
         },
         {

@@ -8,7 +8,7 @@ const IntroPost1 = (props) => {
     const { title, desc } = props;
 
     return (
-        <div className=" bg-premierColor dt:bg-[#fff] flex flex-col items-center h-fit dt:h-[80vh] ">
+        <div className=" bg-premierColor dt:bg-[#fff] flex flex-col items-center h-[120vh] dt:h-[80vh] ">
             <motion.h1
                 {...ShowUpAnimate}
                 className=" text-center font-bold font-Exo text-[#fff] dt:text-[#00564B] py-[28px] text-[3rem]"

@@ -6,7 +6,7 @@ const NavPC = () => {
     return (
         <nav className="">
             <ul
-                className={`hidden z-[10000] dt:flex dt:justify-evenly dt:items-center  dt:h-[70px] bg-[#005648] border-[1px]
+                className={`hidden dt:flex dt:justify-evenly dt:items-center  dt:h-[70px] bg-[#005648] border-[1px]
              border-b-white ${scrollPosition ? "StickyNav" : ""}`}
             >
                 <li className="  ItemMenuPC cursor-pointer  flex  hover:bg-[#ffffffe1]  hover:text-[#306860]   ">
@@ -100,7 +100,7 @@ const NavPC = () => {
                             <li
                                 className="  text-[16px] font-semibold  z-[100] translate-x-[-100%] text-white
                           bg-premierColor hover:bg-[#ffffffe1]  hover:text-[#306860]   scale-0 group-hover:translate-x-[0]
-                          duration-[0.2sease-in-out group-hover:scale-100  "
+                          duration-[0.2s] ease-in-out group-hover:scale-100  "
                             >
                                 <Link
                                     to="./"

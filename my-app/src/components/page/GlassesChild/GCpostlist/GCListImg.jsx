@@ -5,7 +5,7 @@ import eyekid4 from "../../../assets/eyekid4.jpg";
 const GCListimg = () => {
     return (
         <>
-            <div className="grid h-[50vh] grid-cols-12 grid-rows-12 gap-x-2  bg-[#fbfbfb]">
+            <div className="grid h-[60vh] dt:h-[100vh] grid-cols-12 grid-rows-12 gap-x-2 dt:gap-4 mt-[40px] dt:mt-0 bg-[#fbfbfb]">
                 <img
                     src={eyekid1}
                     alt="Eyekids"

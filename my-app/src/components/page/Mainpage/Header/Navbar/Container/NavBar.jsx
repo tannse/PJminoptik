@@ -30,11 +30,11 @@ const NavBar = (props) => {
 
     return (
         <nav
-            className={`z-[10000] fixed top-[9vh] w-[100%] h-[90vh] Hidden-scroll-bar  overflow-y-auto backdrop-blur-md  transition-all ease-linear duration-100  dt:hidden border-b-white  bg-premierColor ${
+            className={`z-[10000] fixed top-[10%] w-[100%] h-[100vh] Hidden-scroll-bar  overflow-y-auto transition-all ease-linear duration-100  dt:hidden border-b-white  bg-premierColor ${
                 onOpenMenu ? "NavBar_SubItem--active" : "NavBar-SubItem--close"
             }`}
         >
-            <ul className=" mt-[4rem]">
+            <ul className=" mt-[4rem] z-[4000]">
                 {MenuItems.map((item, index) => (
                     <li key={index}>
                         {item.subMenu ? (

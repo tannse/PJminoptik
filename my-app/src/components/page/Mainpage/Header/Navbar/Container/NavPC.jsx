@@ -103,7 +103,7 @@ const NavPC = () => {
                           duration-[0.2s] ease-in-out group-hover:scale-100  "
                             >
                                 <Link
-                                    to="./"
+                                    to="/TorraOgon"
                                     alt="Torra ögon "
                                     className="block  h-[3rem] translate-y-[10px] px-[10px] duration-[0.2s] ease-in-out"
                                 >

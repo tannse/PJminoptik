@@ -38,7 +38,7 @@ export const MenuItems = [
             },
             {
                 title: "Torra ögon",
-                url: "/",
+                url: "/TorraOgon",
             },
         ],
     },

@@ -20,10 +20,7 @@ const MainPage = () => {
     }, []);
 
     return (
-        <motion.div
-            className="Hidden-scroll-bar overflow-y-auto"
-            {...ShowComponent}
-        >
+        <motion.div {...ShowComponent}>
             <Header />
             {Loading ? (
                 ""

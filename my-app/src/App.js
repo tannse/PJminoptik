@@ -10,6 +10,7 @@ import ShareLayout from "./components/Card UI/ShareLayout";
 import WorkGlasses from "./components/page/WorkGlasses/Container/WorkGlasses";
 import GlassChild from "./components/page/GlassesChild/container/GlassChild";
 import TorraOgon from "./components/page/TorraOgon/Container/TorraOgon";
+import SunGlasses from "./components/page/SunGlasses/Container/SunGlasses";
 function App() {
     const ScrollToCurrentLocation = () => {
         const location = useLocation();
@@ -33,6 +34,7 @@ function App() {
                         <Route path="/GlassChild" element={<GlassChild />} />
                         <Route path="*" element={<ErrorPage />} />
                         <Route path="/TorraOgon" element={<TorraOgon />} />
+                        <Route path="/SunGlasses" element={<SunGlasses />} />
                     </Route>
                 </Routes>
                 <ScrollToCurrentLocation></ScrollToCurrentLocation>

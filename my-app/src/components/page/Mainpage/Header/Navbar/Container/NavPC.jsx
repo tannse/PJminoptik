@@ -114,7 +114,7 @@ const NavPC = () => {
                     </nav>
                 </NavLink>
                 <li className="ItemMenuPC cursor-pointer text-white  flex hover:bg-[#ffffffe1]  hover:text-[#306860]   ">
-                    <Link className="   " to="./">
+                    <Link className="" to="/SunGlasses">
                         Solglasögon
                     </Link>
                 </li>

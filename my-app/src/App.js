@@ -1,15 +1,36 @@
 import "./App.css";
 import React, { Suspense, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import MainPage from "./components/page/Mainpage/Container/MainPage";
-import OfferBlock from "./components/page/Offer/Container/OfferBlock";
-import VisioncareBlock from "./components/page/VisionCare/Container/VisioncareBlock";
-import ErrorPage from "./components/Card UI/ErrorPage";
-import Intro from "./components/page/Intro/Container/Intro";
-import ShareLayout from "./components/Card UI/ShareLayout";
-import WorkGlasses from "./components/page/WorkGlasses/Container/WorkGlasses";
-import GlassChild from "./components/page/GlassesChild/container/GlassChild";
-import TorraOgon from "./components/page/TorraOgon/Container/TorraOgon";
+import { Spinner } from "./components/Card UI/Spinner";
+const OfferBlock = React.lazy(() =>
+    import("./components/page/Offer/Container/OfferBlock")
+);
+const VisioncareBlock = React.lazy(() =>
+    import("./components/page/VisionCare/Container/VisioncareBlock")
+);
+const WorkGlasses = React.lazy(() =>
+    import("./components/page/WorkGlasses/Container/WorkGlasses")
+);
+const GlassChild = React.lazy(() =>
+    import("./components/page/GlassesChild/container/GlassChild")
+);
+const TorraOgon = React.lazy(() =>
+    import("./components/page/TorraOgon/Container/TorraOgon")
+);
+const SunGlasses = React.lazy(() =>
+    import("./components/page/SunGlasses/Container/SunGlasses")
+);
+const ErrorPage = React.lazy(() => import("./components/Card UI/ErrorPage"));
+const ShareLayout = React.lazy(() =>
+    import("./components/Card UI/ShareLayout")
+);
+
+const MainPage = React.lazy(() =>
+    import("./components/page/Mainpage/Container/MainPage")
+);
+const Intro = React.lazy(() =>
+    import("./components/page/Intro/Container/Intro")
+);
 function App() {
     const ScrollToCurrentLocation = () => {
         const location = useLocation();
@@ -19,7 +40,7 @@ function App() {
     };
     return (
         <div className="app">
-            <Suspense fallback={<div>Loading...</div>}>
+            <Suspense fallback={<Spinner />}>
                 <Routes>
                     <Route path="/" element={<MainPage />} />
                     <Route element={<ShareLayout />}>
@@ -33,6 +54,7 @@ function App() {
                         <Route path="/GlassChild" element={<GlassChild />} />
                         <Route path="*" element={<ErrorPage />} />
                         <Route path="/TorraOgon" element={<TorraOgon />} />
+                        <Route path="/SunGlasses" element={<SunGlasses />} />
                     </Route>
                 </Routes>
                 <ScrollToCurrentLocation></ScrollToCurrentLocation>

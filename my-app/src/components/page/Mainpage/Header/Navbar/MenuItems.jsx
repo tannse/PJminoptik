@@ -45,7 +45,7 @@ export const MenuItems = [
     {
         title: "Solglasögon",
         key: "nb4",
-        url: "/",
+        url: "/SunGlasses",
     },
     {
         title: "Hitta till oss",

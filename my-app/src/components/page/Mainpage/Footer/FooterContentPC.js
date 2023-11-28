@@ -11,7 +11,7 @@ const FooterPC = () => {
 
                 <div className=" leading-7 col-start-2 col-end-4 row-start-3 ">
                     <h3 className="text-[1.5rem] mb-[1rem] font-bold font-Exo text-white">
-                        Linser & Glasögon
+                        Linser Och Glasögon
                     </h3>
                     <ul>
                         <li className="text-white  capitalize">Kontaklinser</li>

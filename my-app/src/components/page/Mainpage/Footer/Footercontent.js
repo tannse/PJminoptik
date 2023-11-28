@@ -77,7 +77,7 @@ const FooterMobile = () => {
                         </a>
                     </div>
                 </div>
-                <div className="relative flex flex-col items-center translate-y-[25%] justify-center col-span-2 ">
+                <div className="relative flex flex-col items-center justify-center col-span-2 ">
                     <SynologenImg></SynologenImg>
                     <span className="  font-Exo  text-white mt-[1rem] ">
                         Kvlaitéts & Miöjöpolicy

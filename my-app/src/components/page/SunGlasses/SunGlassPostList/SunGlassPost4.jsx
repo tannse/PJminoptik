@@ -14,7 +14,7 @@ const SunGlassPost4 = (props) => {
     return (
         <>
             <div className="  h-[100vh] dt:h-[120vh] flex items-center flex-col font-Exo  bg-[#f6faf6]">
-                <div className="max-w-full dt:max-w-5xl">
+                <div className="max-w-full dt:max-w-4xl">
                     <h3 className=" self-center text-[27px] dt:text-[3rem] dt:text-center py-[20px] text-custom-darkgreen font-extrabold">
                         {title}
                     </h3>

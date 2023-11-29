@@ -2,6 +2,8 @@ import SunGlassPost1 from "../SunGlassPostList/SunGlassPost1";
 import SunGlassPost2 from "../SunGlassPostList/SunGlassPost2";
 import SunGlassPost3 from "../SunGlassPostList/SunGlassPost3";
 import SunGlassPost4 from "../SunGlassPostList/SunGlassPost4";
+import SunGlassPost5 from "../SunGlassPostList/SunGlassPost5";
+
 const SunGlasses = () => {
     const SunGlassDataList = [
         {
@@ -51,9 +53,11 @@ const SunGlasses = () => {
                 second: "SÅ HÄR HITTAR DU DIN RÄTTA FORM",
             },
             desc: {
-                first: "Visste du att molnen släpper igenom cirka 50 procent av solens skadliga UV-strålar? Att vit sand reflekterar cirka 25 procent av ljuset och snö hela 85 procent? Numera är de flesta medvetna om hur farlig UV-strålningen är. Men att det även gäller ögonen är det inte lika många som tänker på.",
-                second: "Använder du glasögon utan UV-skydd luras pupillerna att öppna sig. Det leder till att ögonen exponeras för mer skadligt solljus än om du exempelvis kisar, vilket på sikt kan leda till ögonskador som exempelvis grå starr. Använd därför bara solglasögon med 100 procent UV-skydd. På så sätt ökar du dina chanser att få glädje av dina ögon i många år framöver.",
-                third: "Färger som bör undvikas oavsett vad trenderna säger är lila, rosa, rött och i synnerhet blått. Solens blåa ljus är nämligen direkt skadligt för ögonen. Väljer du då blått glas utsätter du dina ögon för maximalt mycket blått ljus, vilket leder till att gula fläcken skadas och förmågan att se skarpt försvinner – en skada som inte kan repareras.",
+                first: "Visste du att molnen släpper igenom cirka 50 procent av solens skadliga UV-strålar? Att vit sand reflekterar cirka 25 procent av ljuset och snö hela 85 procent? ",
+                second: "Numera är de flesta medvetna om hur farlig UV-strålningen är. Men att det även gäller ögonen är det inte lika många som tänker på.",
+                third: "Använder du glasögon utan UV-skydd luras pupillerna att öppna sig. Det leder till att ögonen exponeras för mer skadligt solljus än om du exempelvis kisar, vilket på sikt kan leda till ögonskador som exempelvis grå starr. ",
+                four: "Använd därför bara solglasögon med 100 procent UV-skydd. På så sätt ökar du dina chanser att få glädje av dina ögon i många år framöver.",
+                five: "Ju större bågarna är, desto svårare får ljusstrålarna att bryta sig över kanten och besvära dina ögon. Därför får solglasögon gärna vara lite större än vanliga glasögon. Du ska dock vara medveten om att ljus som kommer bakifrån lättare träffar glasets baksida och reflekteras in i ögat om du har stora solglasögon. I detta läge är en antireflexbehandling på glasens insida att rekommendera. Du kan också satsa på polaroidglas som ger mycket gott skydd mot reflexer. En annan variant är du väljer en extremt tätslutande båge som exempelvis wrap-arounds.",
             },
         },
     ];
@@ -79,6 +83,15 @@ const SunGlasses = () => {
                 descThird={SunGlassDataList[2].desc.third}
             />
             <SunGlassPost4 title={SunGlassDataList[3].title} />
+            <SunGlassPost5
+                titleFirst={SunGlassDataList[4].title.first}
+                titleSecond={SunGlassDataList[4].title.second}
+                descFirst={SunGlassDataList[4].desc.first}
+                descSecond={SunGlassDataList[4].desc.second}
+                descThird={SunGlassDataList[4].desc.third}
+                descFour={SunGlassDataList[4].desc.four}
+                descFive={SunGlassDataList[4].desc.five}
+            />
         </>
     );
 };

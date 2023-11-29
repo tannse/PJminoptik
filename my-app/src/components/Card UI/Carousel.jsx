@@ -23,7 +23,7 @@ const Carousel = ({ children: images }) => {
     }, []);
 
     return (
-        <div className="overflow-hidden touch-none dt:rounded-full relative">
+        <div className="overflow-hidden touch-none dt:rounded-[15%] relative">
             <div
                 style={{ transform: `translateX(-${curr * 100}%)` }}
                 className="flex object-cover mbx:h-[30vh] dt:h-[100%]  transition-all duration-200 ease-in"

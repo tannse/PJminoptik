@@ -25,6 +25,9 @@ module.exports = {
             bgOverlay: "rgba(0, 0, 0, 0.25)",
         },
         extend: {
+            clipPath: {
+                wave: "polygon(0 0, 100% 0, 100% 80%, 0 100%)",
+            },
             colors: {
                 "custom-darkgreen": "#024F45",
                 "custom-green": "#00544a",

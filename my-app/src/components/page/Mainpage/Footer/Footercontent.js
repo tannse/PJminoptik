@@ -4,9 +4,9 @@ import { CiInstagram } from "react-icons/ci";
 import SynologenImg from "../../../Card UI/Synologen";
 const FooterMobile = () => {
     return (
-        <div className=" relative dt:hidden ">
+        <div className=" relative dt:hidden  ">
             {/* Mobile */}
-            <div className="  absolute z-[999] h-[100vh] dt:h-[85vh] grid grid-cols-2 grid-rows-3  gap-x-8  px-[30px]  inset-0  mt-[20px] ">
+            <div className=" bg-premierColor absolute z-[999] h-[100vh] dt:h-[85vh] grid grid-cols-2 grid-rows-3  gap-x-8  px-[30px]  inset-0  mt-[20px] ">
                 {/* Info1 */}
 
                 <div className="leading-7">
@@ -85,7 +85,6 @@ const FooterMobile = () => {
                     <hr className="w-5/6 border-dashed relative top-[30px]  " />
                 </div>
             </div>
-            <BGfooter />
 
             {/* Desktop */}
         </div>

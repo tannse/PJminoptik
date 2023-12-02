@@ -119,7 +119,7 @@ const NavPC = () => {
                     </Link>
                 </li>
                 <li className="ItemMenuPC cursor-pointer  flex text-white   hover:bg-[#ffffffe1]  hover:text-[#306860]   ">
-                    <Link className="  " to="/ErrorPage">
+                    <Link className="  " to="/OptikLocation">
                         Hitta till oss
                     </Link>
                 </li>

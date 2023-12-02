@@ -50,7 +50,7 @@ export const MenuItems = [
     {
         title: "Hitta till oss",
         key: "nb5",
-        url: "/",
+        url: "/OptikLocation",
     },
     {
         title: "Boka tid",

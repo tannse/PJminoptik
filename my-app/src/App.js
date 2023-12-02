@@ -31,6 +31,10 @@ const MainPage = React.lazy(() =>
 const Intro = React.lazy(() =>
     import("./components/page/Intro/Container/Intro")
 );
+const OptikLocation = React.lazy(() =>
+    import("./components/page/OptikLocation/Container/OptikLocation")
+);
+
 function App() {
     const ScrollToCurrentLocation = () => {
         const location = useLocation();
@@ -55,6 +59,10 @@ function App() {
                         <Route path="*" element={<ErrorPage />} />
                         <Route path="/TorraOgon" element={<TorraOgon />} />
                         <Route path="/SunGlasses" element={<SunGlasses />} />
+                        <Route
+                            path="/OptikLocation"
+                            element={<OptikLocation />}
+                        />
                     </Route>
                 </Routes>
                 <ScrollToCurrentLocation></ScrollToCurrentLocation>

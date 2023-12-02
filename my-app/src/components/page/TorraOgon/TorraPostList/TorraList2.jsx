@@ -1,5 +1,4 @@
 import TorraOgonImg2 from "../../../assets/TorraOgon2.jpg";
-import { Button } from "@material-tailwind/react";
 const TorraList2 = (props) => {
     const { title, desc, question } = props;
     return (

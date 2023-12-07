@@ -129,3 +129,11 @@
         @apply translate-x-[0] opacity-[1];
     }
 }
+@layer components {
+    .TabbelCustomPC {
+        @apply border border-gray-300 text-center py-2;
+    }
+    .TabbelHover {
+        @apply hover:bg-premierColor hover:text-white transition-all duration-200;
+    }
+}

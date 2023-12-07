@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { BiLogoFacebook } from "react-icons/bi";
 import { CiInstagram } from "react-icons/ci";
 import IconResure from "../../../assets/ResusBank.png";
@@ -64,7 +65,11 @@ const VisionPost3 = (props) => {
                             </div>
                             <hr className="mt-[10px]" />
                             {/* Support Customer on PC view  */}
-                            <div className=" hidden dt:flex dt:w-[25%] dt:hover:translate-y-[-10px] cursor-pointer dt:hover:shadow-whiteShadow duration-500  gap-y-[10px] dt:py-[10px] flex-col items-center dt:border-[3px] dt:rounded-[30px] dt:border-solid dt:border-white">
+                            <Link
+                                to="/PartialPayment"
+                                alt="PartialPayment"
+                                className=" hidden dt:flex dt:w-[25%] dt:hover:translate-y-[-10px] cursor-pointer dt:hover:shadow-whiteShadow duration-500  gap-y-[10px] dt:py-[10px] flex-col items-center dt:border-[3px] dt:rounded-[30px] dt:border-solid dt:border-white"
+                            >
                                 <img src={IconResure} alt="Reasure Bank" />
                                 <span className="text-[16px] text-white font-bold font-Exo">
                                     DELBETALNING
@@ -73,7 +78,7 @@ const VisionPost3 = (props) => {
                                     Dela upp din betalning. <br />
                                     Upp till 12 mån räntefritt
                                 </p>
-                            </div>
+                            </Link>
                             <Button
                                 {...ShowUpAnimate}
                                 className="StyleButtonNav dt:hidden self-center min-w-[40%] mt-[20px]  uppercase"

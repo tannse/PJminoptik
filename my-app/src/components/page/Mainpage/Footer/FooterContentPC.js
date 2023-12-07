@@ -1,5 +1,6 @@
 import { BiLogoFacebook } from "react-icons/bi";
 import { CiInstagram } from "react-icons/ci";
+import { Link } from "react-router-dom";
 import SynologenImg from "../../../Card UI/Synologen";
 
 const FooterPC = () => {
@@ -40,9 +41,13 @@ const FooterPC = () => {
                             Information
                         </h3>
                         <ul>
-                            <li className="text-white capitalize">
+                            <Link
+                                to="/PartialPayment"
+                                alt="PartialPayment"
+                                className="text-white capitalize"
+                            >
                                 delbetalning
-                            </li>
+                            </Link>
                             <li className="text-white capitalize">boka tid</li>
                         </ul>
                     </div>

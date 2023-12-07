@@ -60,7 +60,13 @@ const Header = () => {
                         </div>
                         <div className="flex mx-2 items-center">
                             <AiOutlineMail className="text-[20px]"></AiOutlineMail>
-                            <span className="ml-1">Delbetalning</span>
+                            <Link
+                                to="/PartialPayment"
+                                alt="PartialPayment"
+                                className="ml-1 cursor-pointer"
+                            >
+                                Delbetalning
+                            </Link>
                         </div>
                     </div>
                     <button className=" group hidden dt:block mt-[15px] outline-none active:scale-75 transition-transform duration-50 font-Exo font-bold  rounded-[20px] border-[1px] border-solid border-white  bg-[#00564B] text-white w-[164px] h-[43px]">

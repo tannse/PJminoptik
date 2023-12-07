@@ -34,7 +34,9 @@ const Intro = React.lazy(() =>
 const OptikLocation = React.lazy(() =>
     import("./components/page/OptikLocation/Container/OptikLocation")
 );
-
+const PartialPayment = React.lazy(() =>
+    import("./components/page/PartialPayment/Container/PartialPay")
+);
 function App() {
     const ScrollToCurrentLocation = () => {
         const location = useLocation();
@@ -62,6 +64,10 @@ function App() {
                         <Route
                             path="/OptikLocation"
                             element={<OptikLocation />}
+                        />
+                        <Route
+                            path="/PartialPayment"
+                            element={<PartialPayment />}
                         />
                     </Route>
                 </Routes>

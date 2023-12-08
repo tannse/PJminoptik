@@ -9,14 +9,16 @@ const NavPC = () => {
                 className={`hidden dt:flex dt:justify-evenly dt:items-center  dt:h-[70px] bg-[#005648] border-[1px]
              border-b-white ${scrollPosition ? "StickyNav" : ""}`}
             >
-                <li className="  ItemMenuPC cursor-pointer  flex  hover:bg-[#ffffffe1]  hover:text-[#306860]   ">
-                    <Link to="/" alt="Hem">
-                        Hem
-                    </Link>
-                </li>
+                <Link
+                    to="/"
+                    alt="Hem"
+                    className="ItemMenuPC cursor-pointer flex hover:bg-[#ffffffe1]  hover:text-[#306860]"
+                >
+                    Hem
+                </Link>
                 <li className="ItemMenuPC cursor-pointer  group transition-all hover:bg-[#ffffffe1]  hover:text-[#306860]  relative     ">
                     <NavLink
-                        className=" cursor-pointer flex justify-center"
+                        className=" cursor-pointer flex justify-center relative"
                         to="/VisionCare"
                     >
                         Synundersökning

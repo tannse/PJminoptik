@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { ShowRightAnimate } from "../../../Card UI/Animation";
 import { ShowLeftAnimate } from "../../../Card UI/Animation";
 import { ShowUpAnimate } from "../../../Card UI/Animation";
-const VisionPost1 = () => {
+const SynvardPost1 = () => {
     return (
         <div className="h-fit dt:h-[85vh] relative flex flex-col dt:flex-row  items-center justify-center  mt-[4.3rem] mb-[50px] ">
             <div className="w-[calc(100%-10%)]">
@@ -56,4 +56,4 @@ const VisionPost1 = () => {
         </div>
     );
 };
-export default VisionPost1;
+export default SynvardPost1;

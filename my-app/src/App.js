@@ -5,8 +5,8 @@ import { Spinner } from "./components/Card UI/Spinner";
 const OfferBlock = React.lazy(() =>
     import("./components/page/Offer/Container/OfferBlock")
 );
-const VisioncareBlock = React.lazy(() =>
-    import("./components/page/VisionCare/Container/VisioncareBlock")
+const SynvardcareBlock = React.lazy(() =>
+    import("./components/page/Synvard/Container/SynvardcareBlock")
 );
 const WorkGlasses = React.lazy(() =>
     import("./components/page/WorkGlasses/Container/WorkGlasses")
@@ -54,7 +54,7 @@ function App() {
                         <Route path="/Offer" element={<OfferBlock />} />
                         <Route
                             path="/VisionCare"
-                            element={<VisioncareBlock />}
+                            element={<SynvardcareBlock />}
                         />
                         <Route path="/WorkGlasses" element={<WorkGlasses />} />
                         <Route path="/GlassChild" element={<GlassChild />} />

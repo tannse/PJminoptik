@@ -1,6 +1,6 @@
 import PartialPayPost1 from "../PartialPayPost/PartialPayPost1";
 import PartialPayPost2 from "../PartialPayPost/PartialPayPost2";
-import VisionPost3 from "../../VisionCare/VisionList/VisionPost3";
+import SynvardPost3 from "../../Synvard/SynvardList/SynvardPost3";
 const PartialPay = () => {
     const PartialData = [
         {
@@ -66,7 +66,7 @@ const PartialPay = () => {
                 Admavg={PartialData[1].Tabellen.seven}
                 Uppläggn={PartialData[1].Tabellen.eight}
             />
-            <VisionPost3 />
+            <SynvardPost3 />
         </>
     );
 };

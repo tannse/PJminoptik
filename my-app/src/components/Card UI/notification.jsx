@@ -1,5 +1,5 @@
 import { LiaTimesSolid } from "react-icons/lia";
-import useNotification from "../page/VisionCare/useNotification";
+import useNotification from "../page/Synvard/useNotification";
 import logoOptik from "../assets/logoOptik.png";
 
 const NotificationBuild = () => {

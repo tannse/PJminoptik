@@ -15,7 +15,7 @@ import SupportByMail from "../SupportByMail";
 import useNotification from "../useNotification";
 import { Button } from "@material-tailwind/react";
 
-const VisionPost3 = (props) => {
+const SynvardPost3 = (props) => {
     const { supportMail, handleSupportMail } = useSupportMail();
     const { notification, handleNotification } = useNotification();
 
@@ -199,4 +199,4 @@ const VisionPost3 = (props) => {
         </div>
     );
 };
-export default VisionPost3;
+export default SynvardPost3;

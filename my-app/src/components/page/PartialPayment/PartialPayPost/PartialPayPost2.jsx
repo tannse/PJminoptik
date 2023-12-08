@@ -22,7 +22,7 @@ const PartialPayPost2 = (props) => {
     return (
         <div className="h-[100vh] flex justify-center items-center w-full">
             <div className="w-[80%] h-[80vh]  ">
-                <div className="flex flex-col">
+                <div className="flex flex-col ">
                     <h3 className="h3CustomPC text-custom-darkgreen">
                         {PraTitPost2}
                     </h3>

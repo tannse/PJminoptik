@@ -52,10 +52,7 @@ function App() {
                     <Route element={<ShareLayout />}>
                         <Route path="/Introduction" element={<Intro />} />
                         <Route path="/Offer" element={<OfferBlock />} />
-                        <Route
-                            path="/VisionCare"
-                            element={<SynvardcareBlock />}
-                        />
+                        <Route path="/synvard" element={<SynvardcareBlock />} />
                         <Route path="/WorkGlasses" element={<WorkGlasses />} />
                         <Route path="/GlassChild" element={<GlassChild />} />
                         <Route path="*" element={<ErrorPage />} />

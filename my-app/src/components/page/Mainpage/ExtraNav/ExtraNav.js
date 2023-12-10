@@ -2,29 +2,32 @@ import Extranav1 from "../../../assets/Extranav-1.jpg";
 import Extranav2 from "../../../assets/Extranav-2.jpg";
 import Extranav3 from "../../../assets/Extranav-3.jpg";
 import Extranav4 from "../../../assets/Extranav-4.jpg";
+import { Link } from "react-router-dom";
 import { Button } from "@material-tailwind/react";
 import { motion } from "framer-motion";
 const ExtraNav = () => {
     return (
         <div>
             <ul className="h-[80vh] mbx:h-[60vh] scroll-none dt:hidden flex flex-col items-center justify-evenly mx-[36px]">
-                <motion.li
+                <Link
+                    to="/synvard"
+                    alt="synvard"
                     initial={{ opacity: 0, y: 25 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
                 >
                     <Button className="StyleButtonNav ">Synundersökning</Button>
-                </motion.li>
+                </Link>
 
-                <motion.li
+                <Link
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
                 >
                     <Button className="StyleButtonNav">Glasögon</Button>
-                </motion.li>
+                </Link>
 
                 <motion.li
                     initial={{ opacity: 0, y: 40 }}

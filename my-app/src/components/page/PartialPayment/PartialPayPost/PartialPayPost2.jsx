@@ -1,3 +1,4 @@
+import SelectOption from "../../../Card UI/SelectOption";
 import Resurslogo from "../../../assets/Resurslogo.png";
 const PartialPayPost2 = (props) => {
     const start = 25;
@@ -20,19 +21,27 @@ const PartialPayPost2 = (props) => {
         Uppläggn,
     } = props;
     return (
-        <div className="h-[100vh] flex justify-center items-center w-full">
-            <div className="w-[80%] h-[80vh]  ">
+        <div className="dt:h-[90vh] mb:h-[140vh] flex justify-center dt:items-center mb:mt-[20px] w-full">
+            <div className="h-[80vh] mb:w-[90%]   dt:w-[80%]">
+                {/* Tabbel mobile */}
                 <div className="flex flex-col ">
-                    <h3 className="h3CustomPC text-custom-darkgreen">
-                        {PraTitPost2}
-                    </h3>
-                    <p className="DescCustomPC my-[1rem] text-custom-darkgreen">
-                        {PraDes1Post2}
-                    </p>
+                    <div className="mb:flex flex-col dt:hidden">
+                        <p className="text-[20px] text-custom-darkgreen text-center font-bold">
+                            Enkelt verktyg for att beräkna dina tryckkostnader :
+                        </p>
+                        <SelectOption />
+                    </div>
                 </div>
-                <div className="flex w-full gap-x-[2rem]">
-                    {/* Tabbell */}
-                    <div className="overflow-x-auto w-3/5 ">
+
+                <div className="dt:flex mb:flex-col dt:flex-row w-full gap-x-[2rem]">
+                    {/* Tabbell pc */}
+                    <div className="overflow-x-auto mb:hidden dt:block w-3/5 ">
+                        <h3 className="mb:hidden dt:block h3CustomPC text-custom-darkgreen">
+                            {PraTitPost2}
+                        </h3>
+                        <p className="mb:hidden dt:block DescCustomPC my-[1rem] text-custom-darkgreen">
+                            {PraDes1Post2}
+                        </p>
                         <table className="min-w-full table-auto border-collapse border border-gray-400">
                             <thead className="bg-gray-100">
                                 <tr className="bg-bgButton text-white">
@@ -94,13 +103,13 @@ const PartialPayPost2 = (props) => {
                     </div>
 
                     {/* Resurs Bank */}
-                    <div className=" flex flex-col gap-y-6 w-2/5">
+                    <div className=" flex flex-col gap-y-6 mb:mt-[20px] mb:w-full dt:w-2/5">
                         {" "}
-                        <h3 className="h3CustomPC text-custom-darkgreen">
+                        <h3 className="h3CustomPC dt:text-left mb:text-center  text-custom-darkgreen">
                             {PraTit2Post2}
                         </h3>
-                        <img src={Resurslogo} className="object-cover" />
-                        <p className="DescCustomPC">
+                        <img src={Resurslogo} className=" object-cover" />
+                        <p className="DescCustomPC  dt:text-left mb:text-center">
                             {PraDes2Post2.slice(0, start)}
                             <a
                                 className="text-[1.2rem] font-semibold text-custom-darkgreen"
@@ -111,7 +120,9 @@ const PartialPayPost2 = (props) => {
                             </a>
                             {PraDes2Post2.slice(end)}
                         </p>
-                        <p className="DescCustomPC">{PraDes3Post2}</p>
+                        <p className="DescCustomPC dt:text-left mb:text-center">
+                            {PraDes3Post2}
+                        </p>
                     </div>
                 </div>
             </div>

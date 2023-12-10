@@ -10,8 +10,8 @@ const PartialPayPost1 = (props) => {
         PraDesclistPost1,
     } = props;
     return (
-        <div className="relative flex justify-center items-center">
-            <img className="h-[100vh] w-[100%] " src={DelbetalImg1} />
+        <div className="dt:h-[100vh] mb:h-[1200px] w-[100%] mb:text-center dt:text-left relative flex justify-center  dt:items-center">
+            <img className=" object-cover w-full h-full " src={DelbetalImg1} />
             <div className="absolute h-[80vh] flex justify-center items-center w-[90%]  ">
                 <div className="h-[70vh] w-[85%] ">
                     <div className="">
@@ -25,7 +25,7 @@ const PartialPayPost1 = (props) => {
                             <p className="text-[#fff] DescCustomPC">
                                 {PraDes1Post1}
                             </p>
-                            <hr className="my-[20px] w-[50%]" />
+                            <hr className="my-[20px] dt:ml-0 mb:block m-auto mb:w-[70%] dt:w-[50%]" />
                         </div>
                         <ul className="flex flex-col">
                             <h4 className="text-[1.5rem] font-bold text-[#fff]">
@@ -47,7 +47,7 @@ const PartialPayPost1 = (props) => {
                                 {PraDes2Post1}
                             </p>
                         </div>
-                        <Button className="mt-[20px] StyleButtonNav">
+                        <Button className="mt-[20px] dt:inline-block mb:block mb:mx-auto StyleButtonNav">
                             SE LEDIGA TIDER
                         </Button>
                     </div>

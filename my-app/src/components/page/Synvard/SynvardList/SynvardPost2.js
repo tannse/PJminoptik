@@ -1,5 +1,5 @@
 import WellcomeImg from "../../../assets/WellcomeImg.jpg";
-const synvardPost2 = () => {
+const SynvardPost2 = () => {
     return (
         <div className=" flex flex-col  justify-center items-center ">
             <div className="w-[calc(100%-10%)]    ">
@@ -81,4 +81,4 @@ const synvardPost2 = () => {
         </div>
     );
 };
-export default synvardPost2;
+export default SynvardPost2;

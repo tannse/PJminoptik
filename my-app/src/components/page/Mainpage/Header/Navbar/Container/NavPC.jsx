@@ -16,38 +16,35 @@ const NavPC = () => {
                 >
                     Hem
                 </Link>
-                <li className="ItemMenuPC cursor-pointer  group transition-all hover:bg-[#ffffffe1]  hover:text-[#306860]  relative     ">
-                    <NavLink
-                        className=" cursor-pointer flex justify-center relative"
-                        to="/VisionCare"
-                    >
-                        Synundersökning
-                        <MdKeyboardDoubleArrowDown className="group-hover:rotate-180 self-center duration-200 ease-linear ml-[10px]"></MdKeyboardDoubleArrowDown>
-                        <ul
-                            className="absolute
+                <Link
+                    to="/synvard"
+                    alt="synvard "
+                    className="ItemMenuPC cursor-pointer  group transition-all hover:bg-[#ffffffe1]  hover:text-[#306860]  relative     "
+                >
+                    Synundersökning
+                    <MdKeyboardDoubleArrowDown className="group-hover:rotate-180 self-center duration-200 ease-linear ml-[10px]"></MdKeyboardDoubleArrowDown>
+                    <ul
+                        className="absolute
                         duration-400 ease-linear scale-0 group-hover:scale-100 text-center  top-[2.4em] w-fit  p-[15px] z-[100] self-start "
+                    >
+                        <Link
+                            to="/synvard"
+                            alt="synvard "
+                            className="flex items-center justify-center h-[3rem]  duration-[0.2s] ease-in-out text-[16px] text-white font-semibold  z-[100] translate-x-[-100%]  bg-premierColor hover:bg-[#ffffffe1]  hover:text-[#306860]   scale-0 group-hover:translate-x-[0]    duration-[0.2s] ease-in-out group-hover:scale-100 "
                         >
-                            <li className="text-[16px] text-white font-semibold  z-[100] translate-x-[-100%]  bg-premierColor hover:bg-[#ffffffe1]  hover:text-[#306860]   scale-0 group-hover:translate-x-[0]    duration-[0.2s] ease-in-out group-hover:scale-100 ">
-                                <Link
-                                    to="/VisionCare"
-                                    alt="VisionCare "
-                                    className=" block h-[3rem] translate-y-[10px]  duration-[0.2s] ease-in-out "
-                                >
-                                    Synvård
-                                </Link>
-                            </li>
-                            <li className=" text-[16px] text-white font-semibold  z-[100] translate-x-[-100%]  bg-premierColor hover:bg-[#ffffffe1]  hover:text-[#306860]  scale-0 group-hover:translate-x-[0]    duration-[0.2s] ease-in-out group-hover:scale-100 ">
-                                <Link
-                                    to="/Introduction"
-                                    alt="Kontaklinser "
-                                    className="  block h-[3rem] translate-y-[10px] px-[10px] duration-[0.2s] ease-in-out "
-                                >
-                                    Vad gör en Optiker?
-                                </Link>
-                            </li>
-                        </ul>
-                    </NavLink>
-                </li>
+                            <span className="">Synvård</span>
+                        </Link>
+                        <li className=" text-[16px] text-white font-semibold  z-[100] translate-x-[-100%]  bg-premierColor hover:bg-[#ffffffe1]  hover:text-[#306860]  scale-0 group-hover:translate-x-[0]    duration-[0.2s] ease-in-out group-hover:scale-100 ">
+                            <Link
+                                to="/Introduction"
+                                alt="Kontaklinser "
+                                className="  block h-[3rem] translate-y-[10px] px-[10px] duration-[0.2s] ease-in-out "
+                            >
+                                Vad gör en Optiker?
+                            </Link>
+                        </li>
+                    </ul>
+                </Link>
                 <NavLink
                     to="/Offer"
                     className="ItemMenuPC  group transition-all hover:bg-[#ffffffe1]  hover:text-[#306860] relative"
@@ -115,17 +112,20 @@ const NavPC = () => {
                         </ul>
                     </nav>
                 </NavLink>
-                <li className="ItemMenuPC cursor-pointer text-white  flex hover:bg-[#ffffffe1]  hover:text-[#306860]   ">
-                    <Link className="" to="/SunGlasses">
-                        Solglasögon
-                    </Link>
-                </li>
-                <li className="ItemMenuPC cursor-pointer  flex text-white   hover:bg-[#ffffffe1]  hover:text-[#306860]   ">
-                    <Link className="  " to="/OptikLocation">
-                        Hitta till oss
-                    </Link>
-                </li>
-                <li className="ItemMenuPC  cursor-pointer flex text-white  flex hover:bg-[#ffffffe1]  hover:text-[#306860]  ">
+                <Link
+                    to="/SunGlasses"
+                    alt="SunGlasses"
+                    className="ItemMenuPC cursor-pointer text-white  flex hover:bg-[#ffffffe1]  hover:text-[#306860]   "
+                >
+                    <p>Solglasögon</p>
+                </Link>
+                <Link
+                    to="/OptikLocation"
+                    className="ItemMenuPC cursor-pointer  flex text-white   hover:bg-[#ffffffe1]  hover:text-[#306860]   "
+                >
+                    <p>Hitta till oss</p>
+                </Link>
+                <li className="ItemMenuPC  cursor-pointer flex text-white   hover:bg-[#ffffffe1]  hover:text-[#306860]  ">
                     <Link className=" " to="/Booking">
                         Boka tid
                     </Link>

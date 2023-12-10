@@ -11,7 +11,7 @@ export const MenuItems = [
         subMenu: [
             {
                 title: "Synvård",
-                url: "/VisionCare",
+                url: "/synvard",
             },
             {
                 title: " Vad göra en Optiker",

@@ -30,7 +30,7 @@
 
 @layer components {
     .StyleButtonNav {
-        @apply select-none text-[0.9rem]   shadow-Shadow  uppercase font-Exo font-bold text-[20px] flex items-center justify-center   rounded-[10px] border-[1px] border-solid border-white  bg-premierColor p-[10px] text-white min-w-[220px] min-h-[50px];
+        @apply select-none text-[0.9rem]   shadow-Shadow  uppercase font-Exo font-bold text-[20px] flex items-center justify-center   rounded-[10px] border-[1px] border-solid border-white  bg-[#118273] p-[10px] text-white min-w-[220px] min-h-[50px];
     }
 }
 @layer components {

@@ -1,15 +1,15 @@
-import BGfooter from "../../../Card UI/BGfooter";
 import { BiLogoFacebook } from "react-icons/bi";
 import { CiInstagram } from "react-icons/ci";
 import SynologenImg from "../../../Card UI/Synologen";
+import { Link } from "react-router-dom";
 const FooterMobile = () => {
     return (
-        <div className=" relative dt:hidden  ">
+        <div className=" relative dt:hidden mb:h-[120vh] mbx:h-[100vh] dt:h-[85vh]  ">
             {/* Mobile */}
-            <div className=" bg-premierColor absolute z-[999] h-[100vh] dt:h-[85vh] grid grid-cols-2 grid-rows-3  gap-x-8  px-[30px]  inset-0  mt-[20px] ">
+            <div className=" bg-premierColor absolute z-[999]  grid grid-cols-2 grid-rows-3  gap-x-8  px-[30px]  inset-0   ">
                 {/* Info1 */}
 
-                <div className="leading-7">
+                <div className="leading-7 mt-[20px]">
                     <h3 className="text-[1.2rem] font-bold font-Exo text-white">
                         Linser & Glasögon
                     </h3>
@@ -21,7 +21,7 @@ const FooterMobile = () => {
                         <li className="StyleLinkFooter">Solglasögon</li>
                     </ul>
                 </div>
-                <div className="leading-9">
+                <div className="leading-9 mt-[20px]">
                     <h3 className="text-[1.2rem] mb-[1rem] font-bold font-Exo text-white">
                         Synundersökning
                     </h3>
@@ -38,7 +38,11 @@ const FooterMobile = () => {
                             Information
                         </h3>
                         <ul>
-                            <li className="StyleLinkFooter">delbetalning</li>
+                            <li className="StyleLinkFooter">
+                                <Link to="PartialPayment" alt="PartialPayment">
+                                    delbetalning
+                                </Link>
+                            </li>
                             <li className="StyleLinkFooter">boka tid</li>
                         </ul>
                     </div>

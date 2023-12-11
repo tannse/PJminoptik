@@ -46,7 +46,7 @@ const NavPC = () => {
                     </ul>
                 </Link>
                 <NavLink
-                    to="/Offer"
+                    to="/Glasses"
                     className="ItemMenuPC  group transition-all hover:bg-[#ffffffe1]  hover:text-[#306860] relative"
                 >
                     <nav className=" cursor-pointer flex justify-center  ">

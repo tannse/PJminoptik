@@ -21,6 +21,7 @@ const ExtraNav = () => {
                 </Link>
 
                 <Link
+                    to="/Glasses"
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
@@ -52,7 +53,8 @@ const ExtraNav = () => {
                 className="hidden rounded-sm border-stone-400 dt:justify-evenly   dt:flex dt:pb-[100px] dt:w-[100%] 
             bg-premierColor duration-200 ease-in-out transition-all  dt:items-center p-[50px]  dt:object-cover  "
             >
-                <motion.li
+                <Link
+                    to="/synvard"
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
@@ -70,9 +72,10 @@ const ExtraNav = () => {
                     >
                         synundersokning
                     </a>
-                </motion.li>
+                </Link>
 
-                <motion.li
+                <Link
+                    to="/Glasses"
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
@@ -90,9 +93,10 @@ const ExtraNav = () => {
                     >
                         Glasögon
                     </a>
-                </motion.li>
+                </Link>
 
-                <motion.li
+                <Link
+                    to="/Offer"
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
@@ -110,9 +114,10 @@ const ExtraNav = () => {
                     >
                         kontaktlinser
                     </a>
-                </motion.li>
+                </Link>
 
-                <motion.li
+                <Link
+                    to="/SunGlasses"
                     initial={{ opacity: 0, y: 50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
@@ -130,7 +135,7 @@ const ExtraNav = () => {
                     >
                         solglasogon
                     </a>
-                </motion.li>
+                </Link>
             </ul>
         </div>
     );

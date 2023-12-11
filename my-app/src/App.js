@@ -2,6 +2,9 @@ import "./App.css";
 import React, { Suspense, useEffect } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { Spinner } from "./components/Card UI/Spinner";
+const Glasses = React.lazy(() =>
+    import("./components/page/Glasses/Container/Glasses")
+);
 const OfferBlock = React.lazy(() =>
     import("./components/page/Offer/Container/OfferBlock")
 );
@@ -52,6 +55,7 @@ function App() {
                     <Route element={<ShareLayout />}>
                         <Route path="/Introduction" element={<Intro />} />
                         <Route path="/Offer" element={<OfferBlock />} />
+                        <Route path="/Glasses" element={<Glasses />} />
                         <Route path="/synvard" element={<SynvardcareBlock />} />
                         <Route path="/WorkGlasses" element={<WorkGlasses />} />
                         <Route path="/GlassChild" element={<GlassChild />} />

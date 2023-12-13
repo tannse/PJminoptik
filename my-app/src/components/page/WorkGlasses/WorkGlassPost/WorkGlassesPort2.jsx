@@ -1,20 +1,25 @@
 import Arbetglas1 from "../../../assets/Arbetglas1.jpg";
-
+import { motion } from "framer-motion";
+import { ShowLeftAnimate, ShowUpAnimate } from "../../../Card UI/Animation";
 const WorkGlassPost2 = (props) => {
     const { title, desc, job } = props;
 
     return (
         <>
             <div className="font-Exo grid dt:h-[100vh] h-[120vh] grid-cols-12 grid-rows-12 bg-[#fbfbfb]      ">
-                <img
+                <motion.img
+                    {...ShowUpAnimate}
                     alt="arbetGlas"
                     className="  rounded-xl shadow-Shadow col-start-2 col-end-12 dt:col-start-8 dt:col-end-12 row-start-1 row-end-4 dt:row-end-12 w-full h-full object-cover "
                     src={Arbetglas1}
                 />
 
-                <h2 className="col-start-2 col-end-10 row-start-4 row-end-5 mt-[20px]  dt:col-end-12 dt:row-start-2 dt:row-end-4 text-[2rem] dt:text-[3rem] text-custom-darkgreen font-extrabold">
+                <motion.h2
+                    {...ShowLeftAnimate}
+                    className="col-start-2 col-end-10 row-start-4 row-end-5 mt-[20px]  dt:col-end-12 dt:row-start-2 dt:row-end-4 text-[2rem] dt:text-[3rem] text-custom-darkgreen font-extrabold"
+                >
                     {title}
-                </h2>
+                </motion.h2>
                 <p className="col-start-2 col-end-13 dt:col-end-7 row-start-5 dt:row-start-4 row-end-5 text-custom-darkgreen DescCustomPC">
                     {desc.first}
                 </p>
@@ -28,7 +33,7 @@ const WorkGlassPost2 = (props) => {
                         <li key={index}> {value}</li>
                     ))}
                 </ol>
-                <p className="col-start-2 col-end-12 row-start-12 row-end-13 dt:row-start-10 dt:col-end-7 text-custom-darkgreen DescCustomPC ">
+                <p className="col-start-2 col-end-12 row-start-12 row-end-13 dt:row-start-10 dt:row-end-12 my-auto dt:col-end-7 text-custom-darkgreen DescCustomPC ">
                     {desc.third}
                 </p>
             </div>

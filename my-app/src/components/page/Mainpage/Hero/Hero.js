@@ -22,7 +22,7 @@ const Hero = () => {
                             glasögon.
                         </span>
 
-                        <Button className="StyleButtonNav ">
+                        <Button className="StyleButtonNav mt-[20px]">
                             BOKA TID ONLINE
                         </Button>
                     </div>

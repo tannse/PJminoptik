@@ -14,11 +14,26 @@ const FooterMobile = () => {
                         Linser & Glasögon
                     </h3>
                     <ul>
-                        <li className="StyleLinkFooter ">Kontaklinser</li>
-                        <li className="StyleLinkFooter">Arbetsglasögon</li>
-                        <li className="StyleLinkFooter">Torra ögon</li>
-                        <li className="StyleLinkFooter">Glasögon till barn</li>
-                        <li className="StyleLinkFooter">Solglasögon</li>
+                        <Link to="/Offer" className="StyleLinkFooter ">
+                            KontakLinknto
+                        </Link>
+                        to=''
+                        <Link to="" className="StyleLinkFooter">
+                            Arbetsglasögon
+                        </Link>
+                        to=''
+                        <Link to="" className="StyleLinkFooter">
+                            Torra ögon
+                        </Link>
+                        to=''
+                        <Link to="" className="StyleLinkFooter">
+                            Glasögon till barn
+                        </Link>
+                        to=''
+                        <Link to="" className="StyleLinkFooter">
+                            Solglasögon
+                        </Link>
+                        to=''
                     </ul>
                 </div>
                 <div className="leading-9 mt-[20px]">
@@ -26,7 +41,10 @@ const FooterMobile = () => {
                         Synundersökning
                     </h3>
                     <ul>
-                        <li className="StyleLinkFooter">Vad gör en optiker</li>
+                        <Link to="" className="StyleLinkFooter">
+                            Vad gör en optiker
+                        </Link>
+                        to=''
                     </ul>
                 </div>
 
@@ -38,12 +56,16 @@ const FooterMobile = () => {
                             Information
                         </h3>
                         <ul>
-                            <li className="StyleLinkFooter">
+                            <Link to="" className="StyleLinkFooter">
                                 <Link to="PartialPayment" alt="PartialPayment">
                                     delbetalning
                                 </Link>
-                            </li>
-                            <li className="StyleLinkFooter">boka tid</li>
+                            </Link>
+                            to=''
+                            <Link to="" className="StyleLinkFooter">
+                                boka tid
+                            </Link>
+                            to=''
                         </ul>
                     </div>
                     <div className="mt-[30px] leading-7">
@@ -51,12 +73,16 @@ const FooterMobile = () => {
                             Kontakt
                         </h3>
                         <ul>
-                            <li className="StyleLinkFooter"> Hitta till oss</li>
-
-                            <li className="StyleLinkFooter ">
+                            <Link to="" className="StyleLinkFooter">
+                                {" "}
+                                Hitta till oss
+                            </Link>
+                            to=''
+                            <Link to="" className="StyleLinkFooter ">
                                 {" "}
                                 Ringa 0798999999
-                            </li>
+                            </Link>
+                            to=''
                         </ul>
                     </div>
                 </div>
@@ -84,7 +110,7 @@ const FooterMobile = () => {
                 <div className="relative flex flex-col items-center justify-center col-span-2 ">
                     <SynologenImg></SynologenImg>
                     <span className="  font-Exo  text-white mt-[1rem] ">
-                        Kvlaitéts & Miöjöpolicy
+                        Kvlaitéts & MiöjöpoLinkcto='' y
                     </span>
                     <hr className="w-5/6 border-dashed relative top-[30px]  " />
                 </div>

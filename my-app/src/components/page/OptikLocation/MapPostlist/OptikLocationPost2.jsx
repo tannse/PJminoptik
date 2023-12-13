@@ -1,6 +1,11 @@
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
 import ArbetGlas4 from "../../../assets/Arbetglas4.jpg";
 import SkeletonText from "../../../Card UI/SkeletonText";
+import { motion } from "framer-motion";
+import {
+    ShowLeftAnimate,
+    ShowSpecialAnimate90,
+} from "../../../Card UI/Animation";
 const OptikLocationPost2 = (props) => {
     const { isLoaded } = useJsApiLoader({
         googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
@@ -36,9 +41,12 @@ const OptikLocationPost2 = (props) => {
                         {/* Kontakt Info */}
                         <div className=" flex-1">
                             <div>
-                                <h3 className="text-[3rem] text-custom-darkgreen ">
+                                <motion.h3
+                                    {...ShowLeftAnimate}
+                                    className="text-[3rem] text-custom-darkgreen "
+                                >
                                     {FirstTitle}
-                                </h3>
+                                </motion.h3>
                                 <p className="DescCustomPC  text-[1.3rem] mt-[20px] text-custom-darkgreen">
                                     {FirstDesc}
                                 </p>
@@ -86,16 +94,20 @@ const OptikLocationPost2 = (props) => {
                 <div className="w-[90%] ">
                     <div className="flex items-center gap-x-5 w-[100%]">
                         <div className="flex-1">
-                            <img
+                            <motion.img
+                                {...ShowSpecialAnimate90}
                                 className="h-[50vh] w-full round object-cover"
                                 alt="VISION"
                                 src={ArbetGlas4}
                             />
                         </div>
                         <div className="flex-1">
-                            <h3 className="text-[30px] text-center text-custom-darkgreen">
+                            <motion.h3
+                                {...ShowLeftAnimate}
+                                className="text-[30px] text-center text-custom-darkgreen"
+                            >
                                 {SecondTitle}
-                            </h3>
+                            </motion.h3>
                             <p className="text-center mt-[36px] DescCustomPC">
                                 {SecondDesc}
                             </p>

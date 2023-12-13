@@ -1,6 +1,6 @@
 import CardOptik from "../../../assets/CardOptik.png";
 import { motion } from "framer-motion";
-import { ShowRightAnimate, ShowRotate } from "../../../Card UI/Animation";
+import { ShowRightAnimate, ShowRotate360 } from "../../../Card UI/Animation";
 import { Button } from "@material-tailwind/react";
 import React from "react";
 const OfferPost1 = (props) => {
@@ -9,7 +9,7 @@ const OfferPost1 = (props) => {
             <div className="w-[calc(100%-20%)]">
                 <div className="flex flex-col items-center rounded-xl justify-center bg-premierColor h-[70vh]  dt:h-[60vh]  dt:flex-row  shadow-Shadow ">
                     <motion.img
-                        {...ShowRotate}
+                        {...ShowRotate360}
                         src={CardOptik}
                         alt="CardOptik"
                         className=" pointer-events-none h-[25vh]  transition duration-600 ease-linear object-cover dt:w-2/4 dt:h-[50vh] dt:object-none"

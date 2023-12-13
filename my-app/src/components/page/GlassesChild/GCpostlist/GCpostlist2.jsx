@@ -1,20 +1,33 @@
 import RupEye1 from "../../../assets/rupeye.jpg";
 import RupEye2 from "../../../assets/rupeye2.jpg";
+import { motion } from "framer-motion";
+import {
+    ShowLeftAnimate,
+    ShowUpAnimate,
+    ShowScale,
+    ShowDownAnimate,
+    ShowRightAnimate,
+} from "../../../Card UI/Animation";
 const GCpostlist2 = (props) => {
     const { title, desc } = props;
 
     return (
         <>
             <div className="font-Exo grid dt:h-[100vh] h-[130vh] grid-cols-10  grid-rows-8 dt:grid-rows-12 dt:grid-cols-12 gap-y-10 dt:gap-x-4 bg-[#fbfbfb]">
-                <h1 className="col-start-2 col-end-11 dt:col-end-7 row-start-1 row-end-2 text-[2rem] dt:text-[3rem] font-bold mt-[20px] dt:mt-[-10px] text-custom-darkgreen">
+                <motion.h1
+                    {...ShowRightAnimate}
+                    className="col-start-2 col-end-11 dt:col-end-7 row-start-1 row-end-2 text-[2rem] dt:text-[3rem] font-bold mt-[20px] dt:mt-[-10px] text-custom-darkgreen"
+                >
                     {title}
-                </h1>
-                <img
+                </motion.h1>
+                <motion.img
+                    {...ShowLeftAnimate}
                     src={RupEye1}
                     alt="RupEye"
                     className="  col-start-2 col-end-10 row-start-3 row-end-6 dt:col-end-7 dt:row-start-2 dt:row-end-8 shadow-Shadow rounded-xl w-full h-full object-cover"
                 />
-                <img
+                <motion.img
+                    {...ShowRightAnimate}
                     src={RupEye2}
                     alt="RupEye"
                     className=" col-start-2 col-end-10 row-start-6 row-end-9 dt:col-start-7 dt:col-end-12 dt:row-start-2 dt:row-end-8 shadow-Shadow rounded-xl w-full h-full object-cover"

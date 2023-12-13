@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import ServiceCT2 from "../../../assets/ServiceCT2.jpg";
 import { Button } from "@material-tailwind/react";
-
+import { Link } from "react-router-dom";
 const Item2Content = () => {
     return (
         <div className=" dt:hidden h-fit bg-[#FFF]">
@@ -12,7 +12,7 @@ const Item2Content = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1 }}
                         viewport={{ once: true }}
-                        className="h2CustomMobile text-black    "
+                        className="h2CustomMobile text-custom-darkgreen    "
                     >
                         Bästa servicen
                     </motion.h2>
@@ -40,9 +40,12 @@ const Item2Content = () => {
                         kvalitéer som marknaden har att erbjuda. Kom in i
                         butiken så visar vi mer med hjälp av bl.a. Zeiss.
                     </motion.p>
-                    <Button className="  dt:block mt-[15px] StyleButtonNav font-Exo font-bold  rounded-[10px] shadow-Shadow px-[15px] border-white border-[2px] border-solid text-white  bg-bgButton">
+                    <Link
+                        to="/OptikLocation"
+                        className="dt:block mt-[15px] StyleButtonNav font-Exo font-bold rounded-[10px] shadow-Shadow  border-white border-[2px] border-solid text-white bg-bgButton"
+                    >
                         LÄS MER OCH HITTA TILL OSS
-                    </Button>
+                    </Link>
                 </div>
             </div>
             <div className="flex ">

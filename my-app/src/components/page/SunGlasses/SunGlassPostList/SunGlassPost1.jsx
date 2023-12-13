@@ -1,14 +1,27 @@
 import { Button } from "@material-tailwind/react";
 import Sunglass1 from "../../../assets/Sunglass1.jpg";
+import { motion } from "framer-motion";
+import {
+    ShowLeftAnimate,
+    ShowUpAnimate,
+    ShowScale,
+    ShowDownAnimate,
+    ShowRightAnimate,
+    ShowSpecialAnimate90,
+} from "../../../Card UI/Animation";
 const SunGlassPost1 = (props) => {
     const { desc, title } = props;
     return (
         <>
             <div className="font-Exo grid h-[120vh]  dt:h-[100vh] grid-cols-12 grid-rows-12 gap-8 bg-premierColor ">
-                <h2 className=" mb:row-start-1 mb:row-end-4 col-start-2 col-end-13 dt:col-start-7 dt:col-end-12 dt:row-start-3 dt:row-end-4 text-[27px] dt:text-[3rem] dt:text-center m-auto text-[#fff] font-extrabold">
+                <motion.h2
+                    {...ShowRightAnimate}
+                    className=" mb:row-start-1 mb:row-end-4 col-start-2 col-end-13 dt:col-start-7 dt:col-end-12 dt:row-start-3 dt:row-end-4 text-[27px] dt:text-[3rem] dt:text-center m-auto text-[#fff] font-extrabold"
+                >
                     {title}
-                </h2>
-                <img
+                </motion.h2>
+                <motion.img
+                    {...ShowSpecialAnimate90}
                     alt="Arbet Glas"
                     className=" mb:row-start-3 mb:row-end-7 rounded-xl shadow-whiteShadow50 col-start-2 col-end-12 dt:col-end-7 row-start-1 dt:row-start-2 row-end-5 dt:row-end-12 w-[100%] h-full object-cover "
                     src={Sunglass1}

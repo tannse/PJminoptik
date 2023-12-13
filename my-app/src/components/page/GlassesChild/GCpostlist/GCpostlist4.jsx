@@ -1,13 +1,25 @@
 import kidBigglasses from "../../../assets/kidBigglasses.jpg";
+import { motion } from "framer-motion";
+import {
+    ShowLeftAnimate,
+    ShowUpAnimate,
+    ShowScale,
+    ShowDownAnimate,
+    ShowRightAnimate,
+    ShowRotate,
+} from "../../../Card UI/Animation";
 const GCpostlist4 = (props) => {
     const { title, desc } = props;
 
     return (
         <>
             <div className="font-Exo grid h-[130vh] grid-cols-12 grid-rows-12 bg-[#fbfbfb] ">
-                <h1 className="col-start-2 col-end-12 dt:col-start-4 dt:col-end-10 row-start-1 row-end-3 mx-auto my-auto text-[2rem] dt:text-[3rem] font-bold text-custom-darkgreen">
+                <motion.h1
+                    {...ShowScale}
+                    className="col-start-2 col-end-12 dt:col-start-4 dt:col-end-10 row-start-1 row-end-3 mx-auto my-auto text-[2rem] dt:text-[3rem] font-bold text-custom-darkgreen"
+                >
                     {title}
-                </h1>
+                </motion.h1>
                 <hr className=" hidden dt:block h-[1px] row-start-2 dt:row-start-3 mt-[15%] dt:mt-[-10%] col-start-5 col-end-9  bg-premierColor font-extrabold  " />
                 <img
                     src={kidBigglasses}

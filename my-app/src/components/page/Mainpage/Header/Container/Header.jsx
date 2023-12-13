@@ -8,7 +8,9 @@ import logoOptik from "../../../../assets/logoOptik.png";
 import { Link } from "react-router-dom";
 import useScroll from "../../../../Card UI/HandleScroll";
 import NavPC from "../Navbar/Container/NavPC";
-
+import { Button } from "@material-tailwind/react";
+import { motion } from "framer-motion";
+import { ShowLeftDelayAnimate } from "../../../../Card UI/Animation";
 const Header = () => {
     const [openMenu, setOpenMenu] = useState(false);
     const scrollPosition = useScroll();
@@ -48,17 +50,33 @@ const Header = () => {
                         SÖN-MÅN: STÄNGT
                     </span>
                 </div>
-                <div className=" relative mt-[-2%] flex flex-col   items-center">
+                <div className=" relative  flex flex-col   items-center">
                     <div className="hidden dt:flex items-center  mr-[46px]">
-                        <div className="flex mx-2 items-center">
+                        <motion.div
+                            {...ShowLeftDelayAnimate(0.2)}
+                            className="flex-1 flex mx-2 items-center bg-premierColor text-white rounded-lg p-[6px] hover:bg-[#fff] hover:text-custom-darkgreen duration-500 hover:animate-pulse transition-all "
+                        >
                             <AiOutlineMail className="text-[20px]"></AiOutlineMail>
-                            <span className="ml-1">vellinge@minoptik.se</span>
-                        </div>
-                        <div className="flex mx-2 items-center">
+                            <a
+                                href="mailto:vellinge@minoptik.se"
+                                className="ml-1"
+                            >
+                                vellinge@minoptik.se
+                            </a>
+                        </motion.div>
+                        <motion.div
+                            {...ShowLeftDelayAnimate(0.4)}
+                            className="flex-1 flex mx-2 items-center bg-premierColor text-white rounded-lg p-[6px] hover:bg-[#fff] hover:text-custom-darkgreen duration-500 hover:animate-pulse transition-all"
+                        >
                             <BsTelephoneOutbound className="text-[20px]"></BsTelephoneOutbound>
-                            <span className="ml-1">040-426280</span>
-                        </div>
-                        <div className="flex mx-2 items-center">
+                            <a href="tel:040-426280" className="ml-1">
+                                040-426280
+                            </a>
+                        </motion.div>
+                        <motion.div
+                            {...ShowLeftDelayAnimate(0.6)}
+                            className="flex-1 flex mx-2 items-center bg-premierColor text-white rounded-lg p-[6px] hover:bg-[#fff] hover:text-custom-darkgreen duration-500 hover:animate-pulse transition-all"
+                        >
                             <AiOutlineMail className="text-[20px]"></AiOutlineMail>
                             <Link
                                 to="/PartialPayment"
@@ -67,17 +85,17 @@ const Header = () => {
                             >
                                 Delbetalning
                             </Link>
-                        </div>
+                        </motion.div>
                     </div>
-                    <button className=" group hidden dt:block mt-[15px] outline-none active:scale-75 transition-transform duration-50 font-Exo font-bold  rounded-[20px] border-[1px] border-solid border-white  bg-[#00564B] text-white w-[164px] h-[43px]">
+                    <Button className="  hidden dt:block mt-[15px] outline-none active:scale-75 transition-transform duration-50 font-Exo font-bold  rounded-lg border-[1px] border-solid border-white  bg-[#00564B] text-white w-[164px] h-[43px]">
                         <Link
                             to="/Booking"
                             alt="BOKA TID ONLINE"
-                            className="group-hover:text-[1.2rem] w-[100%] ease-linear duration-150"
+                            className=" w-[100%] ease-linear duration-150"
                         >
                             BOKA TID ONLINE
                         </Link>
-                    </button>
+                    </Button>
                 </div>
                 {openMenu ? (
                     <BiExit

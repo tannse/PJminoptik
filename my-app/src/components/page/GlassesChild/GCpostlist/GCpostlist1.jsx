@@ -1,14 +1,25 @@
 import ChillEye1 from "../../../assets/ChildEye1.jpg";
+import { motion } from "framer-motion";
+import {
+    ShowLeftAnimate,
+    ShowUpAnimate,
+    ShowScale,
+    ShowDownAnimate,
+} from "../../../Card UI/Animation";
 const GCpostlist1 = (props) => {
     const { title, desc } = props;
 
     return (
         <>
             <div className="font-Exo grid dt:h-fit h-[130vh] grid-cols-12 grid-rows-12 ">
-                <h1 className="col-start-1 dt:col-start-4 col-end-12 row-start-1 row-end-2 dt:row-end-3 text-[2rem] dt:mt-auto dt:mb-auto  dt:text-[3rem] font-bold  ml-[30px] text-custom-darkgreen">
+                <motion.h1
+                    {...ShowLeftAnimate}
+                    className="col-start-1 dt:col-start-4 col-end-12 row-start-1 row-end-2 dt:row-end-3 text-[2rem] dt:mt-auto dt:mb-auto  dt:text-[3rem] font-bold  ml-[30px] text-custom-darkgreen"
+                >
                     {title}
-                </h1>
-                <img
+                </motion.h1>
+                <motion.img
+                    {...ShowDownAnimate}
                     src={ChillEye1}
                     alt="ChildEye"
                     className="col-start-2 col-end-12 row-start-3 row-end-6 dt:row-end-9 dt:col-start-3 dt:col-end-11 dt:mt-0 dt:rounded-[20%] shadow-Shadow w-full h-full object-cover  "

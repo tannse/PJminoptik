@@ -1,6 +1,12 @@
 import { Button } from "@material-tailwind/react";
 import ServiceCT2 from "../../../assets/ServiceCT2.jpg";
+import {
+    ShowUpAnimate,
+    ShowRightAnimate,
+    ShowLeftAnimate,
+} from "../../../Card UI/Animation";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Item2PC = () => {
     return (
@@ -10,33 +16,34 @@ const Item2PC = () => {
         my-[32px] px-[71px] h-[100vh]  "
         >
             <motion.h3
-                className="text-[40px] col-start-7 col-end-13 row-start-4 font-bold font-Exo text-black"
-                initial={{ translateX: "30%", opacity: 0 }}
-                whileInView={{ translateX: "0", opacity: 1 }}
-                transition={{ duration: 1 }}
-                viewport={{ once: true }}
+                className="text-[40px] col-start-7 col-end-13 row-start-4 font-bold font-Exo text-custom-darkgreen"
+                {...ShowLeftAnimate}
             >
                 Bästa servicen
             </motion.h3>
             <motion.hr
-                initial={{ width: "0%" }}
-                whileInView={{ width: "70%" }}
-                transition={{ duration: 1 }}
-                viewport={{ once: true }}
+                {...ShowLeftAnimate}
                 className="col-start-7 col-end-10 row-start-5   border-[1px] border-black"
             />
-            <p className="text-[25px] mt-[1em] text-black font-bold font-Exo  col-start-7 col-end-12 row-start-5 row-end-8 line-clamp-3">
+            <p className="text-[25px] mt-[1em] text-custom-darkgreen font-bold font-Exo col-start-7 col-end-12 row-start-5 row-end-8 line-clamp-3">
                 Min Optik är en del av Synologen – somär bäst påbemötande,
                 engagemangoch branschkunskap i Sverige.
             </p>
-            <p className="text-black text-[20px] col-start-7 col-end-11 line-clamp-3 row-start-8 row-end-12 ">
+            <motion.p
+                {...ShowLeftAnimate}
+                className="text-black text-[1.2rem] col-start-7 col-end-11 line-clamp-3 row-start-8 row-end-12 "
+            >
                 Det visar en färsk undersökning om kundservice, gjord bland 95
                 utvalda butikskedjor i 15 olika branscher. Personlig service är
                 framgångsreceptet!
-            </p>
-            <Button className="StyleButtonNav group col-start-7 row-start-11">
-                Synundersökning
-            </Button>
+            </motion.p>
+            <Link
+                {...ShowUpAnimate}
+                to="synvard"
+                className="StyleButtonNav group col-start-7 row-start-11"
+            >
+                <Button>Synundersökning</Button>
+            </Link>
 
             <motion.img
                 initial={{ opacity: 0, y: -100 }}

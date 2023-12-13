@@ -1,4 +1,5 @@
 import Item1Photo from "../../../assets/Item1Photo.png";
+import { Link } from "react-router-dom";
 import ServiceCT1 from "../../../assets/ServiceCT1.png";
 import { motion } from "framer-motion";
 import { Button } from "@material-tailwind/react";
@@ -32,9 +33,12 @@ const Item1PC = () => {
                 marknaden har att erbjuda. Kom in i butiken så visar vi mer med
                 hjälp av bl.a. Zeiss.
             </p>
-            <Button className="StyleButtonNav  col-start-2 row-start-10">
-                LÄS MER OCH HITTA TILL OSS
-            </Button>
+            <Link
+                to="/OptikLocation"
+                className="StyleButtonNav w-full col-start-2 col-end-4 row-start-10"
+            >
+                <Button className="w-full">Hitta Till Oss</Button>
+            </Link>
 
             <motion.img
                 initial={{ opacity: 0, y: -100 }}

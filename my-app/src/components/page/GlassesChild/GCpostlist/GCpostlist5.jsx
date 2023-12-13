@@ -1,16 +1,28 @@
 import Iso9001 from "../../../assets/Arbetglas5.jpg";
 import { BiLike } from "react-icons/bi";
+import { motion } from "framer-motion";
+import {
+    ShowLeftAnimate,
+    ShowUpAnimate,
+    ShowScale,
+    ShowDownAnimate,
+    ShowRightAnimate,
+} from "../../../Card UI/Animation";
 const GCpostlist5 = (props) => {
     const { title, desc, tipsok } = props;
 
     return (
         <>
             <div className="font-Exo grid h-[130vh] dt:h-[80vh] grid-cols-12 grid-rows-12 border-b-[1px] border-solid border-white bg-premierColor">
-                <h2 className="col-start-2 col-end-12 dt:col-end-8 row-start-2 dt:row-start-3 text-[2rem]  dt:text-[3rem]  font-bold   text-[#fff]">
+                <motion.h2
+                    {...ShowUpAnimate}
+                    className="col-start-2 col-end-12 dt:col-end-8 row-start-2 dt:row-start-3 text-[2rem]  dt:text-[3rem]  font-bold   text-[#fff]"
+                >
                     {title}
-                </h2>
+                </motion.h2>
 
-                <img
+                <motion.img
+                    {...ShowDownAnimate}
                     src={Iso9001}
                     alt="Iso9001"
                     className=" col-start-9  col-end-12 row-start-3 row-end-7 my-auto dt:row-start-4 dt:row-end-6  dt:h-[18rem] rounded-xl object-contain  "

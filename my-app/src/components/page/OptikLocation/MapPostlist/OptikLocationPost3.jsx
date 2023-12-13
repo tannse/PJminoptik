@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import { ShowLeftAnimate } from "../../../Card UI/Animation";
 const OptikLocationPost3 = (props) => {
     const {
         FirstTitle,
@@ -17,9 +19,12 @@ const OptikLocationPost3 = (props) => {
                     {/* FirstItem Post3 */}
                     <div className="h-[60vh] flex justify-center items-center bg-[#F6FCF6]">
                         <div className="flex-col items-center w-[80%]">
-                            <h3 className="h3CustomPC text-custom-darkgreen text-center">
+                            <motion.h3
+                                {...ShowLeftAnimate}
+                                className="h3CustomPC text-custom-darkgreen text-center"
+                            >
                                 {FirstTitle}
-                            </h3>
+                            </motion.h3>
                             <p className="DescCustomPC  font-semibold text-custom-darkgreen text-center">
                                 {SecondTitle}
                             </p>
@@ -37,9 +42,12 @@ const OptikLocationPost3 = (props) => {
                     {/* Second Post3 */}
                     <div className="h-[50vh] mt-[35px]  flex justify-center items-center bg-[#F6FCF6]">
                         <div className="flex-col items-center w-[80%]">
-                            <h3 className="h3CustomPC text-custom-darkgreen text-center">
+                            <motion.h3
+                                {...ShowLeftAnimate}
+                                className="h3CustomPC text-custom-darkgreen text-center"
+                            >
                                 {TitleItem2}
-                            </h3>
+                            </motion.h3>
 
                             <p className="DescCustomPC py-5 leading-10  text-center">
                                 {DescItem2}
@@ -49,9 +57,12 @@ const OptikLocationPost3 = (props) => {
                     {/* Third Post3 */}
                     <div className="h-[50vh] mt-[35px]  flex justify-center items-center bg-[#F6FCF6]">
                         <div className="flex-col items-center w-[80%]">
-                            <h3 className="h3CustomPC text-custom-darkgreen text-center">
+                            <motion.h3
+                                {...ShowLeftAnimate}
+                                className="h3CustomPC text-custom-darkgreen text-center"
+                            >
                                 {TitleItem3}
-                            </h3>
+                            </motion.h3>
 
                             <p className="DescCustomPC leading-10 py-5 text-center">
                                 {DescItem3}

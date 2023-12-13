@@ -21,7 +21,7 @@ const PartialPayPost2 = (props) => {
         Uppläggn,
     } = props;
     return (
-        <div className="dt:h-[90vh] mb:h-[140vh] flex justify-center dt:items-center mb:mt-[20px] w-full">
+        <div className="dt:h-[90vh] mb:h-[120vh] flex justify-center dt:items-center mb:mt-[20px] w-full">
             <div className="h-[80vh] mb:w-[90%]   dt:w-[80%]">
                 {/* Tabbel mobile */}
                 <div className="flex flex-col ">
@@ -103,7 +103,7 @@ const PartialPayPost2 = (props) => {
                     </div>
 
                     {/* Resurs Bank */}
-                    <div className=" flex flex-col gap-y-6 mb:mt-[20px] mb:w-full dt:w-2/5">
+                    <div className=" flex flex-col gap-y-6 mb:mt-[5rem] mb:w-full dt:w-2/5">
                         {" "}
                         <h3 className="h3CustomPC dt:text-left mb:text-center  text-custom-darkgreen">
                             {PraTit2Post2}

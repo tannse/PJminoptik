@@ -15,22 +15,12 @@ const FooterMobile = () => {
                             Linser & Glasögon
                         </h3>
                         <div className="flex-col flex StyleLinkFooter">
-                            <Link className="" to="/Offer">
-                                KontakLinknto
-                            </Link>
+                            <Link to="/Offer">KontakLinknto</Link>
 
-                            <Link className="" to="">
-                                Arbetsglasögon
-                            </Link>
-                            <Link className="" to="">
-                                Torra ögon
-                            </Link>
-                            <Link className="" to="">
-                                Glasögon till barn
-                            </Link>
-                            <Link className="" to="">
-                                Solglasögon
-                            </Link>
+                            <Link to="/WorkGlasses">Arbetsglasögon</Link>
+                            <Link to="/TorraOgon">Torra ögon</Link>
+                            <Link to="/GlassChild">Glasögon till barn</Link>
+                            <Link to="/SunGlasses">Solglasögon</Link>
                         </div>
                     </div>
                     <div className="flex-1 leading-7 flex flex-col justify-center">
@@ -38,9 +28,7 @@ const FooterMobile = () => {
                             Synundersökning
                         </h3>
                         <div className="flex-col flex StyleLinkFooter">
-                            <Link className="" to="">
-                                Vad gör en optiker
-                            </Link>
+                            <Link to="/Introduction">Vad gör en optiker</Link>
                         </div>
                     </div>
                 </div>
@@ -54,7 +42,7 @@ const FooterMobile = () => {
                         <div className="flex-col flex StyleLinkFooter">
                             <Link
                                 className="underline"
-                                to="PartialPayment"
+                                to="/PartialPayment"
                                 alt="PartialPayment"
                             >
                                 delbetalning
@@ -70,7 +58,7 @@ const FooterMobile = () => {
                             Kontakt
                         </h3>
                         <div className="flex-col flex StyleLinkFooter">
-                            <Link className="underline" to="">
+                            <Link className="underline" to="/OptikLocation">
                                 Hitta till oss
                             </Link>
                         </div>
@@ -101,6 +89,7 @@ const FooterMobile = () => {
                     </div>
                     <div className=" mt-[3rem] flex flex-col items-center justify-center">
                         <SynologenImg></SynologenImg>
+
                         <span className="  font-Exo  text-white mt-[1rem]">
                             Kvlaitéts & MiöjöpoLinkc
                         </span>

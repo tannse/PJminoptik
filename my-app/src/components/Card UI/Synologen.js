@@ -1,5 +1,13 @@
 import Synologen from "../assets/Synologen.jpg";
 const SynologenImg = () => {
-    return <img src={Synologen} className="w-[100%]" alt="Synologen Optik" />;
+    return (
+        <a
+            className="w-[100%]"
+            href="https://www.synologen.se/"
+            target="_blank"
+        >
+            <img src={Synologen} alt="Synologen Optik" />
+        </a>
+    );
 };
 export default SynologenImg;

@@ -33,11 +33,12 @@ const Header = () => {
             }`}
         >
             <div className="mx-[35px] dt:ml-[146px] my-[15px] flex justify-between items-center rounded-lg">
-                <img
+                <Link
+                    to="/"
                     className=" w-[70%]  dt:w-[325px] dt:h-[25%]    object-cover"
-                    src={logoOptik}
-                    alt="Logo"
-                />
+                >
+                    <img src={logoOptik} alt="Logo"></img>
+                </Link>
                 <div className="hidden dt:flex flex-col">
                     <span className="font-Exo text-20">
                         TIS - FRE: 10:00 – 18.00

@@ -45,7 +45,7 @@
 }
 @layer component {
     .StyleLinkFooter {
-        @apply text-white list-disc ml-3 py-1 capitalize;
+        @apply text-white ml-2 py-1  capitalize;
     }
 }
 @layer components {
@@ -65,12 +65,7 @@
          text-center;
     }
 }
-@layer components {
-    .ImgCusTomMobile {
-        @apply w-[100%] h-[35vh]  
-         mt-[1.3rem]   text-center object-cover;
-    }
-}
+
 @layer components {
     .DescCustomPC {
         @apply text-[1rem] font-medium font-Exo;

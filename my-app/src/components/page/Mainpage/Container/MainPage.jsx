@@ -2,7 +2,7 @@ import Header from "../Header/Container/Header";
 import Hero from "../Hero/Hero";
 import ExtraNav from "../ExtraNav/ExtraNav";
 import BlockContent from "../MainContent/Blockcontent";
-import FooterBlock from "../Footer/FooterBlock";
+import FooterBlock from "../Footer/Container/FooterBlock";
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ShowComponent } from "../../../Card UI/Animation";

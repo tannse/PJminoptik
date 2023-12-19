@@ -19,7 +19,7 @@ const SynvardPost1 = () => {
                                 </motion.h2>
 
                                 <h3
-                                    className=" h3CustomPC font-semibold text-center  text-custom-darkgreen
+                                    className=" h3CustomPC font-semibold text-start  text-custom-darkgreen
                 "
                                 >
                                     Prova marknadens bästa linser hos din lokala

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import ServiceCT3 from "../../../assets/ServiceCT3.jpg";
 import { Button } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const Item3Content = () => {
     return (
@@ -39,7 +40,9 @@ const Item3Content = () => {
                         bara vill ta en espresso och inspireras av det senaste
                         glasögonmodet.
                     </motion.p>
-                    <Button className=" StyleButtonNav">Boka tid online</Button>
+                    <Button className=" StyleButtonNav">
+                        <Link>Boka tid online</Link>
+                    </Button>
                 </div>
             </div>
             <div className="flex justify-center ">

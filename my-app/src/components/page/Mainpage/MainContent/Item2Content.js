@@ -41,10 +41,10 @@ const Item2Content = () => {
                         butiken så visar vi mer med hjälp av bl.a. Zeiss.
                     </motion.p>
                     <Link
-                        to="/OptikLocation"
+                        to="/synvard"
                         className="dt:block mt-[15px] StyleButtonNav font-Exo font-bold rounded-[10px] shadow-Shadow  border-white border-[2px] border-solid text-white bg-bgButton"
                     >
-                        LÄS MER OCH HITTA TILL OSS
+                        Synundersökning
                     </Link>
                 </div>
             </div>

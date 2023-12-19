@@ -10,7 +10,7 @@ const FooterMobile = () => {
                 {/* cột item 1 */}
 
                 <div className="flex justify-between items-start w-full mt-[20px] ">
-                    <div className="flex-1 leading-7 flex flex-col  justify-center">
+                    <div className="flex-1 leading-9 flex flex-col  justify-center">
                         <h3 className="text-[1.2rem] font-bold font-Exo text-white">
                             Linser & Glasögon
                         </h3>
@@ -35,7 +35,7 @@ const FooterMobile = () => {
                 {/* cột item 2 */}
 
                 <div className="flex justify-between items-start w-full mt-[20px] ">
-                    <div className="flex-1 leading-7 flex flex-col  justify-center">
+                    <div className="flex-1 leading-9 flex flex-col  justify-center">
                         <h3 className="text-[1.2rem] font-bold font-Exo text-white">
                             Information
                         </h3>

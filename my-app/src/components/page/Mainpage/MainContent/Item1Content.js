@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import ServiceCT1 from "../../../assets/ServiceCT1.png";
 import { Button } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const Item1Content = () => {
     return (
@@ -40,7 +41,9 @@ const Item1Content = () => {
                         butiken så visar vi mer med hjälp av bl.a. Zeiss.
                     </motion.p>
                     <Button className="  dt:block mt-[15px] outline-none  active:scale-75 transition-transform duration-10 font-Exo font-bold  rounded-[10px] shadow-Shadow px-[15px] border-white border-[2px] border-solid text-white  bg-bgButton   h-[43px]">
-                        LÄS MER OCH HITTA TILL OSS
+                        <Link to="/OptikLocation">
+                            LÄS MER OCH HITTA TILL OSS
+                        </Link>
                     </Button>
                 </div>
             </div>

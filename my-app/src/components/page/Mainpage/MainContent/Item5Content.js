@@ -32,7 +32,13 @@ const Item5Content = () => {
                         sammanslutning av experter.
                     </motion.p>
                     <Button className="  dt:block mt-[15px] outline-none  active:scale-75 transition-transform duration-50 font-Exo font-bold  rounded-[10px] shadow-Shadow px-[15px] border-white border-[2px] border-solid text-white  bg-bgButton   h-[43px]">
-                        Läser mer här
+                        <a
+                            href="https://www.synologen.se/om-oss/var-kvalitets-och-miljopolicy/"
+                            alt="synologen"
+                            target="_blank"
+                        >
+                            Läser mer här
+                        </a>
                     </Button>
                 </div>
             </div>

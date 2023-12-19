@@ -22,6 +22,7 @@ const ExtraNav = () => {
 
                 <Link
                     to="/Glasses"
+                    alt="Glasses"
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
@@ -30,23 +31,26 @@ const ExtraNav = () => {
                     <Button className="StyleButtonNav">Glasögon</Button>
                 </Link>
 
-                <motion.li
+                <Link
+                    to="/Offer"
+                    alt="Offer"
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
                 >
                     <Button className="StyleButtonNav">Kontaktlinser</Button>
-                </motion.li>
+                </Link>
 
-                <motion.li
+                <Link
+                    to="/SunGlasses"
                     initial={{ opacity: 0, y: 40 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
                 >
                     <Button className="StyleButtonNav">Solglasögon</Button>
-                </motion.li>
+                </Link>
             </ul>
 
             <ul
@@ -59,11 +63,11 @@ const ExtraNav = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
-                    className="w-1/5 flex flex-col justify-center  group  cursor-pointer items-center border-2 rounded-xl border-white hover:shadow-buttonShadow  customAnimation   "
+                    className="w-1/5 flex flex-col justify-center group cursor-pointer items-center border-2 rounded-xl border-white hover:shadow-buttonShadow  customAnimation   "
                 >
                     <img
                         alt="minoptik"
-                        className=" group-hover:brightness-[65%]  w-[100%] h-[20vh] object-cover   customAnimation   rounded-t-xl   "
+                        className=" group-hover:brightness-[65%] w-[100%] h-[20vh] object-cover   customAnimation   rounded-t-xl   "
                         src={Extranav1}
                     ></img>
                     <a

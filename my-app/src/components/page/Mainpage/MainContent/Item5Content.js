@@ -4,8 +4,8 @@ import { Button } from "@material-tailwind/react";
 
 const Item5Content = () => {
     return (
-        <div className="bg-premierColor h-[100vh] dt:hidden ">
-            <div className=" pt-[3.1rem]   px-[2.2rem] StyleFlexCol">
+        <div className="bg-premierColor mbx:h-[70vh] dt:hidden ">
+            <div className=" pt-[1rem]   px-[2.2rem] StyleFlexCol">
                 <div className="border-solid border-white border-[2px] rounded-[15px] py-[20px] px-[10px] mt-[10px] StyleFlexCol">
                     <motion.h2
                         initial={{ y: 50, opacity: 0 }}
@@ -43,7 +43,7 @@ const Item5Content = () => {
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
                     src={ServiceCT5}
-                    className="  ImgCusTomMobile h-fit  object-cover dt:object-none "
+                    className=" h-fit mt-[20px] object-cover dt:object-none "
                 />
             </div>
         </div>

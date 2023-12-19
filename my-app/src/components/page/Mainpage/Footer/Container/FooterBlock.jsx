@@ -1,5 +1,5 @@
-import FooterPC from "./FooterContentPC";
-import FooterMobile from "./Footercontent";
+import FooterPC from "../FooterPC";
+import FooterMobile from "../FooterMobile";
 const FooterBlock = () => {
     return (
         <div>

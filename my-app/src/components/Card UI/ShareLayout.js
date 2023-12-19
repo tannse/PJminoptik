@@ -1,5 +1,5 @@
 import Header from "../page/Mainpage/Header/Container/Header";
-import FooterBlock from "../page/Mainpage/Footer/FooterBlock";
+import FooterBlock from "../page/Mainpage/Footer/Container/FooterBlock";
 import { Outlet } from "react-router-dom";
 const ShareLayout = ({ children }) => {
     return (

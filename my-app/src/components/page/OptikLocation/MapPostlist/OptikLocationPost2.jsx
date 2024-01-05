@@ -1,5 +1,5 @@
 import { GoogleMap, Marker, useJsApiLoader } from "@react-google-maps/api";
-import ArbetGlas4 from "../../../assets/Arbetglas4.jpg";
+import ArbetGlas4 from "../../../assets/Arbetglas4.webp";
 import SkeletonText from "../../../Card UI/SkeletonText";
 import { motion } from "framer-motion";
 import {

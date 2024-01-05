@@ -1,13 +1,6 @@
-import Sunglass2 from "../../../assets/Sunglass2.jpg";
+import Sunglass2 from "../../../assets/Sunglass2.webp";
 import { motion } from "framer-motion";
-import {
-    ShowLeftAnimate,
-    ShowUpAnimate,
-    ShowScale,
-    ShowDownAnimate,
-    ShowRightAnimate,
-    ShowSpecialAnimate90,
-} from "../../../Card UI/Animation";
+import { ShowLeftAnimate, ShowRightAnimate } from "../../../Card UI/Animation";
 const SunGlassPost2 = (props) => {
     const { descFirst, descSecond, descThird, titleFirst, style } = props;
     return (

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import OfferImage1 from "../../../assets/OfferImage1.jpg";
-import OfferImage2 from "../../../assets/OfferImage2.jpg";
-import OfferImage3 from "../../../assets/OfferImage3.jpg";
+import OfferImage1 from "../../../assets/OfferImage1.webp";
+import OfferImage2 from "../../../assets/OfferImage2.webp";
+import OfferImage3 from "../../../assets/OfferImage3.webp";
 import {
     ShowDownAnimate,
     ShowLeftAnimate,

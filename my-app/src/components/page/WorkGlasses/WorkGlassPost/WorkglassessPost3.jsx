@@ -1,4 +1,4 @@
-import Arbetglas4 from "../../../assets/Arbetglas4.jpg";
+import Arbetglas4 from "../../../assets/Arbetglas4.webp";
 import { motion } from "framer-motion";
 import { ShowLeftAnimate, ShowRightAnimate } from "../../../Card UI/Animation";
 export const WorkGlassPost3 = (props) => {

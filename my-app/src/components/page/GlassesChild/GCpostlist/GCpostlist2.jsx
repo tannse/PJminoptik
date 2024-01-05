@@ -1,13 +1,7 @@
-import RupEye1 from "../../../assets/rupeye.jpg";
-import RupEye2 from "../../../assets/rupeye2.jpg";
+import RupEye1 from "../../../assets/rupeye.webp";
+import RupEye2 from "../../../assets/rupeye2.webp";
 import { motion } from "framer-motion";
-import {
-    ShowLeftAnimate,
-    ShowUpAnimate,
-    ShowScale,
-    ShowDownAnimate,
-    ShowRightAnimate,
-} from "../../../Card UI/Animation";
+import { ShowLeftAnimate, ShowRightAnimate } from "../../../Card UI/Animation";
 const GCpostlist2 = (props) => {
     const { title, desc } = props;
 

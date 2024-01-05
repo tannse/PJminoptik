@@ -1,6 +1,6 @@
-import Item1Photo from "../../../assets/Item1Photo.png";
+import Item1Photo from "../../../assets/Item1Photo.webp";
 import { Link } from "react-router-dom";
-import ServiceCT1 from "../../../assets/ServiceCT1.png";
+import ServiceCT1 from "../../../assets/ServiceCT1.webp";
 import { motion } from "framer-motion";
 import { Button } from "@material-tailwind/react";
 

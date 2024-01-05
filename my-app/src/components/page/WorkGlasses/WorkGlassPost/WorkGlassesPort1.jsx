@@ -1,4 +1,4 @@
-import Arbetglas3 from "../../../assets/Arbetglas3.jpg";
+import Arbetglas3 from "../../../assets/Arbetglas3.webp";
 import { motion } from "framer-motion";
 import {
     ShowLeftAnimate,

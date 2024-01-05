@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ServiceCT3 from "../../../assets/ServiceCT3.jpg";
+import ServiceCT3 from "../../../assets/ServiceCT3.webp";
 import { Button } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
 

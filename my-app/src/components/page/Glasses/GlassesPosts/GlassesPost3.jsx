@@ -1,4 +1,4 @@
-import Arbetglas3 from "../../../assets/Arbetglas3.jpg";
+import Arbetglas3 from "../../../assets/Arbetglas3.webp";
 const GlassPost3 = (props) => {
     const { glass3tit, glass3des } = props;
     return (

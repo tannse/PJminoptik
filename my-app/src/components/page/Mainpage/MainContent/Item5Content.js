@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ServiceCT5 from "../../../assets/ServiceCT5.gif";
+import ServiceCT5 from "../../../assets/ServiceCT5.webp";
 import { Button } from "@material-tailwind/react";
 
 const Item5Content = () => {
@@ -33,6 +33,7 @@ const Item5Content = () => {
                     </motion.p>
                     <Button className="  dt:block mt-[15px] outline-none  active:scale-75 transition-transform duration-50 font-Exo font-bold  rounded-[10px] shadow-Shadow px-[15px] border-white border-[2px] border-solid text-white  bg-bgButton   h-[43px]">
                         <a
+                            rel="noreferrer"
                             href="https://www.synologen.se/om-oss/var-kvalitets-och-miljopolicy/"
                             alt="synologen"
                             target="_blank"

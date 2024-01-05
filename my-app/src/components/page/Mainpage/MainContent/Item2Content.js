@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
-import ServiceCT2 from "../../../assets/ServiceCT2.jpg";
-import { Button } from "@material-tailwind/react";
+import ServiceCT2 from "../../../assets/ServiceCT2.webp";
 import { Link } from "react-router-dom";
 const Item2Content = () => {
     return (

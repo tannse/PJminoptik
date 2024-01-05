@@ -1,11 +1,7 @@
 import { Button } from "@material-tailwind/react";
-import Sunglass1 from "../../../assets/Sunglass1.jpg";
+import Sunglass1 from "../../../assets/Sunglass1.webp";
 import { motion } from "framer-motion";
 import {
-    ShowLeftAnimate,
-    ShowUpAnimate,
-    ShowScale,
-    ShowDownAnimate,
     ShowRightAnimate,
     ShowSpecialAnimate90,
 } from "../../../Card UI/Animation";

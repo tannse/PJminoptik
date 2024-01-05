@@ -2,11 +2,9 @@ import { motion } from "framer-motion";
 import {
     ShowLeftAnimate,
     ShowUpAnimate,
-    ShowScale,
-    ShowDownAnimate,
     ShowRightAnimate,
 } from "../../../Card UI/Animation";
-import TorraOgonImg2 from "../../../assets/TorraOgon2.jpg";
+import TorraOgonImg2 from "../../../assets/TorraOgon2.webp";
 const TorraList2 = (props) => {
     const { title, desc, question } = props;
     return (

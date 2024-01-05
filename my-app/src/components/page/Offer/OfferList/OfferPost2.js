@@ -1,4 +1,4 @@
-import OfferImage from "../../../assets/OfferImage.jpg";
+import OfferImage from "../../../assets/OfferImage.webp";
 const OfferPost2 = (props) => {
     return (
         <div className=" flex justify-center bg-[#f6faf6] h-fit mt-[50px] ">

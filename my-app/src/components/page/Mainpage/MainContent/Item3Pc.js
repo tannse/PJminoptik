@@ -1,9 +1,5 @@
-import ServiceCT3 from "../../../assets/ServiceCT3.jpg";
-import {
-    ShowLeftAnimate,
-    ShowRightAnimate,
-    ShowScale,
-} from "../../../Card UI/Animation";
+import ServiceCT3 from "../../../assets/ServiceCT3.webp";
+import { ShowLeftAnimate, ShowScale } from "../../../Card UI/Animation";
 import { motion } from "framer-motion";
 const Item3PC = () => {
     return (

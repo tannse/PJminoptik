@@ -1,4 +1,4 @@
-import WellcomeImg from "../../../assets/WellcomeImg.jpg";
+import WellcomeImg from "../../../assets/WellcomeImg.webp";
 const SynvardPost2 = () => {
     return (
         <div className=" flex flex-col  justify-center items-center ">

@@ -1,20 +1,17 @@
 import GlassesPost2Img1 from "../../../assets/GlassesPost2Img1.jpg";
 import GlassesPost2Img2 from "../../../assets/GlassesPost2Img2.jpg";
-import { Button } from "@material-tailwind/react";
-import Arbetglas3 from "../../../assets/Arbetglas3.jpg";
 const GlassPost2 = (props) => {
     const {
         glass2titl1,
         glass2titl2,
         glass2titl3,
-        glass2titl4,
+
         glass2des1,
         glass2des2,
         glass2des3,
         glass2des4,
         glass2des5,
         glass2des6,
-        glass2des7,
     } = props;
     return (
         <>

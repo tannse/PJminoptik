@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import {
     ShowLeftAnimate,
     ShowUpAnimate,
-    ShowScale,
     ShowLeftDelayAnimate,
 } from "../../../Card UI/Animation";
 const SunGlassPost5 = (props) => {

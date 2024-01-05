@@ -1,13 +1,9 @@
 import { motion } from "framer-motion";
 import {
-    ShowLeftAnimate,
     ShowUpAnimate,
-    ShowScale,
-    ShowLeftDelayAnimate,
-    ShowDownAnimate,
     ShowSpecialAnimate90,
 } from "../../../Card UI/Animation";
-import LocationPost5Img from "../../../assets/LocationPost5Img.png";
+import LocationPost5Img from "../../../assets/LocationPost5Img.webp";
 const OptikLocation5 = (props) => {
     const { title, desc } = props;
     return (

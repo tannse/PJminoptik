@@ -1,13 +1,7 @@
-import Iso9001 from "../../../assets/Arbetglas5.jpg";
+import Iso9001 from "../../../assets/Arbetglas5.webp";
 import { BiLike } from "react-icons/bi";
 import { motion } from "framer-motion";
-import {
-    ShowLeftAnimate,
-    ShowUpAnimate,
-    ShowScale,
-    ShowDownAnimate,
-    ShowRightAnimate,
-} from "../../../Card UI/Animation";
+import { ShowUpAnimate, ShowDownAnimate } from "../../../Card UI/Animation";
 const GCpostlist5 = (props) => {
     const { title, desc, tipsok } = props;
 

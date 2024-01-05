@@ -1,5 +1,4 @@
-import { Button } from "@material-tailwind/react";
-import SunGlass3 from "../../../assets/Sunglass3.jpg";
+import SunGlass3 from "../../../assets/Sunglass3.webp";
 import { motion } from "framer-motion";
 import {
     ShowLeftAnimate,

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import ServiceCT4 from "../../../assets/ServiceCT5.jpg";
+import ServiceCT4 from "../../../assets/ServiceCT5.webp";
 import { Button } from "@material-tailwind/react";
 
 const Item4Content = () => {

@@ -1,12 +1,11 @@
-import eyekid1 from "../../../assets/eyekid1.jpg";
-import eyekid2 from "../../../assets/eyekid2.jpg";
-import eyekid3 from "../../../assets/eyekid3.jpg";
-import eyekid4 from "../../../assets/eyekid4.jpg";
+import eyekid1 from "../../../assets/eyekid1.webp";
+import eyekid2 from "../../../assets/eyekid2.webp";
+import eyekid3 from "../../../assets/eyekid3.webp";
+import eyekid4 from "../../../assets/eyekid4.webp";
 import { motion } from "framer-motion";
 import {
     ShowLeftAnimate,
     ShowUpAnimate,
-    ShowScale,
     ShowDownAnimate,
     ShowRightAnimate,
 } from "../../../Card UI/Animation";

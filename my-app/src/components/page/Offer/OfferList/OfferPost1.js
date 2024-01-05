@@ -1,4 +1,4 @@
-import CardOptik from "../../../assets/CardOptik.png";
+import CardOptik from "../../../assets/CardOptik.webp";
 import { motion } from "framer-motion";
 import { ShowRightAnimate, ShowRotate360 } from "../../../Card UI/Animation";
 import { Button } from "@material-tailwind/react";

@@ -1,10 +1,6 @@
 import { Button } from "@material-tailwind/react";
-import ServiceCT2 from "../../../assets/ServiceCT2.jpg";
-import {
-    ShowUpAnimate,
-    ShowRightAnimate,
-    ShowLeftAnimate,
-} from "../../../Card UI/Animation";
+import ServiceCT2 from "../../../assets/ServiceCT2.webp";
+import { ShowUpAnimate, ShowLeftAnimate } from "../../../Card UI/Animation";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 

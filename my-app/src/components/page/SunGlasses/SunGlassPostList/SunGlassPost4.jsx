@@ -1,18 +1,13 @@
 import Carousel from "../../../Card UI/Carousel";
-import SunGlass1 from "../../../assets/SunglassSlide1.jpg";
-import SunGlass2 from "../../../assets/SunglassSlide2.jpg";
-import SunGlass3 from "../../../assets/SunglassSlide3.jpg";
-import SunGlass4 from "../../../assets/SunglassSlide4.jpg";
-import DOlogo from "../../../assets/DOlogo.png";
-import RBlogo from "../../../assets/RBlogo.png";
-import OAlogo from "../../../assets/OAlogo.png";
+import SunGlass1 from "../../../assets/SunglassSlide1.webp";
+import SunGlass2 from "../../../assets/SunglassSlide2.webp";
+import SunGlass3 from "../../../assets/SunglassSlide3.webp";
+import SunGlass4 from "../../../assets/SunglassSlide4.webp";
+import DOlogo from "../../../assets/DOlogo.webp";
+import RBlogo from "../../../assets/RBlogo.webp";
+import OAlogo from "../../../assets/OAlogo.webp";
 import { motion } from "framer-motion";
-import {
-    ShowLeftAnimate,
-    ShowUpAnimate,
-    ShowScale,
-    ShowLeftDelayAnimate,
-} from "../../../Card UI/Animation";
+import { ShowScale, ShowLeftDelayAnimate } from "../../../Card UI/Animation";
 const SunGlassPost4 = (props) => {
     const images = [SunGlass1, SunGlass2, SunGlass3, SunGlass4];
 
@@ -29,7 +24,7 @@ const SunGlassPost4 = (props) => {
                     </motion.h3>
                     <Carousel>
                         {images.map((image, index) => (
-                            <img key={index} src={image} />
+                            <img alt="Sunglass" key={index} src={image} />
                         ))}
                     </Carousel>
                 </div>

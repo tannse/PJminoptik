@@ -1,13 +1,6 @@
 import kidBigglasses from "../../../assets/kidBigglasses.jpg";
 import { motion } from "framer-motion";
-import {
-    ShowLeftAnimate,
-    ShowUpAnimate,
-    ShowScale,
-    ShowDownAnimate,
-    ShowRightAnimate,
-    ShowRotate,
-} from "../../../Card UI/Animation";
+import { ShowScale } from "../../../Card UI/Animation";
 const GCpostlist4 = (props) => {
     const { title, desc } = props;
 

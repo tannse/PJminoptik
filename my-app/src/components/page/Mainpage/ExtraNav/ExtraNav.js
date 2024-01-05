@@ -1,10 +1,9 @@
-import Extranav1 from "../../../assets/Extranav-1.jpg";
-import Extranav2 from "../../../assets/Extranav-2.jpg";
-import Extranav3 from "../../../assets/Extranav-3.jpg";
-import Extranav4 from "../../../assets/Extranav-4.jpg";
+import Extranav1 from "../../../assets/Extranav-1.webp";
+import Extranav2 from "../../../assets/Extranav-2.webp";
+import Extranav3 from "../../../assets/Extranav-3.webp";
+import Extranav4 from "../../../assets/Extranav-4.webp";
 import { Link } from "react-router-dom";
 import { Button } from "@material-tailwind/react";
-import { motion } from "framer-motion";
 const ExtraNav = () => {
     return (
         <div>

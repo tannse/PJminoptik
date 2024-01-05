@@ -1,5 +1,4 @@
-import ItemCerti from "../../../assets/ServiceCT5.gif";
-
+import ItemCerti from "../../../assets/ServiceCT5.webp";
 import { motion } from "framer-motion";
 const Item5PC = () => {
     return (
@@ -36,6 +35,8 @@ const Item5PC = () => {
             >
                 <a
                     href="./"
+                    target="_blank
+                    "
                     className="group-hover:text-[1.5rem] w-[100%] ease-linear duration-150 "
                 >
                     Boka tid online

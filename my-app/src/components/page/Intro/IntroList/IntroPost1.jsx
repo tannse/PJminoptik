@@ -1,4 +1,4 @@
-import AboutPhoto from "../../../assets/MinOptikAbout.jpg";
+import AboutPhoto from "../../../assets/MinOptikAbout.webp";
 import { motion } from "framer-motion";
 import { ShowUpAnimate } from "../../../Card UI/Animation";
 import { ShowRightAnimate } from "../../../Card UI/Animation";

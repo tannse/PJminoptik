@@ -1,11 +1,6 @@
-import ChillEye1 from "../../../assets/ChildEye1.jpg";
+import ChillEye1 from "../../../assets/ChildEye1.webp";
 import { motion } from "framer-motion";
-import {
-    ShowLeftAnimate,
-    ShowUpAnimate,
-    ShowScale,
-    ShowDownAnimate,
-} from "../../../Card UI/Animation";
+import { ShowLeftAnimate, ShowDownAnimate } from "../../../Card UI/Animation";
 const GCpostlist1 = (props) => {
     const { title, desc } = props;
 

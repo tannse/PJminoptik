@@ -1,13 +1,7 @@
-import TorraOgonImg1 from "../../../assets/TorraOgon1.jpg";
+import TorraOgonImg1 from "../../../assets/TorraOgon1.webp";
 import { Button } from "@material-tailwind/react";
 import { motion } from "framer-motion";
-import {
-    ShowLeftAnimate,
-    ShowUpAnimate,
-    ShowScale,
-    ShowDownAnimate,
-    ShowRightAnimate,
-} from "../../../Card UI/Animation";
+import { ShowLeftAnimate, ShowRightAnimate } from "../../../Card UI/Animation";
 const TorraList1 = (props) => {
     const { title, desc } = props;
     console.log(props);

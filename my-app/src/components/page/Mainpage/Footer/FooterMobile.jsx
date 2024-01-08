@@ -4,7 +4,7 @@ import SynologenImg from "../../../Card UI/Synologen";
 import { Link } from "react-router-dom";
 const FooterMobile = () => {
     return (
-        <div className="dt:hidden mb:h-[110vh] mbx:h-[80vh] bg-premierColor">
+        <div className="dt:hidden mb:h-[110vh] mbx:h-[100vh] bg-premierColor">
             {/* Mobile */}
             <div className="flex flex-col  items-center px-[20px]">
                 {/* cột item 1 */}

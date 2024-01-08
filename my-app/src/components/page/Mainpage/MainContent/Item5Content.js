@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
-import ServiceCT5 from "../../../assets/ServiceCT5.webp";
+import CertificateLogoIso from "../../../assets/CertificateLogoIso.webp";
 import { Button } from "@material-tailwind/react";
 
 const Item5Content = () => {
     return (
-        <div className="bg-premierColor mbx:h-[70vh] dt:hidden ">
+        <div className="bg-premierColor mbx:h-[90vh] dt:hidden ">
             <div className=" pt-[1rem]   px-[2.2rem] StyleFlexCol">
                 <div className="border-solid border-white border-[2px] rounded-[15px] py-[20px] px-[10px] mt-[10px] StyleFlexCol">
                     <motion.h2
@@ -49,7 +49,7 @@ const Item5Content = () => {
                     whileInView={{ opacity: 1 }}
                     transition={{ duration: 1 }}
                     viewport={{ once: true }}
-                    src={ServiceCT5}
+                    src={CertificateLogoIso}
                     className=" h-fit mt-[20px] object-cover dt:object-none "
                 />
             </div>

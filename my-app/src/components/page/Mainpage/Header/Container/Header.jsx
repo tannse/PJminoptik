@@ -1,29 +1,29 @@
 import { useState, useEffect, Contex } from "react";
 import { HiOutlineMenu } from "react-icons/hi";
 import NavBar from "../Navbar/Container/NavBar";
+import NavPC from "../Navbar/Container/NavPC";
 import { BsTelephoneOutbound } from "react-icons/bs";
 import { BiExit } from "react-icons/bi";
 import { AiOutlineMail } from "react-icons/ai";
 import logoOptik from "../../../../assets/logoOptik.png";
 import { Link } from "react-router-dom";
 import useScroll from "../../../../Card UI/HandleScroll";
-import NavPC from "../Navbar/Container/NavPC";
 import { Button } from "@material-tailwind/react";
 import { motion } from "framer-motion";
 import { ShowLeftDelayAnimate } from "../../../../Card UI/Animation";
 const Header = () => {
-    const [openMenu, setOpenMenu] = useState(false);
+    const [activeMenu, setActiveMenu] = useState(false);
     const scrollPosition = useScroll();
     useEffect(() => {
         const htmlElement = document.documentElement;
-        htmlElement.style.overflow = openMenu ? "hidden" : "auto";
+        htmlElement.style.overflow = activeMenu ? "hidden" : "auto";
         return () => {
             htmlElement.style.overflow = "auto";
         };
-    }, [openMenu]);
+    }, [activeMenu]);
 
     const HandleOpenMenu = () => {
-        setOpenMenu(!openMenu);
+        setActiveMenu(!activeMenu);
     };
 
     return (
@@ -98,7 +98,7 @@ const Header = () => {
                         </Link>
                     </Button>
                 </div>
-                {openMenu ? (
+                {activeMenu ? (
                     <BiExit
                         className=" dt:hidden w-[30px] h-[30px] text-[#00564b] z-[5000]  cursor-pointer"
                         onClick={HandleOpenMenu}
@@ -111,16 +111,8 @@ const Header = () => {
                 )}
             </div>
 
-            <NavBar onOpenMenu={openMenu} setOpenMenu={setOpenMenu} />
+            <NavBar activeMenu={activeMenu} setActiveMenu={setActiveMenu} />
             <NavPC></NavPC>
-
-            {/* <div
-                className={` w-[100%] bg-bgOverlay h-[100%] top-0 z-[100] transition-transform ease-in-out duration-500 dt:hidden  ${
-                    openMenu ? " fixed  opacity-100  " : " opacity-0 "
-                }`}
-            >
-                <div></div>
-            </div> */}
         </header>
     );
 };

@@ -6,7 +6,7 @@ const WorkGlassPost2 = (props) => {
 
     return (
         <>
-            <div className="font-Exo grid dt:h-[100vh] h-[120vh] grid-cols-12 grid-rows-12 bg-[#fbfbfb]      ">
+            <div className="font-Exo grid dt:h-[100vh] h-[150vh] mbx:h-[130vh] grid-cols-12 grid-rows-12 bg-[#fbfbfb]      ">
                 <motion.img
                     {...ShowUpAnimate}
                     alt="arbetGlas"

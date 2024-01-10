@@ -10,7 +10,7 @@ export const WorkGlassPost1 = (props) => {
     const { title, desc } = props;
     return (
         <>
-            <div className="font-Exo grid h-[100vh]  dt:h-[80vh] grid-cols-12 grid-rows-12 gap-8 bg-[#fbfbfb] ">
+            <div className="font-Exo grid  h-[120vh] mbx:h-[100vh]  dt:h-[80vh]  grid-cols-12 grid-rows-12 gap-8 bg-[#fbfbfb] ">
                 <motion.img
                     {...ShowLeftAnimate}
                     alt="Arbet Glas"
@@ -24,16 +24,16 @@ export const WorkGlassPost1 = (props) => {
                 >
                     {title}
                 </motion.h2>
-                <p className="col-start-2 col-end-12 row-start-6 dt:mt-[30px] dt:col-start-8 dt:row-start-4 dt:row-end-7 my-auto mt-[20px]  DescCustomPC">
+                <p className="col-start-2 col-end-12 row-start-7 row-end-8 dt:col-start-8 dt:row-start-4 dt:row-end-7 mbx:mt-[20px] my-auto DescCustomPC">
                     {desc.first}
                 </p>
-                <p className="col-start-2 dt:col-start-8 col-end-12  dt:row-start-6 dt:row-end-9 row-end-11 dt:mt-[20px] dt:DescCustomPC">
+                <p className="col-start-2 dt:col-start-8 col-end-12  dt:row-start-6 dt:row-end-9  row-end-10 dt:mt-[20px] dt:DescCustomPC my-auto">
                     {desc.second}
                 </p>
 
                 <Button
                     {...ShowScale}
-                    className="col-start-3 row-start-10   dt:col-start-8 col-end-10 translate-y-5 dt:row-start-10 dt:row-end-9 
+                    className="col-start-3 row-start-11 mbx:row-start-11 mbx:row-end-13 dt:row-start-9 dt:row-end-10  dt:col-start-8 col-end-10 m-auto
                  StyleButtonNav"
                 >
                     SE LEDIGA TIDER

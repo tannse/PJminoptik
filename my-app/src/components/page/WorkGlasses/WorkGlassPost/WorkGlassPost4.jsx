@@ -5,7 +5,7 @@ export const WorkGlassPost4 = (props) => {
     const { title, desc } = props;
     return (
         <>
-            <div className="font-Exo grid h-[50vh] dt:h-[60vh] grid-cols-12 grid-rows-7 bg   bg-[#fbfbfb]  ">
+            <div className="font-Exo grid h-[70vh] mbx:h-[50vh] dt:h-[60vh] grid-cols-12 grid-rows-7 bg   bg-[#fbfbfb]  ">
                 <motion.img
                     {...ShowScale}
                     alt="arbet Glas"

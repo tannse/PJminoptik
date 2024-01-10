@@ -6,7 +6,7 @@ export const WorkGlassPost3 = (props) => {
     return (
         <>
             <>
-                <div className="font-Exo grid dt:h-[80vh] h-[100vh] grid-cols-12 grid-rows-12 gap-10">
+                <div className="font-Exo grid dt:h-[80vh] mbx:h-[100vh] h-[150vh] grid-cols-12 grid-rows-12 ">
                     <motion.img
                         {...ShowLeftAnimate}
                         alt="arbet Glas"

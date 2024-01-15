@@ -9,10 +9,10 @@ const SunGlassPost3 = (props) => {
     const { descFirst, descSecond, descThird, titleFirst, titleSecond } = props;
     return (
         <>
-            <div className="font-Exo grid h-[120vh]  dt:h-[100vh] grid-cols-12 grid-rows-12 bg-[#f6faf6]">
+            <div className="font-Exo grid h-fit  dt:h-[100vh] grid-cols-12 grid-rows-12 bg-[#f6faf6]">
                 <motion.h3
                     {...ShowDownAnimate}
-                    className=" mb:row-start-1 mb:row-end-3 mb:col-start-2 mb:col-end-12 col-end-13 dt:col-start-7 dt:col-end-12 dt:row-start-1 dt:row-end-3 text-[27px] dt:text-[3rem] dt:text-center m-auto text-custom-darkgreen font-extrabold"
+                    className=" mb:row-start-1 mb:row-end-2 mb:col-start-2 mb:col-end-12 col-end-13 dt:col-start-7 dt:col-end-12 dt:row-start-1 dt:row-end-3 text-[27px] dt:text-[3rem] dt:text-center m-auto text-custom-darkgreen font-extrabold"
                 >
                     {titleFirst}
                 </motion.h3>
@@ -24,17 +24,17 @@ const SunGlassPost3 = (props) => {
                 </p>
                 <motion.h3
                     {...ShowLeftAnimate}
-                    className=" mb:row-start-1 mb:row-end-4 mb:col-start-2 mb:col-end-12 dt:col-start-7 dt:col-end-12 dt:row-start-5 dt:row-end-9 text-[27px] dt:text-[3rem] dt:text-center m-auto text-custom-darkgreen font-extrabold"
+                    className=" mb:row-start-2 mb:row-end-3 mb:col-start-2 mb:col-end-12 dt:col-start-7 dt:col-end-12 dt:row-start-5 dt:row-end-9 text-[23px] dt:text-[3rem] dt:text-center m-auto text-custom-darkgreen font-extrabold"
                 >
                     {titleSecond}
                 </motion.h3>
-                <p className="mb:row-start-7 mb:row-end-10 mb:col-start-2 mb:col-end-12 row-end-11 dt:col-start-7 dt:col-end-12 dt:row-start-8 dt:row-end-10 text-center m-auto text-custom-darkgreen dt:DescCustomPC">
+                <p className="mb:row-start-10 mb:row-end-11 mb:col-start-2 mb:col-end-12 row-end-11 dt:col-start-7 dt:col-end-12 dt:row-start-8 dt:row-end-10 text-center m-auto text-custom-darkgreen dt:DescCustomPC">
                     <span className="text-[1.5rem] font-semibold">
                         {descSecond.charAt(0)}
                     </span>
                     {descSecond.substring(1)}
                 </p>
-                <p className="mb:row-start-7 mb:row-end-10 mb:col-start-2 mb:col-end-12 row-end-11 dt:col-start-7 dt:col-end-12 dt:row-start-10 dt:row-end-13 dt:mt-0 text-center m-auto text-custom-darkgreen dt:DescCustomPC">
+                <p className="mb:row-start-11 mb:row-end-13 mb:col-start-2 mb:col-end-12 row-end-11 dt:col-start-7 dt:col-end-12 dt:row-start-10 dt:row-end-13 dt:mt-0 text-center m-auto text-custom-darkgreen dt:DescCustomPC">
                     <span className="text-[1.5rem] font-semibold">
                         {descThird.charAt(0)}
                     </span>

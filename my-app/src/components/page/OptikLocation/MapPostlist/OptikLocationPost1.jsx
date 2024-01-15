@@ -15,7 +15,7 @@ const OptikLocationPost1 = (props) => {
                 </p>
             </motion.div>
             <img
-                className="w-[100%] h-[80vh]"
+                className="w-[100%] object-cover h-[80vh]"
                 alt="Kontakt MinOptik"
                 src={OptikLocationImg1}
             />

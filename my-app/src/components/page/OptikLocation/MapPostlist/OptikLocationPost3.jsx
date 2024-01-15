@@ -17,7 +17,7 @@ const OptikLocationPost3 = (props) => {
             <div className="flex flex-col  items-center ">
                 <div className="w-[90%] ">
                     {/* FirstItem Post3 */}
-                    <div className="h-[60vh] flex justify-center items-center bg-[#F6FCF6]">
+                    <div className="h-[100vh] dt:h-[60vh] flex justify-center items-center bg-[#F6FCF6]">
                         <div className="flex-col items-center w-[80%]">
                             <motion.h3
                                 {...ShowLeftAnimate}
@@ -40,7 +40,7 @@ const OptikLocationPost3 = (props) => {
                         </div>
                     </div>
                     {/* Second Post3 */}
-                    <div className="h-[50vh] mt-[35px]  flex justify-center items-center bg-[#F6FCF6]">
+                    <div className="h-[50vh] flex justify-center items-center bg-[#F6FCF6]">
                         <div className="flex-col items-center w-[80%]">
                             <motion.h3
                                 {...ShowLeftAnimate}
@@ -55,8 +55,8 @@ const OptikLocationPost3 = (props) => {
                         </div>
                     </div>
                     {/* Third Post3 */}
-                    <div className="h-[50vh] mt-[35px]  flex justify-center items-center bg-[#F6FCF6]">
-                        <div className="flex-col items-center w-[80%]">
+                    <div className="h-[110vh]  dt:h-[50vh] mt-[35px]  flex justify-center items-center  bg-[#F6FCF6]">
+                        <div className="flex-col items-center w-[80%] ">
                             <motion.h3
                                 {...ShowLeftAnimate}
                                 className="h3CustomPC text-custom-darkgreen text-center"
@@ -64,7 +64,7 @@ const OptikLocationPost3 = (props) => {
                                 {TitleItem3}
                             </motion.h3>
 
-                            <p className="DescCustomPC leading-10 py-5 text-center">
+                            <p className="DescCustomPC  leading-10 py-5 text-center">
                                 {DescItem3}
                             </p>
                         </div>

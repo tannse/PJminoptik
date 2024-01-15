@@ -18,34 +18,34 @@ const SunGlassPost5 = (props) => {
     } = props;
     return (
         <>
-            <div className="font-Exo grid h-[140vh] dt:h-[140vh] grid-cols-12 grid-rows-12 gap-x-[20px] gap-y-[20px] bg-[#d9f8e8] ">
+            <div className="font-Exo grid h-[140vh] grid-cols-12 grid-rows-12 gap-x-[20px] gap-y-[20px] bg-[#d9f8e8] ">
                 <motion.h3
                     {...ShowUpAnimate}
-                    className=" mb:row-start-1 mb:row-end-3 mb:col-start-2 mb:col-end-12 col-end-13 dt:col-start-4 dt:col-end-10 dt:row-start-1 dt:row-end-3 text-[27px] dt:text-[3rem] dt:text-center  m-auto text-custom-darkgreen font-extrabold"
+                    className=" mb:row-start-1 mb:row-end-2 mb:col-start-2 mb:col-end-12 col-end-13 dt:col-start-4 dt:col-end-10 dt:row-start-1 dt:row-end-3 text-[24px] dt:text-[3rem] dt:text-center  m-auto text-custom-darkgreen font-extrabold"
                 >
                     {titleFirst}
                 </motion.h3>
                 <motion.p
                     {...ShowLeftDelayAnimate(0.2)}
-                    className="mb:row-start-7 mb:row-end-10 mb:col-start-2 mb:col-end-12 row-start-8 row-end-11 dt:col-start-2 dt:col-end-5 dt:row-start-2 dt:row-end-5 text-center m-auto text-custom-darkgreen dt:DescCustomPC"
+                    className="mb:row-start-2 mb:row-end-3 mb:col-start-2 mb:col-end-12 row-start-8 row-end-11 dt:col-start-2 dt:col-end-5 dt:row-start-2 dt:row-end-5 text-center m-auto text-custom-darkgreen dt:DescCustomPC"
                 >
                     {descFirst}
                 </motion.p>
                 <motion.p
                     {...ShowLeftDelayAnimate(0.4)}
-                    className="mb:row-start-7 mb:row-end-10 mb:col-start-2 mb:col-end-12 row-start-8 row-end-11 dt:col-start-5 dt:col-end-9 dt:row-start-2 dt:row-end-5 text-center m-auto text-custom-darkgreen dt:DescCustomPC"
+                    className="mb:row-start-3 mb:row-end-5 mb:col-start-2 mb:col-end-12 row-start-8 row-end-11 dt:col-start-5 dt:col-end-9 dt:row-start-2 dt:row-end-5 text-center m-auto text-custom-darkgreen dt:DescCustomPC"
                 >
                     {descSecond}
                 </motion.p>
                 <motion.p
                     {...ShowLeftDelayAnimate(0.6)}
-                    className="mb:row-start-7 mb:row-end-10 mb:col-start-2  mb:col-end-12 row-start-8 row-end-11 dt:col-start-9 dt:col-end-12 dt:row-start-2 dt:row-end-5 text-center m-auto  text-custom-darkgreen dt:DescCustomPC"
+                    className="mb:row-start-5 mb:row-end-6 mb:col-start-2  mb:col-end-12 row-start-8 row-end-11 dt:col-start-9 dt:col-end-12 dt:row-start-2 dt:row-end-5 text-center m-auto  text-custom-darkgreen dt:DescCustomPC"
                 >
                     {descThird}
                 </motion.p>
                 <motion.p
                     {...ShowLeftDelayAnimate(0.8)}
-                    className="mb:row-start-7 mb:row-end-10 mb:col-start-2 mb:col-end-12 row-start-8 row-end-11 dt:col-start-2 dt:col-end-12 dt:row-start-4 dt:row-end-6 text-center m-auto text-custom-darkgreen text-[24px] font-bold"
+                    className="mb:row-start-10  mb:col-start-2 mb:col-end-12 row-start-8 row-end-11 dt:col-start-2 dt:col-end-12 dt:row-start-4 dt:row-end-6 text-center m-auto text-custom-darkgreen text-[24px] font-bold"
                 >
                     {descFour}
                 </motion.p>
@@ -59,7 +59,7 @@ const SunGlassPost5 = (props) => {
                 <h3 className=" mb:row-start-1 mb:row-end-3 mb:col-start-2 mb:col-end-12 col-end-13 dt:col-start-2 dt:col-end-7 dt:row-start-2 dt:row-end-3 text-[27px] dt:text-[3rem] dt:text-center m-auto text-custom-darkgreen font-extrabold">
                     {titleSecond}
                 </h3>
-                <p className="mb:row-start-7 mb:row-end-10 mb:col-start-2 mb:col-end-12 row-start-8 row-end-11 dt:col-start-2 dt:col-end-7 dt:row-start-5 dt:row-end-12 text-center leading-7  text-custom-darkgreen dt:DescCustomPC">
+                <p className="mb:row-start-8 mb:col-start-2 mb:col-end-12 row-start-8 row-end-11 dt:col-start-2 dt:col-end-7 dt:row-start-5 dt:row-end-12 text-center leading-7  text-custom-darkgreen dt:DescCustomPC">
                     <span className="text-[1.5rem] font-semibold">
                         {descFive.charAt(0)}
                     </span>
@@ -67,7 +67,7 @@ const SunGlassPost5 = (props) => {
                 </p>
                 <img
                     alt="Arbet Glas"
-                    className=" mb:row-start-3 mb:row-end-7 rounded-xl shadow-whiteShadow50 col-end-12 dt:col-start-8 dt:col-end-12 row-start-1 dt:row-start-2 row-end-5 dt:row-end-11 w-[100%] h-full object-cover "
+                    className=" mb:row-start-3 mb:row-end-7 mb:col-start-2 mb:cold-end-12 rounded-xl col-end-12 dt:col-start-8 dt:col-end-12 row-start-1 dt:row-start-2 row-end-5 dt:row-end-11 w-[100%] shadow-whiteShadow50 h-full object-cover "
                     src={ImgPost6}
                 />
             </div>

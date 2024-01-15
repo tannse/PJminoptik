@@ -14,7 +14,7 @@ const OptikLocationPost2 = (props) => {
         return <SkeletonText />;
     }
     const containerStyle = {
-        width: "600px",
+        width: "400px",
         height: "400px",
         borderRadius: "50px",
     };
@@ -35,9 +35,9 @@ const OptikLocationPost2 = (props) => {
     } = props;
     return (
         <>
-            <div className="flex  justify-center mt-[68px] h-[60vh] w-[100%]">
+            <div className="flex  justify-center mt-[68px] h-[100vh] dt:h-[50vh] w-[100%]">
                 <div className="w-[90%] ">
-                    <div className="flex gap-x-5 justify-around">
+                    <div className="flex gap-x-5 mb:gap-y-5 mb:flex-col dt:flex-row justify-around">
                         {/* Kontakt Info */}
                         <div className=" flex-1">
                             <div>
@@ -90,13 +90,13 @@ const OptikLocationPost2 = (props) => {
                 </div>
             </div>
             {/*  */}
-            <div className="h-[60vh] flex justify-center items-center bg-[#fff]">
+            <div className="h-[100vh] flex justify-center items-center bg-[#fff]">
                 <div className="w-[90%] ">
-                    <div className="flex items-center gap-x-5 w-[100%]">
+                    <div className="flex dt:flex-row flex-col items-center gap-5 w-[100%]">
                         <div className="flex-1">
                             <motion.img
                                 {...ShowSpecialAnimate90}
-                                className="h-[50vh] w-full round object-cover"
+                                className="h-[45vh] w-full object-cover"
                                 alt="VISION"
                                 src={ArbetGlas4}
                             />

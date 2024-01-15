@@ -18,7 +18,7 @@ const OptikLocationPost4 = (props) => {
     return (
         <>
             <div className="mt-[50px] ">
-                <div className="h-[50vh] flex justify-between gap-x-[50px]  ">
+                <div className="h-[100vh] dt:h-[50vh] flex dt:flex-row flex-col justify-between gap-x-[50px]  ">
                     {/* Item1 Post4 */}
                     <motion.div
                         {...ShowLeftDelayAnimate(0.2)}
@@ -58,7 +58,7 @@ const OptikLocationPost4 = (props) => {
                 </div>
             </div>
             <motion.div {...ShowDownAnimate} className="mt-[50px] ">
-                <div className="flex justify-between gap-x-[50px]  ">
+                <div className=" dt:flex hidden justify-between gap-[2rem]   ">
                     <div className=" flex-1 rounded-xl flex justify-center items-center text-center bg-[#F6FCF6]">
                         <div className="w-[80%]">
                             <img

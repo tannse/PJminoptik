@@ -7,14 +7,18 @@ import DOlogo from "../../../assets/DOlogo.webp";
 import RBlogo from "../../../assets/RBlogo.webp";
 import OAlogo from "../../../assets/OAlogo.webp";
 import { motion } from "framer-motion";
-import { ShowScale, ShowLeftDelayAnimate } from "../../../Card UI/Animation";
+import {
+    ShowScale,
+    ShowLeftAnimate,
+    ShowLeftDelayAnimate,
+} from "../../../Card UI/Animation";
 const SunGlassPost4 = (props) => {
     const images = [SunGlass1, SunGlass2, SunGlass3, SunGlass4];
 
     const { title } = props;
     return (
         <>
-            <div className="  h-[100vh] dt:h-[120vh] flex items-center flex-col font-Exo  bg-[#f6faf6]">
+            <div className="  h-fit dt:h-[120vh] flex items-center flex-col font-Exo  bg-[#f6faf6]">
                 <div className="max-w-full dt:max-w-4xl">
                     <motion.h3
                         {...ShowScale}
@@ -26,51 +30,51 @@ const SunGlassPost4 = (props) => {
                         {images.map((image, index) => (
                             <img alt="Sunglass" key={index} src={image} />
                         ))}
+                        sg56 asf
                     </Carousel>
                 </div>
 
-                <div className="flex mt-[2rem] justify-evenly">
-                    <div className="  w-[18%]">
+                <ul className="flex dt:mt-[2rem] justify-center dt:justify-evenly">
+                    <li className=" w-[20%]">
+                        <img
+                            className=" h-full rounded-[10px] p-[10px] "
+                            src={DOlogo}
+                            alt="hallo"
+                        />
+                    </li>
+                    <li className=" w-[20%]">
                         <motion.img
-                            {...ShowLeftDelayAnimate(0.2)}
-                            className=" place-content-stretch h-full    "
+                            {...ShowLeftDelayAnimate(0.6)}
+                            className=" h-full rounded-[10px] p-[10px] "
                             src={DOlogo}
                             alt="Rayban"
                         />
-                    </div>
-                    <div className=" w-[15%]">
+                    </li>
+                    <li className=" w-[20%]">
                         <motion.img
-                            {...ShowLeftDelayAnimate(0.4)}
-                            className=" h-full rounded-[10px] p-[10px] "
-                            src={RBlogo}
-                            alt="Rayban"
-                        />
-                    </div>
-                    <div className=" w-[15%]">
-                        <motion.img
-                            {...ShowLeftDelayAnimate(0.6)}
+                            {...ShowLeftDelayAnimate(0.7)}
                             className=" h-full rounded-[10px] p-[10px] "
                             src={OAlogo}
                             alt="Rayban"
                         />
-                    </div>
-                    <div className="m w-[15%]">
+                    </li>
+                    <li className="m w-[20%]">
                         <motion.img
-                            {...ShowLeftDelayAnimate(0.8)}
+                            {...ShowLeftDelayAnimate(0.9)}
                             className=" h-full rounded-[10px] p-[10px] "
                             src={RBlogo}
                             alt="Rayban"
                         />
-                    </div>
-                    <div className="w-[15%]">
+                    </li>
+                    <li className="w-[20%]">
                         <motion.img
                             {...ShowLeftDelayAnimate(1)}
                             className="  h-full rounded-[10px] p-[10px]  "
                             src={OAlogo}
                             alt="Rayban"
                         />
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </>
     );

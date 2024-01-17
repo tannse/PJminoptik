@@ -3,9 +3,9 @@ import SunGlass1 from "../../../assets/SunglassSlide1.webp";
 import SunGlass2 from "../../../assets/SunglassSlide2.webp";
 import SunGlass3 from "../../../assets/SunglassSlide3.webp";
 import SunGlass4 from "../../../assets/SunglassSlide4.webp";
-import DOlogo from "../../../assets/DOlogo.webp";
-import RBlogo from "../../../assets/RBlogo.webp";
-import OAlogo from "../../../assets/OAlogo.webp";
+import DOlogo from "../../../assets/DOlogo.png";
+import RBlogo from "../../../assets/RBlogo.png";
+
 import { motion } from "framer-motion";
 import {
     ShowScale,
@@ -46,7 +46,7 @@ const SunGlassPost4 = (props) => {
                         <motion.img
                             {...ShowLeftDelayAnimate(0.6)}
                             className=" h-full rounded-[10px] p-[10px] "
-                            src={DOlogo}
+                            src={RBlogo}
                             alt="Rayban"
                         />
                     </li>
@@ -54,7 +54,7 @@ const SunGlassPost4 = (props) => {
                         <motion.img
                             {...ShowLeftDelayAnimate(0.7)}
                             className=" h-full rounded-[10px] p-[10px] "
-                            src={OAlogo}
+                            src={RBlogo}
                             alt="Rayban"
                         />
                     </li>
@@ -70,7 +70,7 @@ const SunGlassPost4 = (props) => {
                         <motion.img
                             {...ShowLeftDelayAnimate(1)}
                             className="  h-full rounded-[10px] p-[10px]  "
-                            src={OAlogo}
+                            src={RBlogo}
                             alt="Rayban"
                         />
                     </li>

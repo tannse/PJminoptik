@@ -37,7 +37,7 @@ const SunGlassPost4 = (props) => {
                 <ul className="flex dt:mt-[2rem] justify-center dt:justify-evenly">
                     <li className=" w-[20%]">
                         <img
-                            className=" object-contain cover h-full rounded-[10px] p-[10px] "
+                            className=" h-full object-contain rounded-[10px] p-[10px] "
                             src={DOlogo}
                             alt="hallo"
                         />
@@ -45,7 +45,7 @@ const SunGlassPost4 = (props) => {
                     <li className=" w-[20%]">
                         <motion.img
                             {...ShowLeftDelayAnimate(0.6)}
-                            className="object-contain h-full rounded-[10px] p-[10px] "
+                            className=" h-full object-contain rounded-[10px] p-[10px] "
                             src={RBlogo}
                             alt="Rayban"
                         />
@@ -53,7 +53,7 @@ const SunGlassPost4 = (props) => {
                     <li className=" w-[20%]">
                         <motion.img
                             {...ShowLeftDelayAnimate(0.7)}
-                            className="object-contain  h-full rounded-[10px] p-[10px] "
+                            className=" h-full object-contain rounded-[10px] p-[10px] "
                             src={RBlogo}
                             alt="Rayban"
                         />
@@ -61,7 +61,7 @@ const SunGlassPost4 = (props) => {
                     <li className="m w-[20%]">
                         <motion.img
                             {...ShowLeftDelayAnimate(0.9)}
-                            className="object-contain  h-full rounded-[10px] p-[10px] "
+                            className=" h-full object-contain rounded-[10px] p-[10px] "
                             src={RBlogo}
                             alt="Rayban"
                         />
@@ -69,7 +69,7 @@ const SunGlassPost4 = (props) => {
                     <li className="w-[20%]">
                         <motion.img
                             {...ShowLeftDelayAnimate(1)}
-                            className="object-contain  h-full rounded-[10px] p-[10px]  "
+                            className="  h-full object-contain rounded-[10px] p-[10px]  "
                             src={RBlogo}
                             alt="Rayban"
                         />

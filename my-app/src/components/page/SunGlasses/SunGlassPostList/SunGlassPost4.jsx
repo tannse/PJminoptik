@@ -18,7 +18,7 @@ const SunGlassPost4 = (props) => {
     const { title } = props;
     return (
         <>
-            <div className="  h-fit dt:h-[120vh] flex items-center flex-col font-Exo  bg-[#f6faf6]">
+            <div className="  h-[80vh] dt:h-[120vh] flex items-center flex-col font-Exo  bg-[#f6faf6]">
                 <div className="max-w-full dt:max-w-4xl">
                     <motion.h3
                         {...ShowScale}
